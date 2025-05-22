@@ -1,0 +1,1722 @@
+[
+  {
+    "_id": "621ffdd236468d709f1835cf",
+    "id": "huggingface/documentation-images",
+    "author": "huggingface",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-21T05:09:23+00:00",
+    "likes": 63,
+    "private": false,
+    "sha": "9c53f5ca3419025dfa78aa54ccda23ab63e90a95",
+    "description": "\n\t\n\t\t\n\t\tThis dataset contains images used in the documentation of HuggingFace's libraries.\n\t\n\nHF Team: Please make sure you optimize the assets before uploading them.\nMy favorite tool for this is https://tinypng.com/.\n",
+    "downloads": 3009609,
+    "tags": [
+      "license:cc-by-nc-sa-4.0",
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2022-03-02T23:29:22+00:00",
+    "key": "",
+    "viewer_sample_rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/0/image/image.jpg?Expires=1747896309&Signature=sGFly0n3gjtiwvKQ4UjlL8JGZNubve~GdyAA-bLqSeCcUUIxmRnlWqB10ZMFvBmBeZ6HBNAFGYGl7RgCAcoVSfucdI39Li1xMrn8dKx5XpVpdyOzd6-HO48MJ~WsUEm-6NJqu5RxXhSgJbzDwKXl23APb29HRtWXbiyclVoyFjQ-Lz3QIukE-5xKo6R8797r6PqVWwZRTHN3aIIA3-lz5IJcn3gk62zWMQDzWgk1uPYRpPBkHrflPK3mJEhSal0xb71cNIUq9MnANlzyI2KnOjuYGOoH7dlOgvjpEdRWi2Jt1hPPQmMiaAvAX943~6QV9e1z5Tc17NVM-vD6E7~89A__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          },
+          "label": 4
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 1,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/1/image/image.jpg?Expires=1747896309&Signature=bNsbeGd2aBXCpbPZkD8o9PbFF0ToYm1DdhUJerYcgGU8bhxKwE4AQa1EjWXfBL3gZUIPRGGLP7XwFEq33KWSQkWTZ7N9hPnJci2nAF0FJHUhGoZaNOAuBroD3cOS6wmSfwOtEZBlrvi5PVQyK3-7kpGQN~-YZhTR4SiPx5vAHXzKdMXYCZ6iYyLdBDrL4Ego139fbMwRDJuFzpsrDCd7WhPUPBRwUROVyskYDexTdw5khT-FBhohw4lqc9qURZFDZLcIa0eiyWShnbmXDwhI0xMhTsWbGGVir69xtQS4--qAoT9YwCp15QEggPabaIsiiOXkF6B2ntZS0njoZW7-zw__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          },
+          "label": 4
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 2,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/2/image/image.jpg?Expires=1747896309&Signature=ZUUWCpU693Q3JXRgw2KjO8qSbvYd36fAci9blLn2BhmEfYSXlzAUsy6GH44ilp5ovBeu0FeYv5GtNW8cYgUXqJNrTJkmHIFz8uWi6NoAUjWVeNTMixrvQbgLSfWXQM9Je586hE7HtuYF~Hr25ICiUBHEZFgrZr5GkJKVL~vIQKcPZbushmQ2omNO7UqZDRZpflqbOeC2hRXK-kI42YKtP48tjUOfhoKqApCN3-PjpYVC2cXbKUmEwHLYmHmvtjaSFmhWQMkrLfK3f3b5Ej3jU5NdyHcqwpDVU6OUUI19tf0mjRISOp3tKLk66~Yyh8C5Msb4SBLtaqrf0pCtT0xb3g__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          },
+          "label": 4
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 3,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/3/image/image.jpg?Expires=1747896309&Signature=XYVdW6CoJbRwi~pvKFBK-op4BToNtDS7Sw8NN7GA7bWYs6iFvEw3e47F1WIfa22Ht-9jlQP1wM4yosJ8OWWEMqC1M5fA3qSKFMO8OQA0RAGJHmffBYhbeurJJBXrNpKydcrVruEk0I8gISyq4t5pApXIsxf-Di1u4Hf520KfQfg3ULbpce62MQDxL7XP-ratyKfTXDXL9mbKmeA3Xo81grmc~3mxXeyGQsvPBCdH9R-iIyPV4DLFp6GycBWhnZEiZAk~ylJeeSnXGER4FgKLaHTElpc99wxTscv7SRYgrMkcZbW5GY9o58bQ6j0gaM4900CqDHoS5HUL9CAnB9AkvA__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          },
+          "label": 4
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 4,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/4/image/image.jpg?Expires=1747896309&Signature=qh-iHAC2z1wnJeO4dcgEWSNdqf4RUG4fcwTwFVfWxoDjQZmCxgVnstO7HUNdAGUWju9qnWd0ds1zljG7gdERZ0fX2Usd4UW3nN7lZ9m~JQxNYCZzyY0yM2oEkUC4rFuoMU2HaueMEOdyQeDJ6A1X0cnLemx7jWY3YH1NrGPxrRzkmNE5AQs5CPmgfqWpbcoBkATR8HD6AGRkbArFkBybuFeNsvloUzRj-JthYrNSjh3vcHC7zrrkS~V~~38pycKePZ-VtB5LZRBbLiEZjp3ZzA-lR1isjiCdUyO1ZLXjoq6o9osuE5LIFUBCdjciXXJcTqnG0h02VemUzL7uswvuhw__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 792,
+            "width": 807
+          },
+          "label": 4
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 5,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/5/image/image.png?Expires=1747896309&Signature=RgOETOzvNDj~R-1uZeAMJ4206V4eA0uAQkmXZlg2LZIwiU17RG0PduD7Oz~xlt6tTrnWiwz6xMbPZo0fNk1tud~lWCazIm3CWvWLBDSMVkBoOCEy-2u4WId1elbSloLqXNFvCikXjLUgZA5bfnYsHdHa-5ylDRSwDfX4Aq9PVZM0OGldvCjnI-UJWjJtRwMMVPI-mugYoi9~qgP6uebG9ewurP-CmOAzRPsnVlWjOHcQTVy9k7VBhe2jYeYg1o7h1GMT-EC06CdMvKJthuxB14H-jAesKi0NJf6QT3LTxPxar-Zn00n4K3DzmG6j4OFDAwlufynNq9mXSISNU1uawQ__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 717,
+            "width": 1178
+          },
+          "label": 5
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 6,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/6/image/image.png?Expires=1747896309&Signature=wFwqUotm1c00X1TSDDyNAz3TbEm9U4xRX7bzARXyEqGgofltKgAOqRnCvTK6AM6e4hxm8MFQgA19jOxsyeFPDTWV~XYf0CmiK7LMEywKF~QUajNMC-Id4RlRYyFQbo4Nimi7U6R8txb2nutMDITHr7Zc8nZaIpO4ZKG~CO5qqptZBJvBIBXo6a8UGkGGUluoa0xh0yVyJmhPbmrbLI~pPViuAzt-Unr-2qHylXF0-zLVHldmgvZfOWdtWejAOP5PpUlLFE~OHSj9yRmpCyW~Vl-TbSOSNJUxrrH73hN7v2ZXTZ9U01U-jYD4MYdpux9Ldny8cy4qQnND8N~w37jVlg__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 480,
+            "width": 640
+          },
+          "label": 5
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 7,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/7/image/image.png?Expires=1747896309&Signature=N~g5~iepMPAaEjsC13oWvtZYgqjvGIduSpsM3DlKcKZgBYGV~fhqR2uehj8qBwLxewkzpLbVYdrCDf6bzPKRjfDRJtYP3ztaLKaUFhhKsC2WlUvDEyR0pCUHkPJufZeBhLeNUKO4t8yv4RdSJzhE7G4qsDZ2a8NMONppTFxz4x3QtOc8~65-ngW8~w1D3JqMZQbL4-vX9OchJ311es4qCpVp~dReEvngcW0mjfR6LehxYX8GQ4ugw5mhxcNA2UrCbluMJYEkKhPoC377O99cldpEUODU7NCPXSityMK~nekExGqJEXDxCBV4FB23qx4uMnVbe7-VrKt3c05Ov8syyQ__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 450,
+            "width": 450
+          },
+          "label": 6
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 8,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/8/image/image.png?Expires=1747896309&Signature=ABnJupFa42tzbrWKMkEOLxNYlUJ5GodF51-MGbw1nnV5aX8F93bdL791VgmRDfHDzTOSq2kSLArpLs65kceas8WGdAiT8Og1yXeX06ezSljIqqRp2bpwWFwXO4Gs4l2sBt2W7fUTu~vvnAnkqZETYZ7jMIz3UZld6Ref1kgERACEVNWIrXGXWRG2j4moX3pBQsB~IbuPpyGuL3nMBAfxAkPBjIxKAlL0DNA9Je7MnT4lqGzrpl3tkA7q6-d~vT~hqFvl~gr3Y5VJ7yr10zK1l95rFvBd~1UvwqTu97ZbSC0V-VUYOyaDIDg1BROTGRYimllYztxynnQUmieRjHJFbg__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 1924,
+            "width": 6169
+          },
+          "label": 6
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 9,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/documentation-images/--/9c53f5ca3419025dfa78aa54ccda23ab63e90a95/--/default/train/9/image/image.png?Expires=1747896309&Signature=X5nL6w5pUaqkmV5SUYt8hr774Efm4BeBEcYBRQYoGMTeXJInshI1TBpZBeECOA61Pwzv5jaQ~ZBbjiCEKiwYVJ132nLg47XlfuhMshL69E~mgqy6wQcxDOmM8gZ0RbMOdCHn6E~7eQoDlylUhz2tMjoDmAzhgFd9ty9mA2zyZjn4GIKg1vODIrBOF-C4s5Lumi92Kn9pu6yxuQR1ZBy7LA2i9hnqdNjJnB8ZA9KKAIdFUW-qKcnT34ItHxlg8d6Rk3ZBFwksse4eaAa~XggACmUmpE9VmDj3o9tIcR1~BAY25fF4Rf2LX3i7mfqTV-j9fuxpJRG8qVpObjx~5zhsbg__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 1475,
+            "width": 5029
+          },
+          "label": 6
+        },
+        "truncated_cells": []
+      }
+    ],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "63dbcedb29a85707bf339dc8",
+    "id": "huggingface/badges",
+    "author": "huggingface",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-04-08T17:39:54+00:00",
+    "likes": 43,
+    "private": false,
+    "sha": "eb40ea58fe98f24e9ea604c5b98b34f94b200dc2",
+    "description": "\n\t\n\t\t\n\t\tBadges\n\t\n\nA set of badges you can use anywhere. Just update the anchor URL to point to the correct action for your Space. Light or dark background with 4 sizes available: small, medium, large, and extra large.\n\n\t\n\t\t\n\t\tHow to use?\n\t\n\n\nWith markdown, just copy the badge from: https://huggingface.co/datasets/huggingface/badges/blob/main/README.md?code=true\nWith HTML, inspect this page with your web browser and copy the outer html.\n\n\n\t\n\t\t\n\t\tAvailable sizes\n\t\n\n\n\t\n\t\t\nSmall\nMedium\nLarge\nExtra… See the full description on the dataset page: https://huggingface.co/datasets/huggingface/badges.",
+    "downloads": 1798688,
+    "tags": [
+      "license:mit",
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2023-02-02T14:55:23+00:00",
+    "key": "",
+    "viewer_sample_rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingface/badges/--/eb40ea58fe98f24e9ea604c5b98b34f94b200dc2/--/default/train/0/image/image.png?Expires=1747896310&Signature=qUol8bPP1-Rfmyi-gQqyBN9nK6PKCtL~dnWRHJsqKUDcWAhYIZs~B~nK22xA6RSqaLiaOZhbUtGLDp4cACAOiQkWlMMGbefHQcBUZWQxcUdHFpINRPQrGH8HwHTu8WoEDiaywZE41hvV8wOXZU7pa-uR-g2FgmM9mOPS4nzXW-3J8ufGqw3TwnEdMcA~T3yDXQZ-pT9TcWn2PcmLsAuK9NhZ4Q-gFmptSD0IomE2~iUOsj8CTpSXh-0FUoA2imvFnQ-UzziU11yf111HPvnaBZpLbSNS76Z-G5IEtrgmDMQ~FhYeFxdZ3Rm5u86M52~2xAzAssLxaj6760KFf99uyg__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 763,
+            "width": 1332
+          }
+        },
+        "truncated_cells": []
+      }
+    ],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "645e3fcc43abb116540da202",
+    "id": "KakologArchives/KakologArchives",
+    "author": "KakologArchives",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:41:37+00:00",
+    "likes": 16,
+    "private": false,
+    "sha": "694b52ff29dd78b2623d23befe817488e3914d35",
+    "description": "\n\t\n\t\t\n\t\tニコニコ実況 過去ログアーカイブ\n\t\n\nニコニコ実況 過去ログアーカイブは、ニコニコ実況 のサービス開始から現在までのすべての過去ログコメントを収集したデータセットです。\n去る2020年12月、ニコニコ実況は ニコニコ生放送内の一公式チャンネルとしてリニューアル されました。これに伴い、2009年11月から運用されてきた旧システムは提供終了となり（事実上のサービス終了）、torne や BRAVIA などの家電への対応が軒並み終了する中、当時の生の声が詰まった約11年分の過去ログも同時に失われることとなってしまいました。\nそこで 5ch の DTV 板の住民が中心となり、旧ニコニコ実況が終了するまでに11年分の全チャンネルの過去ログをアーカイブする計画が立ち上がりました。紆余曲折あり Nekopanda 氏が約11年分のラジオや BS も含めた全チャンネルの過去ログを完璧に取得してくださったおかげで、11年分の過去ログが電子の海に消えていく事態は回避できました。しかし、旧 API が廃止されてしまったため過去ログを API… See the full description on the dataset page: https://huggingface.co/datasets/KakologArchives/KakologArchives.",
+    "downloads": 1513691,
+    "tags": [
+      "task_categories:text-classification",
+      "language:ja",
+      "license:mit",
+      "region:us"
+    ],
+    "createdAt": "2023-05-12T13:31:56+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "648b2e5e167231971aacebba",
+    "id": "opentensor/openvalidators",
+    "author": "opentensor",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-09-25T14:03:34+00:00",
+    "likes": 9,
+    "private": false,
+    "sha": "70355d7577fc70750d4e46942a3cc505bff2eb11",
+    "description": "\n\t\n\t\t\n\t\tDataset Card for Openvalidators dataset\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nThe OpenValidators dataset, created by the OpenTensor Foundation, is a continuously growing collection of data generated\nby the OpenValidators project in W&B. \nIt contains millions of records and serves researchers, data scientists, and miners in the Bittensor network. \nThe dataset provides information on network performance, node behaviors, and wandb run details. \nResearchers can gain insights and detect patterns… See the full description on the dataset page: https://huggingface.co/datasets/opentensor/openvalidators.",
+    "downloads": 1234246,
+    "tags": [
+      "license:mit",
+      "size_categories:1M<n<10M",
+      "region:us"
+    ],
+    "createdAt": "2023-06-15T15:29:34+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "65d48e21dc2727f5807eb431",
+    "id": "huggingchat/models-logo",
+    "author": "huggingchat",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-10-16T11:00:05+00:00",
+    "likes": 4,
+    "private": false,
+    "sha": "3ad1b544339766b92fec4c57c378784423688177",
+    "downloads": 953341,
+    "tags": [
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2024-02-20T11:33:53+00:00",
+    "key": "",
+    "viewer_sample_rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/0/image/image.jpg?Expires=1747896314&Signature=VKth62Gw3NeNIrpbCWzK5DDS233tXUf0L362~PUFc8LGeqpYLQRrOtxPlfZfLfiVjW~pZvWeHDx~uTt3HVkixfzw0sdBfkwm9XqcvR5z3eOTQHkqgdo2q~Qfm1OIXLl6w9zrcE9eId2Fb~wenOZETw5agArMCUCWAWD6DUqhXUvEbMN0agKMPDT9bbM2-bYGtD1EdLUPbO1UxiklHhBrRqrNjQXXZe0fcrrqnhFyg8vuZIiz-RRcwj3M4KC9SD11m8~j067xPLTszRS-pvhVOAbUUf1LZVRi5JYlikh4Ersko4P2wn1JA3OGw8NGFxt2ILq1G4YrtmSw7avHpeYZzA__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 1,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/1/image/image.png?Expires=1747896314&Signature=lA5qWwFU0dpuoSwMNsccNaVMON6aOj~Mqdj8ABvk5JtNNzZvTiDKFGHI8xdKGtFfLdZt6ggs0crllEDDhzie76bSNyPLb50U00bsbEslqoR5JXmsrHlFjUVjWIZzbZWmoAF02L6yqYXuTlB7EfiJ6uWE1VhJsidgtPQlhq3M55dTZofu8DqrJSgNnNSXDSq9EK82y0PzcITe9i13Ipwh8vGiMe3NiWWstPg7npV8gmByDJ474jBZ2IQW6Awx6weJW9qmpxKTyRrD9YWkHH1IUYpob-rHdNadr2xVYGxqI~Qey9nQTvtkIaEGLRTPdixDMn~stEY4eXNaio0t9sUgvA__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 2,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/2/image/image.jpg?Expires=1747896314&Signature=e9UTxJobGwPPqVV1oB9FdfaDrefxyVMTVflj-xy910ILMW7ox0fLGxx7pJlTD5jLC4WVCNrHoUrZhvk7mzDFMp693IOEsK0LLlvg0VqgPsCvkIooJAQsg1fnAWTFmOBFclCubGJkBwyALdjr-v2tG-pUXvnOVprwzVVz3GVh5Hu8fnqsb6d9F3U03Qz7tW9-dVCEs0UrvfFWEc6e7kmkGHXxVHVj~AHICfiYzn0ab~TnHffSNMAmJz66jkbwXC8rrt1-82bcaOB60Szw8PCA12DlWqpsazzafyvJiCuXaseHrIzMB9rg~1fZAYJSmbwGVs6zM429HAuR2e6KO3oERw__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 200,
+            "width": 200
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 3,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/3/image/image.png?Expires=1747896314&Signature=a4vJmGPqGrgqNK8QkTuxtazE6svYT~AGa4Xz4lWI~plgF8DWAfP1WBYqeRNKI6vfP0TnR-MUNghHHjifwtbOIQxLnoKk~HF54Bpv5DwZ9c~RzCThW5eBxgxn1dzYR9-tFhC96w~FIopD106-VBBr11LRGZCu61g9T4SA4bOGF3aj6S1bJgF7y9BAjvDnixP72QW~63AFHfV2mqBEwb9FAhvpEg5b23DWc4u7CHxKw7VJG3pxnTg2-OUA6JukcaDXBfHE0ihiILUR~TiRhTvYgk-1JqCvq0MmeikSYouUblf8YPGqAKkOTVO9NUx44yzSUUpV97DEXTUukuUYBuLEng__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 4,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/4/image/image.png?Expires=1747896314&Signature=Mx24Ljx4-LLvJXhS-jk8QSEFUSEWO6h55xEI12xYMSTbXUN6re9aiajiwzughxuPDBzMbMPD5nM3e0ySP9lTNsL1bPd7PAtDBG930pQ8Qekzbp28YKWytutta-dlFJurL4OwV6bjqWMDubPkkgB60v2~Rrcpy~U4cywG1PptVl0ImyvuE6n8Bqxvnvh~nY2T1oai1vBmgNN21ksmt5T3HuEwQkg5fRPSq-hrjtnkehcKl51uVEuNcsp1U4OhZcym1qIkILmTm80J158kS7KepjY3d6UPNrbDT~SiJ7l6fjnb3GiMuoLRCzoY63TqavbvAM14mzZUl7unWj1wwPqFhw__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 5,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/5/image/image.png?Expires=1747896314&Signature=SfhBSE4HDBo5XKmQNYrjmyvI5z4BWKXjlKqLe2Sg-9ud6T3yaB1M-pcc6FhvJ5OAOD6sjIwunKN1MpXh-sixuIcLjNd4eZnmsUQrm6-AZwTmlT3UUbWTpWLfg6BbvN~jisEu-6ewy1GTAmw5J81Fg1lOiRwgqOS8RMe3BDzTbG0fmSVkxkz-mFc44y101xuAWhFJYtCmhTK0fUD0aIj8rfMkvscY0Po2Nppc0yiziIueDpKyuRZHcNaLlCuLEvz1xJHlEF~ZAJjaX5V8CglqBaMVX8XH3dE4Nx3RdeazPPdobTEu5gAmVv~PqqZsejyqin8Q-FbUj71v--EFg7iffg__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 6,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/6/image/image.png?Expires=1747896314&Signature=xo7L7-uYamR7IEWj6~9JcH7H19bYpNs7PDApJM5SjJGhn~4tyj~9YRd6C9Y-a0a7AOapx6KVmDU9qrLEN6rG7fc51tCd9De7QoLD2lBnq6t7apDoUwPEAHNSOMj7VgLxub3FxfLAF63lWvyXh4JXUhZ5n3BoR1kgzA4xNDvMTjS6VzdhBocLkq2TWvrO-JzNmarcpofI1BjvABEU~z5U568PFHou4vlq91OtevzGnVqCo0O4bI1qirGvEJJtjWSOpv7Bh49P-nCtlqSdJWkl-tPHQ0ns-23nK8mb~pwsIsn6xRTktIDQUWwY-07Kylv9h-7k5Fqm2soXlHxg0J77Yw__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 7,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/7/image/image.png?Expires=1747896314&Signature=p1iKLR3uY3088zE6Z3-dgeySn-h5mm63tZlwA41GX-0kk-QZcI3MaxTGT~8Uhv~4Ut~5BPYmOFDG1MwsCUlKXcqygYv2VCVflfL83wlXKp4Cmvf93YxhaV1KbnHHicCGXjLsg4CzlOG14QqgaQLVNAqNbMT13zCsQ~vQqhHjaJmB2qBy0ZaxCg5-~-AcDu9BTNRlqYbLF17rBTBmaMI2WLY4oyptlwseVcuxXXkpy3mv04UNSAkqZsFw-bao3If96CEofJuf2pLH2abITlbwPxuuKn7xvVZz4wuKpOWQf-~E4dMGVOeh1cGVx-wcImmDUL1To5plsUi6WqxfJEDh3A__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 8,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/8/image/image.png?Expires=1747896314&Signature=A6X3kW9c8ftF8dAdwl5emhMFQ9~8lJyRAHwfToHLnbsJ1EgmYtTMk3rXj~UVUgbEgcLooWHEx37ew3XNFv85Y13KH9zIBjSas~aZl-HhJr5cZvRhfBYPNEPHb63LzP58CMN32oMlHQLC0SZCieCPDilnNbehcp8PMlepyQMPm0WFwHsEs7GGiDvVYPY9V9yogpqPy1~bArXWMVHtfvy-2Lw0YfpN~kGS15sjya14-thaqHNK7-W9Np5w7tPCArH8WT3kOn2NNDU78uw0g8OGfl45zj67uObqvOIRd~sYd~4CW5ArIjCYFEMZq7ubxgoRKs3pR3QrqcFhc7jf7SfIPQ__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 549,
+            "width": 549
+          }
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 9,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/huggingchat/models-logo/--/3ad1b544339766b92fec4c57c378784423688177/--/default/train/9/image/image.png?Expires=1747896314&Signature=PXjOKbJMJFgWWn1peD1zWo3ob48nmrkHU9yttj~MEFLfPMll6wETtoptAMd3ihkarMo-J5Ji3KcaJBcUU5jKdqWKJTVTdHp2BqkVAIiBkRiN8hCdU25aWBDIw-Mo39l7VsZTM2HyTvfISfRN8yXcwheeLUX0gFqvbBSJ2SRG4x1EsdOkfyRcncZJd3G~FGNfYCMd7431Crbn~QFpuWbST7V~8AGW0SF3PoIDIhgjIvquj8cBozvaXERL4LoxOLXfuIEPZgr~jln7xWAV3t8B~FLRQfWN~JG~SHFfQF1wTbPiBDUt9aGvuhSnL56MlgtLFuSA5g0jILyggotTrAiUHw__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 512,
+            "width": 512
+          }
+        },
+        "truncated_cells": []
+      }
+    ],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "64b87fc32f796fffbbf4119b",
+    "id": "lavita/medical-qa-shared-task-v1-toy",
+    "author": "lavita",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-07-20T00:29:06+00:00",
+    "likes": 18,
+    "private": false,
+    "sha": "a1cbb5ce2b697b2377f49cad89ea6387a7efd3fa",
+    "description": "\n\t\n\t\t\n\t\tDataset Card for \"medical-qa-shared-task-v1-toy\"\n\t\n\nMore Information needed\n",
+    "downloads": 864453,
+    "tags": [
+      "size_categories:n<1K",
+      "format:parquet",
+      "modality:tabular",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "createdAt": "2023-07-20T00:28:51+00:00",
+    "key": "",
+    "viewer_sample_rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "id": 2622,
+          "ending0": "Pallor, cyanosis, and erythema of the hands",
+          "ending1": "Calcium deposits on digits",
+          "ending2": "Blanching vascular abnormalities",
+          "ending3": "Hypercoagulable state",
+          "ending4": "Heartburn and regurgitation",
+          "label": 3,
+          "sent1": "A 35-year-old woman comes to your office with a variety of complaints.  As part of her evaluation, she undergoes laboratory testing which reveals the presence of anti-centromere antibodies. ",
+          "sent2": "All of the following symptoms and signs would be expected to be present EXCEPT:",
+          "startphrase": "A 35-year-old woman comes to your office with a variety of complaints. As part of her evaluation, she undergoes laboratory testing which reveals the presence of anti-centromere antibodies. All of the following symptoms and signs would be expected to be present EXCEPT:"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 1,
+        "row": {
+          "id": 1754,
+          "ending0": "CGG",
+          "ending1": "GAA",
+          "ending2": "CAG",
+          "ending3": "CTG",
+          "ending4": "GCC",
+          "label": 1,
+          "sent1": "An 8-year-old boy is brought to the pediatrician because his mother is concerned about recent behavioral changes.  His mother states that she has started to notice that he is slurring his speech and seems to be falling more than normal.  On exam, the pediatrician observes the boy has pes cavus, hammer toes, and kyposcoliosis.  Based on these findings, the pediatrician is concerned the child has a trinucleotide repeat disease. ",
+          "sent2": "Which of the following trinucleotide repeats is this child most likely to possess?",
+          "startphrase": "An 8-year-old boy is brought to the pediatrician because his mother is concerned about recent behavioral changes. His mother states that she has started to notice that he is slurring his speech and seems to be falling more than normal. On exam, the pediatrician observes the boy has pes cavus, hammer toes, and kyposcoliosis. Based on these findings, the pediatrician is concerned the child has a trinucleotide repeat disease. Which of the following trinucleotide repeats is this child most likely to possess?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 2,
+        "row": {
+          "id": 3718,
+          "ending0": "Release of vascular endothelial growth factor",
+          "ending1": "Cellular retention of sodium",
+          "ending2": "Breakdown of endothelial tight junctions",
+          "ending3": "Degranulation of eosinophils",
+          "ending4": "Increased hydrostatic pressure",
+          "label": 2,
+          "sent1": "A 36-year-old man is brought to the emergency department by his wife 20 minutes after having a seizure.  Over the past 3 days, he has had a fever and worsening headaches.  This morning, his wife noticed that he was irritable and demonstrated strange behavior; he put the back of his fork, the salt shaker, and the lid of the coffee can into his mouth.  He has no history of serious illness and takes no medications.  His temperature is 39°C (102.2°F), pulse is 88/min, and blood pressure is 118/76 mm Hg.  Neurologic examination shows diffuse hyperreflexia and an extensor response to the plantar reflex on the right.  A T2-weighted MRI of the brain shows edema and areas of hemorrhage in the left temporal lobe. ",
+          "sent2": "Which of the following is most likely the primary mechanism of the development of edema in this patient?",
+          "startphrase": "A 36-year-old man is brought to the emergency department by his wife 20 minutes after having a seizure. Over the past 3 days, he has had a fever and worsening headaches. This morning, his wife noticed that he was irritable and demonstrated strange behavior; he put the back of his fork, the salt shaker, and the lid of the coffee can into his mouth. He has no history of serious illness and takes no medications. His temperature is 39°C (102.2°F), pulse is 88/min, and blood pressure is 118/76 mm Hg. Neurologic examination shows diffuse hyperreflexia and an extensor response to the plantar reflex on the right. A T2-weighted MRI of the brain shows edema and areas of hemorrhage in the left temporal lobe. Which of the following is most likely the primary mechanism of the development of edema in this patient?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 3,
+        "row": {
+          "id": 9107,
+          "ending0": "Left-sided heart failure",
+          "ending1": "Coronary artery disease",
+          "ending2": "Liver disease",
+          "ending3": "Budd-chiari syndrome",
+          "ending4": "Cor pulmonale",
+          "label": 4,
+          "sent1": "A 35-year-old woman presents to the ER with shortness of breath, cough, and severe lower limb enlargement.  The dyspnea was of sudden onset, started a week ago, and increased with exercise but did not disappear with rest.  Her cough was dry, persistent, and non-productive.  She has a family history of maternal hypertension.  Her vital signs include heart rate 106/min, respiratory rate 28/min, and blood pressure 140/90 mm Hg.  On physical examination, thoracic expansion was diminished on the right side with rhonchi and crackles on the lower two-thirds of both sides, with left predominance.  A systolic murmur was heard on the tricuspid foci, which increased in intensity with inspiration.  There was jugular engorgement when the bed was placed at 50°.  Palpation of the abdomen was painful on the right hypochondrium, with hepatomegaly 4 cm below the lower coastal edge.  Hepatojugular reflux was present.  Soft, painless, pitting edema was present in both lower limbs up until the middle third of both legs.  Lung computed tomography (CT) and transthoracic echocardiogram were performed and detected right heart failure and severe pulmonary fibrosis. ",
+          "sent2": "What is the most likely diagnosis?",
+          "startphrase": "A 35-year-old woman presents to the ER with shortness of breath, cough, and severe lower limb enlargement. The dyspnea was of sudden onset, started a week ago, and increased with exercise but did not disappear with rest. Her cough was dry, persistent, and non-productive. She has a family history of maternal hypertension. Her vital signs include heart rate 106/min, respiratory rate 28/min, and blood pressure 140/90 mm Hg. On physical examination, thoracic expansion was diminished on the right side with rhonchi and crackles on the lower two-thirds of both sides, with left predominance. A systolic murmur was heard on the tricuspid foci, which increased in intensity with inspiration. There was jugular engorgement when the bed was placed at 50°. Palpation of the abdomen was painful on the right hypochondrium, with hepatomegaly 4 cm below the lower coastal edge. Hepatojugular reflux was present. Soft, painless, pitting edema was present in both lower limbs up until the middle third of both legs. Lung computed tomography (CT) and transthoracic echocardiogram were performed and detected right heart failure and severe pulmonary fibrosis. What is the most likely diagnosis?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 4,
+        "row": {
+          "id": 1838,
+          "ending0": "Increase oral hydration and fiber intake",
+          "ending1": "Check the stool for fecal red blood cells and leukocytes",
+          "ending2": "Perform a stool culture",
+          "ending3": "Begin treatment with ciprofloxacin",
+          "ending4": "Begin cognitive behavioral therapy",
+          "label": 4,
+          "sent1": "A 5-year-old boy is brought in by his parents for recurrent abdominal pain.  The child has been taken out of class 5 times this past week for abdominal pain that resulted in him being sent home.  The mother reports that her son's stools have remained unchanged during this time and are brown in color, without blood, and with normal consistency and scent.  She also notes that while at home he seems to be his usual self and does not complain of any symptoms.  Of note she presents to you that she has been preparing her son's lunches which consist of couscous, vegetables, fried rice, and chicken.  The patient denies difficulty with producing stool and does not complain of any functional pain.  The child's vitals and labs including BMP and CBC are unremarkable and within normal limits.  An abdominal exam is performed and there is no tenderness upon palpation, and the abdomen is soft and non-distended. ",
+          "sent2": "After a conversation with the child exploring his symptoms, which of the following is the next step in management for this child?",
+          "startphrase": "A 5-year-old boy is brought in by his parents for recurrent abdominal pain. The child has been taken out of class 5 times this past week for abdominal pain that resulted in him being sent home. The mother reports that her son's stools have remained unchanged during this time and are brown in color, without blood, and with normal consistency and scent. She also notes that while at home he seems to be his usual self and does not complain of any symptoms. Of note she presents to you that she has been preparing her son's lunches which consist of couscous, vegetables, fried rice, and chicken. The patient denies difficulty with producing stool and does not complain of any functional pain. The child's vitals and labs including BMP and CBC are unremarkable and within normal limits. An abdominal exam is performed and there is no tenderness upon palpation, and the abdomen is soft and non-distended. After a conversation with the child exploring his symptoms, which of the following is the next step in management for this child?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 5,
+        "row": {
+          "id": 4147,
+          "ending0": "IV ganciclovir",
+          "ending1": "Pyrimethamine",
+          "ending2": "IV ceftriaxone",
+          "ending3": "IV acyclovir",
+          "ending4": "IV vancomycin",
+          "label": 3,
+          "sent1": "A 5-day-old male newborn is brought to the emergency department 1 hour after having a seizure.  It lasted approximately 1 minute, and involved blinking and lip-smacking movements as well as left-sided jerking of the hand and foot.  His mother says she measured a temperature of 38.2°C (100.7°F) at that time.  He has had increasing difficulty feeding since yesterday.  He was born at 39 weeks' gestation and weighed 3189 g (7 lb, 1 oz); he currently weighs 2980 g (6 lb, 9 oz).  The mother's prenatal course was significant for gonorrhea infection diagnosed early in pregnancy and treated with ceftriaxone and azithromycin combination therapy.  The boy appears irritable and lethargic.  His temperature is 36.0°C (96.8°F).  Examination shows clusters of vesicular lesions with an erythematous base on the patient's face and trunk.  There is profuse lacrimation.  Laboratory studies show:\nLeukocyte count 16,200/mm3\nSegmented neutrophils 25%\nBands 5%\nLymphocytes 65%\nMonocytes 3%\nEosinophils 2%\nSerum\nGlucose 80 mg/dL\nA lumbar puncture is performed.  Cerebrospinal fluid analysis shows a leukocyte count of 117/μL, a protein concentration of 52 mg/dL, and a glucose concentration of 58 mg/dL. Results of blood cultures are pending. ",
+          "sent2": "Which of the following is the most appropriate pharmacotherapy?\"",
+          "startphrase": "A 5-day-old male newborn is brought to the emergency department 1 hour after having a seizure. It lasted approximately 1 minute, and involved blinking and lip-smacking movements as well as left-sided jerking of the hand and foot. His mother says she measured a temperature of 38.2°C (100.7°F) at that time. He has had increasing difficulty feeding since yesterday. He was born at 39 weeks' gestation and weighed 3189 g (7 lb, 1 oz); he currently weighs 2980 g (6 lb, 9 oz). The mother's prenatal course was significant for gonorrhea infection diagnosed early in pregnancy and treated with ceftriaxone and azithromycin combination therapy. The boy appears irritable and lethargic. His temperature is 36.0°C (96.8°F). Examination shows clusters of vesicular lesions with an erythematous base on the patient's face and trunk. There is profuse lacrimation. Laboratory studies show:\nLeukocyte count 16,200/mm3\nSegmented neutrophils 25%\nBands 5%\nLymphocytes 65%\nMonocytes 3%\nEosinophils 2%\nSerum\nGlucose 80 mg/dL\nA lumbar puncture is performed. Cerebrospinal fluid analysis shows a leukocyte count of 117/μL, a protein concentration of 52 mg/dL, and a glucose concentration of 58 mg/dL. Results of blood cultures are pending. Which of the following is the most appropriate pharmacotherapy?\""
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 6,
+        "row": {
+          "id": 3631,
+          "ending0": "Alopecia areata",
+          "ending1": "Discoid lupus erythematosus (DLE)",
+          "ending2": "Secondary syphilis",
+          "ending3": "Tinea capitis",
+          "ending4": "Trichotillomania",
+          "label": 1,
+          "sent1": "A 30-year-old woman presents to the clinic for a 3-month history of painful hair loss.  She was in her usual state of health until about 3 months ago when she started to develop some painfully itchy spots across her scalp.  Since that time these spots have lost hair and scarred, with new spots continuing to form.  On further questioning, she shares that, for the last couple of years, she has generally felt poorly, specifically noting intermittent fevers, muscle and joint pains, and fatigue.  On physical exam, she has several erythematous and scaly plaques across her scalp.  These areas have no hair growth, but some do demonstrate hyperpigmentation. ",
+          "sent2": "Which of the following is the most likely diagnosis?",
+          "startphrase": "A 30-year-old woman presents to the clinic for a 3-month history of painful hair loss. She was in her usual state of health until about 3 months ago when she started to develop some painfully itchy spots across her scalp. Since that time these spots have lost hair and scarred, with new spots continuing to form. On further questioning, she shares that, for the last couple of years, she has generally felt poorly, specifically noting intermittent fevers, muscle and joint pains, and fatigue. On physical exam, she has several erythematous and scaly plaques across her scalp. These areas have no hair growth, but some do demonstrate hyperpigmentation. Which of the following is the most likely diagnosis?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 7,
+        "row": {
+          "id": 2397,
+          "ending0": "Decreased urine osmolarity",
+          "ending1": "Leukocyte casts",
+          "ending2": "Hematuria",
+          "ending3": "Low urine sodium",
+          "ending4": "Proteinuria",
+          "label": 3,
+          "sent1": "A 68-year-old man is admitted to the intensive care unit after open abdominal aortic aneurysm repair.  The patient has received 4 units of packed red blood cells during the surgery.  During the first 24 hours following the procedure, he has only passed 200 mL of urine.  He has congestive heart failure and hypertension.  Current medications include atenolol, enalapril, and spironolactone.  He appears ill.  His temperature is 37.1°C (98.8°F), pulse is 110/min, respirations are 18/min, and blood pressure is 110/78 mm Hg.  Examination shows dry mucous membranes and flat neck veins.  The remainder of the examination shows no abnormalities.  Laboratory studies show a serum creatinine level of 2.0 mg/dL and a BUN of 48 mg/dL. His serum creatinine and BUN on admission were 1.2 mg/dL and 18 mg/dL, respectively. ",
+          "sent2": "Further evaluation of this patient is most likely to reveal which of the following findings?",
+          "startphrase": "A 68-year-old man is admitted to the intensive care unit after open abdominal aortic aneurysm repair. The patient has received 4 units of packed red blood cells during the surgery. During the first 24 hours following the procedure, he has only passed 200 mL of urine. He has congestive heart failure and hypertension. Current medications include atenolol, enalapril, and spironolactone. He appears ill. His temperature is 37.1°C (98.8°F), pulse is 110/min, respirations are 18/min, and blood pressure is 110/78 mm Hg. Examination shows dry mucous membranes and flat neck veins. The remainder of the examination shows no abnormalities. Laboratory studies show a serum creatinine level of 2.0 mg/dL and a BUN of 48 mg/dL. His serum creatinine and BUN on admission were 1.2 mg/dL and 18 mg/dL, respectively. Further evaluation of this patient is most likely to reveal which of the following findings?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 8,
+        "row": {
+          "id": 9469,
+          "ending0": "Cryptococcus",
+          "ending1": "Group B streptococcus",
+          "ending2": "Herpes simplex virus",
+          "ending3": "Neisseria meningitidis",
+          "ending4": "Tuberculosis",
+          "label": 2,
+          "sent1": "A 44-year-old with a past medical history significant for human immunodeficiency virus infection presents to the emergency department after he was found to be experiencing worsening confusion.  The patient was noted to be disoriented by residents and staff at the homeless shelter where he resides.  On presentation he reports headache and muscle aches but is unable to provide more information.  His temperature is 102.2°F (39°C), blood pressure is 112/71 mmHg, pulse is 115/min, and respirations are 24/min.  Knee extension with hips flexed produces significant resistance and pain. ",
+          "sent2": "A lumbar puncture is performed with the following results:\n\nOpening pressure: Normal\nFluid color: Clear\nCell count: Increased lymphocytes\nProtein: Slightly elevated\n\nWhich of the following is the most likely cause of this patient's symptoms?",
+          "startphrase": "A 44-year-old with a past medical history significant for human immunodeficiency virus infection presents to the emergency department after he was found to be experiencing worsening confusion. The patient was noted to be disoriented by residents and staff at the homeless shelter where he resides. On presentation he reports headache and muscle aches but is unable to provide more information. His temperature is 102.2°F (39°C), blood pressure is 112/71 mmHg, pulse is 115/min, and respirations are 24/min. Knee extension with hips flexed produces significant resistance and pain. A lumbar puncture is performed with the following results:\n\nOpening pressure: Normal\nFluid color: Clear\nCell count: Increased lymphocytes\nProtein: Slightly elevated\n\nWhich of the following is the most likely cause of this patient's symptoms?"
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 9,
+        "row": {
+          "id": 9045,
+          "ending0": "Reassurance",
+          "ending1": "Growth hormone therapy",
+          "ending2": "Levothyroxine therapy",
+          "ending3": "CT scan of the head",
+          "ending4": "Bisphosphonate therapy\n\"",
+          "label": 3,
+          "sent1": "A 8-month-old boy is brought to the physician for the evaluation of shortening of his arms and legs.  The parents report that they have also noticed that their son's head is progressively enlarging.  The patient was born at term via vaginal delivery.  There is no personal or family history of serious illness.  His immunizations are up-to-date.  He is at the 3rd percentile for height, 25th percentile for weight, and 95th percentile for head circumference.  Examination shows macrocephaly and prominent brow bones.  The extremities are short and plump.  Muscle strength is 3/5 in all muscle groups.  Deep tendon reflexes are 4+ bilaterally.  An x-ray of the lateral skull shows midfacial hypoplasia and frontal prominence.  X-rays of the spine shows abnormally narrow interpedicular distance. ",
+          "sent2": "Which of the following is the most appropriate next step in management?",
+          "startphrase": "A 8-month-old boy is brought to the physician for the evaluation of shortening of his arms and legs. The parents report that they have also noticed that their son's head is progressively enlarging. The patient was born at term via vaginal delivery. There is no personal or family history of serious illness. His immunizations are up-to-date. He is at the 3rd percentile for height, 25th percentile for weight, and 95th percentile for head circumference. Examination shows macrocephaly and prominent brow bones. The extremities are short and plump. Muscle strength is 3/5 in all muscle groups. Deep tendon reflexes are 4+ bilaterally. An x-ray of the lateral skull shows midfacial hypoplasia and frontal prominence. X-rays of the spine shows abnormally narrow interpedicular distance. Which of the following is the most appropriate next step in management?"
+        },
+        "truncated_cells": []
+      }
+    ],
+    "modalities": [
+      "Tabular",
+      "Text"
+    ]
+  },
+  {
+    "_id": "621ffdd236468d709f18200d",
+    "id": "Salesforce/wikitext",
+    "author": "Salesforce",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-01-04T16:49:18+00:00",
+    "likes": 446,
+    "private": false,
+    "sha": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "description": "\n\t\n\t\t\n\t\tDataset Card for \"wikitext\"\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\n The WikiText language modeling dataset is a collection of over 100 million tokens extracted from the set of verified\n Good and Featured articles on Wikipedia. The dataset is available under the Creative Commons Attribution-ShareAlike License.\nCompared to the preprocessed version of Penn Treebank (PTB), WikiText-2 is over 2 times larger and WikiText-103 is over\n110 times larger. The WikiText dataset also features a far larger… See the full description on the dataset page: https://huggingface.co/datasets/Salesforce/wikitext.",
+    "downloads": 695353,
+    "paperswithcode_id": "wikitext-2",
+    "tags": [
+      "task_categories:text-generation",
+      "task_categories:fill-mask",
+      "task_ids:language-modeling",
+      "task_ids:masked-language-modeling",
+      "annotations_creators:no-annotation",
+      "language_creators:crowdsourced",
+      "multilinguality:monolingual",
+      "source_datasets:original",
+      "language:en",
+      "license:cc-by-sa-3.0",
+      "license:gfdl",
+      "size_categories:1M<n<10M",
+      "format:parquet",
+      "modality:text",
+      "library:datasets",
+      "library:dask",
+      "library:mlcroissant",
+      "library:polars",
+      "arxiv:1609.07843",
+      "region:us"
+    ],
+    "createdAt": "2022-03-02T23:29:22+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "657d7797bc9bceccf9d6f273",
+    "id": "jat-project/jat-dataset-tokenized",
+    "author": "jat-project",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-12-22T22:17:42+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "3711fdaec69f2d8d7b67feff4ff3086259063eac",
+    "description": "\n\t\n\t\t\n\t\tDataset Card for \"jat-dataset-tokenized\"\n\t\n\nMore Information needed\n",
+    "downloads": 684603,
+    "tags": [
+      "size_categories:10M<n<100M",
+      "format:parquet",
+      "modality:timeseries",
+      "library:datasets",
+      "library:dask",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "createdAt": "2023-12-16T10:10:31+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Time-Series"
+    ]
+  },
+  {
+    "_id": "67d1c6ef5e3f34422f94901f",
+    "id": "nvidia/PhysicalAI-Robotics-Manipulation-SingleArm",
+    "author": "nvidia",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-15T05:52:37+00:00",
+    "likes": 7,
+    "private": false,
+    "sha": "73c00c18e7ca108e91846294b20a1d7cd5de9340",
+    "description": "\n\t\n\t\t\n\t\tDataset Description:\n\t\n\nPhysicalAI-Robotics-Manipulation-SingeArm is a collection of datasets of automatic generated motions of a Franka Panda robot performing operations such as block stacking, opening cabinets and drawers. The dataset was generated in IsaacSim leveraging task and motion planning algorithms to find solutions to the tasks automatically [1, 3]. The environments are table-top scenes where the object layouts and asset textures are procedurally generated [2].This dataset… See the full description on the dataset page: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Manipulation-SingleArm.",
+    "downloads": 611837,
+    "tags": [
+      "task_categories:robotics",
+      "license:cc-by-4.0",
+      "region:us",
+      "robotics"
+    ],
+    "createdAt": "2025-03-12T17:39:59+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "66708709d5c5d8fd8db3a5cf",
+    "id": "mlfoundations/dclm-baseline-1.0",
+    "author": "mlfoundations",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-07-22T15:27:52+00:00",
+    "likes": 220,
+    "private": false,
+    "sha": "a3b142c183aebe5af344955ae20836eb34dcf69b",
+    "description": "\n\t\n\t\t\n\t\n\t\n\t\tDCLM-baseline\n\t\n\nDCLM-baseline is a 4T token / 3B document pretraining dataset that achieves strong performance on language model benchmarks.\nBelow are comparisions of model trained on DCLM-baseline with other models in the 7B regime.\n\n\t\n\t\t\nModel\nParams\nTokens\nOpen dataset?\nCORE\nMMLU\nEXTENDED\n\n\n\t\t\nOpen weights, closed datasets\n\n\n\n\n\n\n\n\nLlama2\n7B\n2T\n✗\n49.2\n45.8\n34.1\n\n\nDeepSeek\n7B\n2T\n✗\n50.7\n48.5\n35.3\n\n\nMistral-0.3\n7B\n?\n✗\n57.0\n62.7\n45.1\n\n\nQWEN-2\n7B\n?\n✗\n57.5\n71.9\n50.5\n\n\nLlama3\n8B\n15T\n✗… See the full description on the dataset page: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0.",
+    "downloads": 581884,
+    "tags": [
+      "license:cc-by-4.0",
+      "arxiv:2406.11794",
+      "region:us"
+    ],
+    "createdAt": "2024-06-17T18:57:13+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "625552d2b339bb03abe3432d",
+    "id": "openai/gsm8k",
+    "author": "openai",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-01-04T12:05:15+00:00",
+    "likes": 732,
+    "private": false,
+    "sha": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+    "description": "\n\t\n\t\t\n\t\tDataset Card for GSM8K\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nGSM8K (Grade School Math 8K) is a dataset of 8.5K high quality linguistically diverse grade school math word problems. The dataset was created to support the task of question answering on basic mathematical problems that require multi-step reasoning.\n\nThese problems take between 2 and 8 steps to solve.\nSolutions primarily involve performing a sequence of elementary calculations using basic arithmetic operations (+ − ×÷) to reach the… See the full description on the dataset page: https://huggingface.co/datasets/openai/gsm8k.",
+    "downloads": 573533,
+    "paperswithcode_id": "gsm8k",
+    "tags": [
+      "task_categories:text2text-generation",
+      "annotations_creators:crowdsourced",
+      "language_creators:crowdsourced",
+      "multilinguality:monolingual",
+      "source_datasets:original",
+      "language:en",
+      "license:mit",
+      "size_categories:10K<n<100K",
+      "format:parquet",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "arxiv:2110.14168",
+      "region:us",
+      "math-word-problems"
+    ],
+    "createdAt": "2022-04-12T10:22:10+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "67ce486ea3edca9b3349a097",
+    "id": "IPEC-COMMUNITY/language_table_lerobot",
+    "author": "IPEC-COMMUNITY",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-03-20T11:33:45+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "634ac1e50023777c21b299d95aaf2bfdc8514ae9",
+    "description": "This dataset was created using LeRobot.\n\n\t\n\t\t\n\t\tDataset Structure\n\t\n\nmeta/info.json:\n{\n    \"codebase_version\": \"v2.0\",\n    \"robot_type\": \"xarm\",\n    \"total_episodes\": 442226,\n    \"total_frames\": 7045476,\n    \"total_tasks\": 127605,\n    \"total_videos\": 442226,\n    \"total_chunks\": 443,\n    \"chunks_size\": 1000,\n    \"fps\": 10,\n    \"splits\": {\n        \"train\": \"0:442226\"\n    },\n    \"data_path\": \"data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet\",\n    \"video_path\":… See the full description on the dataset page: https://huggingface.co/datasets/IPEC-COMMUNITY/language_table_lerobot.",
+    "downloads": 548973,
+    "tags": [
+      "task_categories:robotics",
+      "license:apache-2.0",
+      "region:us",
+      "LeRobot",
+      "language_table",
+      "rlds",
+      "openx",
+      "xarm"
+    ],
+    "createdAt": "2025-03-10T02:03:26+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "679255cc5a8e868cbe62569f",
+    "id": "agents-course/course-images",
+    "author": "agents-course",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-04-25T09:40:09+00:00",
+    "likes": 13,
+    "private": false,
+    "sha": "683b020cd2dae5ae7b6c4f137c95ba0fc57fabd8",
+    "downloads": 526788,
+    "tags": [
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2025-01-23T14:44:28+00:00",
+    "key": "",
+    "viewer_sample_rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "image": {
+            "src": "https://datasets-server.huggingface.co/cached-assets/agents-course/course-images/--/683b020cd2dae5ae7b6c4f137c95ba0fc57fabd8/--/default/train/0/image/image.png?Expires=1747896324&Signature=eJjRnpU-SnJ-LRsivdc8MPWfwiPmh9z7XhaP5R50ucuvDfziiCGIhL1g2xBvFblxlPGqaLKL-52WuaaBhZFLj8-bxMQsuJ7kXN1wkVZ~dQM99ew-PkYmaYliYvEL0T~56eWjs1i6UdgP~qXZOBKtSfx1Yl0lu~pf0-Igdw2U8dDlg8cX6LKgMcrhaSvL6gf-2Znwt9mw0XgOMhNk1nkf83Q3eFhwM2q8A-SXnsu7lTDK90cGk4cZxihzawywG-V5QqXDVmIHNHcfTOVJj3WgRlzuhy0928S8pUFXA3xHZnalpr5vglxyjRNBF4ZQidbLGGh7e26VSNjDAq08CuLm6w__&Key-Pair-Id=K3EI6M078Z3AC3",
+            "height": 1157,
+            "width": 1717
+          }
+        },
+        "truncated_cells": []
+      }
+    ],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "63c931941e3e1bf4a2c4a772",
+    "id": "atokforps/latent_v1_alpha_07",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-20T11:24:48+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "c7d845fea7eaa5724a88f74c7a24a70ae2b71ee8",
+    "downloads": 513717,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2023-01-19T12:03:32+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "67d97c4be2b27852325fd8e2",
+    "id": "nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim",
+    "author": "nvidia",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-15T05:53:19+00:00",
+    "likes": 121,
+    "private": false,
+    "sha": "8a5c54e9fd417a05bb00cac6d5e54cb0e3814241",
+    "description": "\n\t\n\t\t\n\t\tPhysicalAI-Robotics-GR00T-X-Embodiment-Sim\n\t\n\n\nGithub Repo: Isaac GR00T N1\nWe provide a set of datasets used for post-training of GR00T N1. Each dataset is a collection of trajectories from different robot embodiments and tasks.\n\n\t\n\t\t\n\t\n\t\n\t\tCross-embodied bimanual manipulation: 9k trajectories\n\t\n\n\n\t\n\t\t\nDataset Name\n#trajectories\n\n\n\t\t\nbimanual_panda_gripper.Threading\n1000\n\n\nbimanual_panda_hand.LiftTray\n1000\n\n\nbimanual_panda_gripper.ThreePieceAssembly\n1000… See the full description on the dataset page: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim.",
+    "downloads": 507141,
+    "tags": [
+      "task_categories:robotics",
+      "license:cc-by-4.0",
+      "region:us",
+      "robotics"
+    ],
+    "createdAt": "2025-03-18T13:59:39+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "675d7e29e24babdf1842d270",
+    "id": "m-a-p/FineFineWeb",
+    "author": "m-a-p",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-12-19T11:34:03+00:00",
+    "likes": 50,
+    "private": false,
+    "sha": "7fd92dc825a75cbff271a5a52eea0eda91a2c112",
+    "description": "\n\t\n\t\t\n\t\tFineFineWeb: A Comprehensive Study on Fine-Grained Domain Web Corpus\n\t\n\narXiv: Coming Soon\nProject Page: Coming Soon\nBlog: Coming Soon\n\n\t\n\t\t\n\t\tData Statistics\n\t\n\n\n\t\n\t\t\nDomain (#tokens/#samples)\nIteration 1 Tokens\nIteration 2 Tokens\nIteration 3 Tokens\nTotal Tokens\nIteration 1 Count\nIteration 2 Count\nIteration 3 Count\nTotal Count\n\n\n\t\t\naerospace\n5.77B\n261.63M\n309.33M\n6.34B\n9100000\n688505\n611034\n10399539\n\n\nagronomy\n13.08B\n947.41M\n229.04M\n14.26B\n15752828\n2711790\n649404\n19114022\n\n\nartistic… See the full description on the dataset page: https://huggingface.co/datasets/m-a-p/FineFineWeb.",
+    "downloads": 502854,
+    "tags": [
+      "task_categories:text-classification",
+      "task_categories:text2text-generation",
+      "task_categories:text-generation",
+      "language:en",
+      "license:apache-2.0",
+      "size_categories:1B<n<10B",
+      "modality:tabular",
+      "modality:text",
+      "region:us"
+    ],
+    "createdAt": "2024-12-14T12:46:33+00:00",
+    "key": "",
+    "viewer_sample_rows": [
+      {
+        "row_idx": 0,
+        "row": {
+          "url": "http://jrassignmentketq.blogdasilvana.info/mission-mars.html",
+          "date": "2018-11-14T01:08:17",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2018-47/segments/1542039741569.29/warc/CC-MAIN-20181114000002-20181114022002-00492.warc.gz",
+          "language_score": 0.9054442048072815,
+          "token_count": 1098,
+          "dump": "CC-MAIN-2018-47",
+          "global_id": "webtext-fineweb__CC-MAIN-2018-47__0__110729786",
+          "lang": "en",
+          "text": "About us mission mars is an award winning multi concept operator based in the north west our mission is simple deliver world class food, drink and entertainment. In this 19-lesson, standards-aligned unit, students learn about mars, design a mission to explore the planet, build and test model spacecraft and components, and engage in scientific exploration the unit takes students through seven stages, including learning about the planet, planning the mission. Astronomers peering at mars in the 17th and 18th centuries saw signs of life everywhere seas continents canals that carried water to martian farms you spot none of these features as your spaceship deploys its parachutes for touchdown on this cold desert world—but then you never expected to. The mars missions flight is a classroom-based mars colonization simulation for fifth graders sponsored by the college of applied science and technology at weber state and the air force stem outreach program at hill air force base, it’s based on the challenger center for space science education’s acclaimed marsville, the cosmic village program, and has been modified to include air force.\nThe curiosity rover has taught us a lot about the history of mars and its potential to support life take a tour of its landing site, gale crater. Directed by nicholas webster with darren mcgavin, nick adams, george de vries, heather hewitt three american astronauts who land on mars discover the body of a frozen russian cosmonaut and a mysterious talking orb. Experience a virtual martian sunset, climb into a simulated orion capsule and feel the texture of rock cliffs inspired by the red planet in our brand-new interactive exhibit, mission mars, now open.\nThis week lockheed martin unveiled its proposal to have a manned laboratory orbiting mars within the next 12 years popular science's senior editor sophie bushwick joins cbs this morning. Online shopping from a great selection at movies & tv store. Mission mars is a multi-concept operator with a mission to deliver world-class food, drink & entertainment through innovation, people and sustainability. Brian de palma's mission to mars focuses on a manned mission to mars going awry in 2020 the dialogue is at times clunky, but visually the film is a treat (though some of the cgi from 2000 has not aged well.\nIf you like old sci-fi or cult movies , visit my blog forgotten universes - universos esquecidos at: ( use google. Educational toys designed to inspire with the latest learning toys, construction toys and more, your little ones can enjoy endless hours of imaginative play. My mission to mars was a pleasant adventure departing from today's incessant need to combine blood curling aliens with one's travels through space, mission to mars provides an intelligent ultimatum. Intrepid explorers looking to be the first to set foot on mars would face extremely high doses of radiation on the journey, according to esa’s exomars mission.\nMission to mars is a 2000 american science fiction adventure film directed by brian de palma from an original screenplay written by jim thomas, john thomas, and graham yostin 2020, a manned mars exploration mission goes awry american astronaut jim mcconnell (gary sinise) coordinates a rescue mission for a colleagueprincipal support actors were tim robbins, don cheadle, connie nielsen, jerry. A low-angle self-portrait of the curiosity rover on the surface of mars photograph: nasa american rocket engineers are being urged to push their next mars mission to the limits of technological. A human mission to mars has been the subject of science fiction, aerospace engineering, and scientific proposals since the 19th centurythe plans comprise proposals to land on mars, eventually settling on and terraforming the planet, while utilizing its moons, phobos and deimos the exploration of mars has been a goal of national space programs for decades.\nPermanent settlement sending humans to mars is a phenomenal undertaking by all standards and presents very real risks and challenges establishing a permanent settlement is very complex, but it is far less complex and requires much less infrastructure sent to mars than return missions. About mission from mars connecting communities with a compassionate heart after reviewing the services of other organizations, mission from mars identified there was a need to provide a lunchtime meal on sundays on the northside. Nasa 'supersonic' parachute for mars mission sets world record nasa successfully tested a parachute which will assist with the agency's mission to mars in 2020. Mars one chief executive, bas lansdorp, left, announces the launch of astronaut selection for a mars space mission project, in new york mars one is a non-profit organisation that aims to.\nPlay mission mars - level the city to secure your landing. Mission: mars base welcome to the future of mars exploration you’ll be transported to mars at some point in the distant future taking on the role of an astronaut living and working on mars, you’ll perform science operations at key locations on the planet. The insight spacecraft is heading to mars to listen for marsquakes and study the planet’s structure. The mission to mars unit introduces students to mars, often called the red planet students learn about the development of robotics and how robots are beneficial to science, society and the exploration of space.",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 1,
+        "row": {
+          "url": "http://pressurevessel.co.in/prototype.html",
+          "date": "2019-08-23T02:45:42",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2019-35/segments/1566027317817.76/warc/CC-MAIN-20190823020039-20190823042039-00241.warc.gz",
+          "language_score": 0.6568574905395508,
+          "token_count": 93,
+          "dump": "CC-MAIN-2019-35",
+          "global_id": "webtext-fineweb__CC-MAIN-2019-35__0__21315566",
+          "lang": "en",
+          "text": "Nuclear Containment Vessel, Aerospace Fuel Tank\nBooster Rockets, Nuclear Safety Vessel, INSAT Aerospace Satellite Fuel Tank\nDelivered Pressurised Gas Tanks in Stainless Steel for application in Aerospace Satellite ISRO - INSAT\nNuclear Safety Vessel\nDeveloped critical forming technologies in nuclear grade Stainless Steel alloys, click here to read more..\n4 M diameter and 29 M long when assembled\nDesigned and built with appropriate SS Alloy in Economic Proportion",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 2,
+        "row": {
+          "url": "https://aviatorsworldwide.com/t/whats-your-favorite-aircraft/9451",
+          "date": "2022-07-02T19:57:46",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2022-27/segments/1656104204514.62/warc/CC-MAIN-20220702192528-20220702222528-00560.warc.gz",
+          "language_score": 0.8584581017494202,
+          "token_count": 345,
+          "dump": "CC-MAIN-2022-27",
+          "global_id": "webtext-fineweb__CC-MAIN-2022-27__0__78356354",
+          "lang": "en",
+          "text": "It can be an aircraft you’ve flown in a simulator or IRL. Mine personally is the B752.\nF/A-18 for sure\nNice! I like the B757-200 because it handles well and is perfect for buttered landings\nI’ve got a few, Fokker 50, 757, Ta 183, and probably some more the like the MDogs for example\nDefinitely the 737 Max.\nQuite a few: 747, 737-200, B-52, C-5A/B/C\nI haven’t flown this IRL or in sim, but this is my favorite aircraft. It’s so beautiful\n@PlanesAndGames I see that thumbs down\nIt looks beautiful!\nEww no! #BoeingDominatesAirbus\nLove the a220 tho\nYes Airbus superior BUT not the A220, or should I call it the CSeries, because that’s Bombardier and it’s called the A220 only after Airbus bought the program.\nIn short, it’s nothing close to other real Airbus planes in terms of ‘quality’.\nwell u see thats where ur wrong\nAlso @Maverick I’m pretty sure it’s not Airbus who manufactures the F/A-18…\nHow is Airbus better than Boeing? Name 10 things that’s better than Boeing\nI definitely know Boeing has amazing characteristics, Airbus has clean cockpit and fly-by-wire which I don’t really care. I still like Boeing more #Boeingbetterby3x",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 3,
+        "row": {
+          "url": "https://www.unmannedsystemstechnology.com/2023/10/commercial-heavy-lift-drones-for-cargo-transportation-logistics/?utm_source=UST+eBrief&utm_campaign=f0bd4077fe-ust-ebrief_2023-10-24&utm_medium=email&utm_term=0_6fc3c01e8d-f0bd4077fe-119746781&mc_cid=f0bd4077fe&mc_eid=d16a5d99bc",
+          "date": "2024-03-05T00:09:36",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2024-10/segments/1707947476592.66/warc/CC-MAIN-20240304232829-20240305022829-00166.warc.gz",
+          "language_score": 0.9002634286880493,
+          "token_count": 552,
+          "dump": "CC-MAIN-2024-10",
+          "global_id": "webtext-fineweb__CC-MAIN-2024-10__0__186531121",
+          "lang": "en",
+          "text": "FlyingBasket is a leading developer of heavy-lift cargo drones for commercial and civil applications. UST is delighted to welcome FlyingBasket on board as a supplier partner, and we will be highlighting their unique solutions and capabilities across our channels over the next 12 months.\nWe’ve just launched FlyingBasket’s UST supplier profile, which has been written and built by our team in collaboration with the company. The Gold profile showcases the FB3, a heavy-payload cargo drone that provides an unparalleled combination of carrying capacity and compact size.\nRead on to find out more:\nThe FB3 is an all-electric multirotor platform that requires no disassembly and can be easily transported inside a van or trailer, ready to deploy at a moment’s notice. The versatile UAS has been designed to be BVLOS (beyond visual line of sight)-ready, with a robust data link that transmits critical flight control data and telemetry at ranges of up to 10 km. All frequency bands have been specifically configured to minimize interference, and are ECO (European Communications Office)-approved.\nThe highly adaptable heavy-lift drone delivers exceptional strength, with the ability to lift 100 kg of payload while weighing only 70 kg. It can be provided in one of two configurations, allowing users to carry and transport payloads of all shapes and sizes:\nSling Configuration: use a proprietary remote-controlled load hook to lift and detach heavy cargo\nCargo Compartment: a rugged transportation box measuring 81 x 35 x 30 cm, designed to suit a wide range of payloads and operational requirements\nThe FB3 features eight brushless motors configured in a coaxial quadcopter setup. This innovative design divides propulsion into top and bottom subsystems, providing critical redundancy for the utmost in safety while ensuring superior heavy-lift performance.\nThanks to FlyingBasket’s custom-made smart batteries, the FB3 is an eco-friendly and sustainable alternative to helicopters and combustion engine-powered aircraft for mission-critical cargo deployment, providing a minimal environmental footprint.\nThe FB3 has been designed from the ground up with safety foremost in mind. The aircraft includes a comprehensive suite of cutting-edge features to ensure peace of mind and mission confidence even in the most challenging of environments, including a Flight Termination System (FTS), optional ADS-B receiver, and radar AGL sensor.\nFlyingBasket also offers a range of comprehensive professional training programs for drone pilots and team members.\nTo find out more about FlyingBasket and the FB3 heavy-lift drone, please visit their profile page: https://www.unmannedsystemstechnology.com/company/flyingbasket/",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 4,
+        "row": {
+          "url": "https://www.cheapflights.co.uk/flights/York/Manchester/",
+          "date": "2022-08-13T16:02:52",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2022-33/segments/1659882571959.66/warc/CC-MAIN-20220813142020-20220813172020-00145.warc.gz",
+          "language_score": 0.8691878914833069,
+          "token_count": 223,
+          "dump": "CC-MAIN-2022-33",
+          "global_id": "webtext-fineweb__CC-MAIN-2022-33__0__177913903",
+          "lang": "en",
+          "text": "How to find the cheapest flight from Manchester (MAN) to York\nAll the information you need to plan the best MAN to NCL flight in 2022: compare Manchester to York flight prices with the expected peak season, weather and rainfall in York.\nWhen is the cheapest time to fly from Manchester to York (MAN - Y0R)?\nWhen flying from Manchester to York, the time of day you decide to fly out makes little to no difference towards the overall price you’ll pay on tickets.\nRelated info for your journey\nUseful info, stats and facts about <span class=\"emphasized\">Manchester</span> to <span class=\"emphasized\">York</span> flights.\nFrom Manchester to York\nWhat airport do you fly from for flights from Manchester to York?\nLocated just 8.9 mi from the city center, Manchester is the airport most travelers will use when flying to York from Manchester. Booking flights from Manchester (MAN) to York should be relatively easy as there are 0 daily outbound flights to York from 6 different airlines.",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 5,
+        "row": {
+          "url": "http://www.spacewalkoffame.com/",
+          "date": "2015-04-01T05:44:00",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2015-14/segments/1427131303502.37/warc/CC-MAIN-20150323172143-00131-ip-10-168-14-71.ec2.internal.warc.gz",
+          "language_score": 0.7854477763175964,
+          "token_count": 220,
+          "dump": "CC-MAIN-2015-14",
+          "global_id": "webtext-fineweb__CC-MAIN-2015-14__0__39796048",
+          "lang": "en",
+          "text": "Welcome to the U.S. Space Walk of Fame Foundation and Museum\nThe U.S. Space Walk of Fame Foundation is a non-profit organization dedicated to preserving the history of the U.S. space program through its Mercury, Gemini, Apollo and Shuttle monuments in Space View Park and the Space Walk of Fame Museum. The monuments and museum honor the men and women who made the space program possible and the astronauts who flew the missions.\nSPACE WALK OF FAME ON SOCIAL MEDIA\nFollow the U.S. Space Walk of Fame on our social media accounts.\nFacebook | Twitter | Blogger | Instagram | YouTube | Pinterest | Storify\nFollow us, like us and please use the hashtag #SWOF when you post something online about the Space Walk of Fame.\n|Take a Sneak Peek at the\nSpace Walk Of Fame Museum\nNext STEM Saturday\nEngineering — Launch pad design\nMuseum admission is $5 per person, children under 15 years are free.\nBe sure to LIKE us on Facebook\nAnd Follow us on Google+",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 6,
+        "row": {
+          "url": "https://annuitysell.info/solar-system-exoplanets-map/solar-system-exoplanets-map-closest-exoplanet-proxima-b-remains-mysterious-in-the-map-system-solar-exoplanets/",
+          "date": "2020-05-30T06:09:10",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2020-24/segments/1590347407289.35/warc/CC-MAIN-20200530040743-20200530070743-00208.warc.gz",
+          "language_score": 0.9016522765159607,
+          "token_count": 1269,
+          "dump": "CC-MAIN-2020-24",
+          "global_id": "webtext-fineweb__CC-MAIN-2020-24__0__66757924",
+          "lang": "en",
+          "text": "Solar System Exoplanets Map closest exoplanet proxima b remains mysterious in the Map System Solar Exoplanets\nWe found 22++ Images in Solar System Exoplanets Map:\nTop 15 pages by letter S\n- Spacecraft Building\n- Solar System Colonization Project 2000\n- Sattelite Nebula Hubble\n- Secret NASA Space Shuttle\n- Space Suit Printable Pattern\n- SpaceX Dragon ISS Resupply\n- Space Shuttle Commander Collins\n- Steven Universe in Space Stars Background\n- Space Shuttle Challenger Remembered\n- Solar System With Oort Cloud\n- Solar Eclipse From Space Station\n- Space Shuttle Edwards\n- Space Station Sightings\n- Solar System Report\n- Samsung Galaxy Star S5280\nAbout this page - Solar System Exoplanets Map\nSolar System Exoplanets Map Nasa Discovers 3 Potentially Habitable Planets Around A Solar Map System Exoplanets, Solar System Exoplanets Map Can39t The Reason Why We Haven39t Met Aliens Be Simply Map Solar System Exoplanets, Solar System Exoplanets Map Astronomers Create First Cloud Map Of A Planet Beyond Our System Map Solar Exoplanets, Solar System Exoplanets Map Exoplanets The Kepler 62 System Compared To Our Solar Map Solar System Exoplanets, Solar System Exoplanets Map Gliese 832c Potentially Habitable Super Earth Discovered Map System Solar Exoplanets, Solar System Exoplanets Map 12 New Telescopes To Beam In On Earth Sized Exoplanets Exoplanets System Solar Map.\nIt is important to know at any age!\nIt is true that even our most powerful telescopes aimed at the landing sites wouldn't see anything. However, not because the Moon landings didn't happen. It is only because of the optical limitations of telescopes themselves, because of their limited size and distance from the Moon.\nand here is another\nThe outer Solar System is more richly endowed with moons than the inner regions. The two enormous gas giant planets, Jupiter and Saturn, and the ice giant planets, Uranus and Neptune, have numerous moons of various sizes, shapes, and origins. As these enormous planets grew, during the early days of our Solar System, they were able to ensnare wandering objects with their mighty gravitational grips.\nPlanetary scientists believed for years that Earth's Moon is depleted of water and other volatile compounds. However, this idea began to change in 2008, when a team of scientists announced that they had detected traces of water in some of the volcanic glass beads carried back to Earth from the Apollo 15 and 17 missions to the Moon. In 2011, additional study of extremely small crystalline formations within those beads revealed that they contain amounts of water that are similar to some basalts on Earth. This indicates that the lunar mantle--at least, part of it--contains as much water as Earth's.\n- Biggest Volcano In The Solar System\n- Cool Pictures Of The Planet Mars\n- NASA Comet Track\n- Landscape in Other Planets\n- Distance Between the Solar System\n- Eagle Nebula Star Birth\n- Johannes Kepler Kepler NASA Mission\n- The Water Planet Company\n- Days to Mars\n- River Song Astronaut Outfit\n- NASA Mentoring Program\n- Blue Nebula Background\n- Gold Nebula\n- Mars Lander Valley of the Moon\n- Gliese 581 G\nThere are ongoing studies assessing the past habitability potential of the Red Planet, as well as the possibility of life.\nThe research published in the July 4, 2016 issue of Nature Geoscience highlights the main factor differentiating moon-birth around Mars and Earth: the differing rotation speeds of the two planets prompted \"completely different tidal actions,\" Dr. Charnoz explained in the July 4, 2016 CNRS Press Release. Dr. Charnoz proposes that at the time of their respective impacts, \"Earth took less than four hours to spin on its axis whereas Mars rotated very slowly over a 24-hour period.\" The result of this important difference caused Earth to hold on to its single, large Moon, while the Martian collision created a dozen smaller moons alongside a larger moon. As time went by, Martian tidal action--resulting from the planet's slow rotation rate--caused most of the moons, including the largest one, to crash back down to the surface of their parent-planet. As a result, only the two most distant moons, Phobos and Deimos, survived as testimony to the ancient catastrophe.\nMost of Saturn's natural satellites are very small and icy dancing moonlets. However, the larger, icy midsized moons twirl around their enormous ringed planet in a lovely and mysterious dance. The largest of the icy moons is Rhea, Saturn's second-largest moon after the weird world that is Titan. Iapetus, the third largest of Saturn's moons, is two-faced, with one side composed of gleaming, very bright, highly reflective ice, and the other, dark and non-reflective, a blackened splotch staining the pristine white ice. Iapetus is larger than Mimas and Enceladus. There is an enormous impact crater on the moon Mimas, that stands out as a prominent feature on what is apparently a badly bombarded, heavily cratered world. The large impact crater Herschel on this 400-kilometer moon was excavated by a tumbling chunk of space-stuff made of rock, ice, or both, that came very close to powdering the entire little moon. Another icy moon, Enceladus, is a bewitching world, 500-kilometers in diameter, that is thought to harbor a global subsurface ocean beneath its frozen crust. Where there is liquid water there is always the possibility--though, by no means, the promise--of life. Enceladus also has the highest albedo of any other moon in our Solar System. This means that it has the most dazzlingly bright reflective surface. It also possesses a very active geology, rendering it almost free of craters because it is constantly being resurfaced by the emissions of gushing icy geysers that are responsible for fresh snow that keeps the surface of the little moon sparkling and smooth.",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 7,
+        "row": {
+          "url": "https://www.roboticstomorrow.com/shownews/AUVSI13",
+          "date": "2018-02-20T19:29:58",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2018-09/segments/1518891813088.82/warc/CC-MAIN-20180220185145-20180220205145-00764.warc.gz",
+          "language_score": 0.8943639993667603,
+          "token_count": 984,
+          "dump": "CC-MAIN-2018-09",
+          "global_id": "webtext-fineweb__CC-MAIN-2018-09__0__244559644",
+          "lang": "en",
+          "text": "Closer to Your End of Arm Tool: AGS Web Site with Enhanced Customer Portal We demonstrate it on the K-Show 2013 in Düsseldorf Hall 10 Both C28 https://inside.ags-automation.de/kundenportal/Custom/AGS_Registrierung.aspx Webside www.ags-automation.de\nUAV Helicopter Integrating IMT Transmitter Provides Civilian and Military Law Enforcement And First Responders With Reliable Aerial Surveillance Solution\nAeroVironment Receives $13.5 Million Order from United States Army for RQ-11B Raven Small Unmanned Aircraft Systems and Gimbaled Payloads\nFourth and final order received for fiscal 2012 contract with total value of $59.6 million---- AeroVironment's Mantis™ gimbaled sensor payloads dramatically improve troops' capabilities as integrated element of Raven unmanned aircraft system\nPleased to be showcasing these solutions for the first time in the United States at AUVSI\n3D Systems announced today plans to exhibit its aerospace and defense 3D content-to-print solutions at the Association for Unmanned Vehicle Systems International (AUVSI 2013) Conference and Exposition.\nThe student teams are exhibiting their aircraft and discussing their competition experience\nEMCORE Corporation, a leading provider of compound semiconductor-based components and subsystems for the fiber optics and space solar power markets, today announced the release of the new EMP-3, EMP-4 and EMP-7 Fiber Optic Gyroscope (FOG) modules, expanding the Company's EMP FOG platform with the latest generation navigational grade fiber optic gyro technology.\nSafety is number one to ensure integration\nFreefly Systems has created the ultimate aerial platform.\nCONTROP USA Inc. to Exhibit New Advancements in Small-to-Medium Electro-Optical / Infrared Stabilized Cameras\nProducts will be exhibited at AUVSI's Unmanned Systems 2013 Expo in Washington, D.C. on August 12-15.\nSolid Concepts will display cutting edge unmanned vehicles and manufacturing technologies at the show this year.\nThe drug-busting, drone-launching Stiletto goes unmanned as the Mistral USV, a smaller sized craft with the same great stability, payload and patented M-hull Technology® of its predecessor combined with state-of-the-art C2 control and modular cargo handling system.\nNeya Systems LLC to Continue its Management Role for Department of Defense Unmanned Aircraft System (UAS) Control Segment (UCS) Architecture\nFollowing the successful completion of the Office of the Secretary of Defense UCS Architecture Release 3.0 in June 2013, Neya Systems LLC has been selected to continue management of the UCS Working Group for Release 3.1. It has reaffirmed its long-term commitment to support Department of Defense UCS programs, a key emerging technology in the global UAS market - estimated at US $8.35 Billion in 2018.\nNeya Systems, LLC announces the release of its Mission Planning and Management System (MPMS), a cross-platform solution for coordination and orchestration of behaviors on multiple unmanned platforms.\nNeya Systems LLC, an industry leader in unmanned systems, computer vision, and autonomy, is pleased to introduce two new unmanned systems standards-compliant H.264 video compression hardware products. These products, UxStreamerTM and UxStreamerTM Mini, represent state-of-the-art video compression systems for standards-compliant unmanned systems.\nRecords 1 to 15 of 42\nUniversal Robots is a result of many years of intensive research in robotics. The product portfolio includes the UR5 and UR10 models that handle payloads of up to 11.3 lbs. and 22.6 lbs. respectively. The six-axis robot arms weigh as little as 40 lbs. with reach capabilities of up to 51 inches. Repeatability of +/- .004\" allows quick precision handling of even microscopically small parts. After initial risk assessment, the collaborative Universal Robots can operate alongside human operators without cumbersome and expensive safety guarding. This makes it simple and easy to move the light-weight robot around the production, addressing the needs of agile manufacturing even within small- and medium sized companies regarding automation as costly and complex. If the robots come into contact with an employee, the built-in force control limits the forces at contact, adhering to the current safety requirements on force and torque limitations. Intuitively programmed by non-technical users, the robot arms go from box to operation in less than an hour, and typically pay for themselves within 195 days. Since the first UR robot entered the market in 2009, the company has seen substantial growth with the robotic arms now being sold in more than 50 countries worldwide.",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 8,
+        "row": {
+          "url": "http://www.ntsb.gov/aviationquery/brief.aspx?ev_id=20001212X21846&key=1",
+          "date": "2014-11-27T14:31:11",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2014-49/segments/1416931008720.43/warc/CC-MAIN-20141125155648-00111-ip-10-235-23-156.ec2.internal.warc.gz",
+          "language_score": 0.9528744220733643,
+          "token_count": 341,
+          "dump": "CC-MAIN-2014-49",
+          "global_id": "webtext-fineweb__CC-MAIN-2014-49__0__100411384",
+          "lang": "en",
+          "text": "NTSB Identification: NYC00LA238.\nThe docket is stored in the Docket Management System (DMS). Please contact Records Management Division\nAccident occurred Wednesday, August 23, 2000 in NEWBERRYPORT, MA\nProbable Cause Approval Date: 04/06/2001\nAircraft: Aviat A-1B, registration: N475C\nInjuries: 2 Uninjured.\nNTSB investigators may have traveled in support of this investigation and used data provided by various sources to prepare this aircraft accident report.\nThe pilot reported that he performed a wheel landing with a 90-degree crosswind from the left of about 8 knots. As the tail wheel was being lowered and the flaps raised, the airplane became 'squirrelly'. The pilot added power for a 'go-around', and the airplane departed the right side of the runway. The airplane continued for 345 feet, until it struck a parked airplane. According to the FAA, the airplane departed the runway at a 30-degree angle and continued for 345 feet, until it struck a parked airplane. Continuous tire tracks from the airplane were observed from the runway to the accident site. A pilot rated passenger reported that he told the front seat pilot to cut the power when the airplane departed the runway. However there was no response, and he closed the throttle before impact.\nThe National Transportation Safety Board determines the probable cause(s) of this accident to be: the failure of the pilot to maintain directional control during landing and a subsequent rejected landing. Factors were the crosswind, and the delayed corrective action by the pilot. Full narrative available\nIndex for Aug2000 | Index of months",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      },
+      {
+        "row_idx": 9,
+        "row": {
+          "url": "https://uklbd.com/location-cheshire-1-7.html",
+          "date": "2021-01-18T20:15:04",
+          "file_path": "s3://commoncrawl/crawl-data/CC-MAIN-2021-04/segments/1610703515235.25/warc/CC-MAIN-20210118185230-20210118215230-00224.warc.gz",
+          "language_score": 0.8802022337913513,
+          "token_count": 97,
+          "dump": "CC-MAIN-2021-04",
+          "global_id": "webtext-fineweb__CC-MAIN-2021-04__0__196322351",
+          "lang": "en",
+          "text": "Stobart Aviation Services\nViking House, Mathieson Road, Widnes, Cheshire, WA8 0NX\nListed in: Aviation Services\nStobart Aviation Services is a leading provider of ground handling, passenger and airside services in Stansted, Southend, Manchester, Edinburgh and Glasgow airports.Stobart Aviation Services offers a suite of wider services including aircraft de-icing and fuelling ...\nListing added on 06/08/20",
+          "domain": "aerospace",
+          "round": 1
+        },
+        "truncated_cells": []
+      }
+    ],
+    "modalities": [
+      "Tabular",
+      "Text"
+    ]
+  },
+  {
+    "_id": "63cb84cb4b339204cea11592",
+    "id": "atokforps/latent_v1_fullrun_alpha2_04",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-21T12:45:43+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "4d5a277594bef39500ecc214faf45955e21ef051",
+    "downloads": 438820,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2023-01-21T06:23:07+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "63cbefae28e49dcd9f643891",
+    "id": "atokforps/latent_v1_fullrun_alpha3_13",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-31T14:06:45+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "2bc1b1aaf5ec1f0f42f0a18294c61861862538e0",
+    "downloads": 437635,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2023-01-21T13:59:10+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "621ffdd236468d709f182a80",
+    "id": "allenai/c4",
+    "author": "allenai",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-01-09T19:14:03+00:00",
+    "likes": 415,
+    "private": false,
+    "sha": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2",
+    "description": "\n\t\n\t\t\n\t\tC4\n\t\n\n\n\t\n\t\t\n\t\tDataset Summary\n\t\n\nA colossal, cleaned version of Common Crawl's web crawl corpus. Based on Common Crawl dataset: \"https://commoncrawl.org\".\nThis is the processed version of Google's C4 dataset\nWe prepared five variants of the data: en, en.noclean, en.noblocklist, realnewslike, and multilingual (mC4).\nFor reference, these are the sizes of the variants:\n\nen: 305GB\nen.noclean: 2.3TB\nen.noblocklist: 380GB\nrealnewslike: 15GB\nmultilingual (mC4): 9.7TB (108 subsets, one per… See the full description on the dataset page: https://huggingface.co/datasets/allenai/c4.",
+    "downloads": 431922,
+    "paperswithcode_id": "c4",
+    "tags": [
+      "task_categories:text-generation",
+      "task_categories:fill-mask",
+      "task_ids:language-modeling",
+      "task_ids:masked-language-modeling",
+      "annotations_creators:no-annotation",
+      "language_creators:found",
+      "multilinguality:multilingual",
+      "source_datasets:original",
+      "language:af",
+      "language:am",
+      "language:ar",
+      "language:az",
+      "language:be",
+      "language:bg",
+      "language:bn",
+      "language:ca",
+      "language:ceb",
+      "language:co",
+      "language:cs",
+      "language:cy",
+      "language:da",
+      "language:de",
+      "language:el",
+      "language:en",
+      "language:eo",
+      "language:es",
+      "language:et",
+      "language:eu",
+      "language:fa",
+      "language:fi",
+      "language:fil",
+      "language:fr",
+      "language:fy",
+      "language:ga",
+      "language:gd",
+      "language:gl",
+      "language:gu",
+      "language:ha",
+      "language:haw",
+      "language:he",
+      "language:hi",
+      "language:hmn",
+      "language:ht",
+      "language:hu",
+      "language:hy",
+      "language:id",
+      "language:ig",
+      "language:is",
+      "language:it",
+      "language:iw",
+      "language:ja",
+      "language:jv",
+      "language:ka",
+      "language:kk",
+      "language:km",
+      "language:kn",
+      "language:ko",
+      "language:ku",
+      "language:ky",
+      "language:la",
+      "language:lb",
+      "language:lo",
+      "language:lt",
+      "language:lv",
+      "language:mg",
+      "language:mi",
+      "language:mk",
+      "language:ml",
+      "language:mn",
+      "language:mr",
+      "language:ms",
+      "language:mt",
+      "language:my",
+      "language:ne",
+      "language:nl",
+      "language:no",
+      "language:ny",
+      "language:pa",
+      "language:pl",
+      "language:ps",
+      "language:pt",
+      "language:ro",
+      "language:ru",
+      "language:sd",
+      "language:si",
+      "language:sk",
+      "language:sl",
+      "language:sm",
+      "language:sn",
+      "language:so",
+      "language:sq",
+      "language:sr",
+      "language:st",
+      "language:su",
+      "language:sv",
+      "language:sw",
+      "language:ta",
+      "language:te",
+      "language:tg",
+      "language:th",
+      "language:tr",
+      "language:uk",
+      "language:und",
+      "language:ur",
+      "language:uz",
+      "language:vi",
+      "language:xh",
+      "language:yi",
+      "language:yo",
+      "language:zh",
+      "language:zu",
+      "license:odc-by",
+      "size_categories:10B<n<100B",
+      "modality:text",
+      "arxiv:1910.10683",
+      "region:us"
+    ],
+    "createdAt": "2022-03-02T23:29:22+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "6742ad7ef6646c6a4ef06cb2",
+    "id": "allenai/olmo-mix-1124",
+    "author": "allenai",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-12-02T15:57:43+00:00",
+    "likes": 60,
+    "private": false,
+    "sha": "166bbe2db8563a30388e37b4cfd753b8252f3622",
+    "description": "\n\t\n\t\t\n\t\tOLMo 2 (November 2024) Pretraining set\n\t\n\nCollection of data used to train OLMo-2-1124 models. The majority of this dataset comes from DCLM-Baseline with no additional filtering, but we provide the explicit breakdowns below.\n\n\t\n\t\t\nName\nTokens\nBytes (uncompressed)\nDocuments\nLicense\n\n\n\t\t\nDCLM-Baseline\n3.70T\n21.3TB\n2.95B\nCC-BY-4.0\n\n\nArxiv\n20.8B\n77.2GB\n3.95M\nODC-BY\n\n\npes2o\n58.6B\n412GB\n38M\nODC-BY\n\n\nstarcoder\n83.0B\n458GB\n78.7M\nODC-BY\n\n\nAlgebraic-stack\n11.8B\n44.0GB\n2.83M\nODC-BY\n\n\nOpenWebMath… See the full description on the dataset page: https://huggingface.co/datasets/allenai/olmo-mix-1124.",
+    "downloads": 400540,
+    "tags": [
+      "task_categories:text-generation",
+      "language:en",
+      "license:odc-by",
+      "size_categories:10M<n<100M",
+      "modality:text",
+      "region:us"
+    ],
+    "createdAt": "2024-11-24T04:37:18+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "67b9b84c2eb0080c5fc8c88e",
+    "id": "IPEC-COMMUNITY/bridge_orig_lerobot",
+    "author": "IPEC-COMMUNITY",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-02-23T06:25:52+00:00",
+    "likes": 4,
+    "private": false,
+    "sha": "0e9d76d07e9df3ea3eba257b2520d4913833fad2",
+    "description": "This dataset was created using LeRobot.\n\n\t\n\t\t\n\t\tDataset Structure\n\t\n\nmeta/info.json:\n{\n    \"codebase_version\": \"v2.0\",\n    \"robot_type\": \"widowx\",\n    \"total_episodes\": 53192,\n    \"total_frames\": 1893026,\n    \"total_tasks\": 19974,\n    \"total_videos\": 212768,\n    \"total_chunks\": 54,\n    \"chunks_size\": 1000,\n    \"fps\": 5,\n    \"splits\": {\n        \"train\": \"0:53192\"\n    },\n    \"data_path\": \"data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet\",\n    \"video_path\":… See the full description on the dataset page: https://huggingface.co/datasets/IPEC-COMMUNITY/bridge_orig_lerobot.",
+    "downloads": 393530,
+    "tags": [
+      "task_categories:robotics",
+      "license:apache-2.0",
+      "modality:video",
+      "region:us",
+      "LeRobot",
+      "bridge_orig",
+      "rlds",
+      "openx",
+      "widowx"
+    ],
+    "createdAt": "2025-02-22T11:43:08+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Video"
+    ]
+  },
+  {
+    "_id": "63cad96d312febded981f92b",
+    "id": "atokforps/latent_v1_fullrun_alpha1_13",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-20T21:13:16+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "642b73db8118f3bf0e7771764c14c4f8df0f90b1",
+    "downloads": 390467,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2023-01-20T18:11:57+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "66212f29fb07c3e05ad0432e",
+    "id": "HuggingFaceFW/fineweb",
+    "author": "HuggingFaceFW",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-01-31T14:10:44+00:00",
+    "likes": 2158,
+    "private": false,
+    "sha": "0f039043b23fe1d4eed300b504aa4b4a68f1c7ba",
+    "description": "\n\t\n\t\t\n\t\t🍷 FineWeb\n\t\n\n\n    \n\n\n\n15 trillion tokens of the finest data the 🌐 web has to offer\n\n\n\t\n\t\t\n\t\tWhat is it?\n\t\n\nThe 🍷 FineWeb dataset consists of more than 15T tokens of cleaned and deduplicated english web data from CommonCrawl. The data processing pipeline is optimized for LLM performance and ran on the 🏭 datatrove library, our large scale data processing library. \n🍷 FineWeb was originally meant to be a fully open replication of 🦅 RefinedWeb, with a release of the full dataset under… See the full description on the dataset page: https://huggingface.co/datasets/HuggingFaceFW/fineweb.",
+    "downloads": 386089,
+    "tags": [
+      "task_categories:text-generation",
+      "language:en",
+      "license:odc-by",
+      "size_categories:10B<n<100B",
+      "format:parquet",
+      "modality:tabular",
+      "modality:text",
+      "library:datasets",
+      "library:dask",
+      "library:mlcroissant",
+      "library:polars",
+      "arxiv:2306.01116",
+      "arxiv:2109.07445",
+      "arxiv:2406.17557",
+      "doi:10.57967/hf/2493",
+      "region:us"
+    ],
+    "createdAt": "2024-04-18T14:33:13+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Tabular",
+      "Text"
+    ]
+  },
+  {
+    "_id": "6653391015e4f1cd0c0733b3",
+    "id": "AquaV/genshin-voices-separated",
+    "author": "AquaV",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-07-06T19:22:40+00:00",
+    "likes": 8,
+    "private": false,
+    "sha": "0eeb103d7a26f89fd9dd4c68e20bd9a9b720a834",
+    "downloads": 385877,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2024-05-26T13:28:48+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "621ffdd236468d709f1835d5",
+    "id": "huggingface-course/documentation-images",
+    "author": "huggingface-course",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-04-23T08:04:38+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "a7aaaabcbeddb38502bca128a3e375f1b7aa1d72",
+    "downloads": 373382,
+    "tags": [
+      "license:apache-2.0",
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2022-03-02T23:29:22+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "64edb45c5c9245397fc83a26",
+    "id": "jat-project/jat-dataset",
+    "author": "jat-project",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2024-02-16T13:52:52+00:00",
+    "likes": 40,
+    "private": false,
+    "sha": "921defdd6f8ae5271f2d4925150c48dba0cb3199",
+    "description": "\n\t\n\t\t\n\t\tJAT Dataset\n\t\n\n\n\t\n\t\t\n\t\tDataset Description\n\t\n\nThe Jack of All Trades (JAT) dataset combines a wide range of individual datasets. It includes expert demonstrations by expert RL agents, image and caption pairs, textual data and more. The JAT dataset is part of the JAT project, which aims to build a multimodal generalist agent.\nPaper: https://huggingface.co/papers/2402.09844\n\n\t\n\t\t\n\t\tUsage\n\t\n\n>>> from datasets import load_dataset\n>>> dataset = load_dataset(\"jat-project/jat-dataset\"… See the full description on the dataset page: https://huggingface.co/datasets/jat-project/jat-dataset.",
+    "downloads": 364730,
+    "tags": [
+      "task_categories:reinforcement-learning",
+      "task_categories:text-generation",
+      "task_categories:question-answering",
+      "annotations_creators:found",
+      "annotations_creators:machine-generated",
+      "source_datasets:conceptual-captions",
+      "source_datasets:ok-vqa",
+      "source_datasets:oscar",
+      "license:apache-2.0",
+      "size_categories:100M<n<1B",
+      "format:parquet",
+      "modality:image",
+      "modality:text",
+      "modality:timeseries",
+      "library:datasets",
+      "library:dask",
+      "library:mlcroissant",
+      "library:polars",
+      "arxiv:2402.09844",
+      "arxiv:2303.03915",
+      "region:us",
+      "imitation-learning",
+      "reinforcement-learning",
+      "text-generation",
+      "question-answering",
+      "generalist-agent"
+    ],
+    "createdAt": "2023-08-29T09:03:24+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image",
+      "Text",
+      "Time-Series"
+    ]
+  },
+  {
+    "_id": "6469bc7cf51b56a285b7797b",
+    "id": "CohereLabs/xP3x",
+    "author": "CohereLabs",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-21T17:22:21+00:00",
+    "likes": 84,
+    "private": false,
+    "sha": "8df5a1517468c760acebc762e0dc351aa385886a",
+    "citation": "@article{muennighoff2022crosslingual,\n  title={Crosslingual generalization through multitask finetuning},\n  author={Muennighoff, Niklas and Wang, Thomas and Sutawika, Lintang and Roberts, Adam and Biderman, Stella and Scao, Teven Le and Bari, M Saiful and Shen, Sheng and Yong, Zheng-Xin and Schoelkopf, Hailey and others},\n  journal={arXiv preprint arXiv:2211.01786},\n  year={2022}\n}",
+    "description": "A multilingual collection of Winograd Schemas in six languages that can be used for evaluation of cross-lingual commonsense reasoning capabilities.",
+    "downloads": 360944,
+    "tags": [
+      "task_categories:other",
+      "annotations_creators:expert-generated",
+      "annotations_creators:crowdsourced",
+      "multilinguality:multilingual",
+      "language:af",
+      "language:ar",
+      "language:az",
+      "language:be",
+      "language:bg",
+      "language:bn",
+      "language:br",
+      "language:bs",
+      "language:ca",
+      "language:ch",
+      "language:cs",
+      "language:cv",
+      "language:cy",
+      "language:da",
+      "language:de",
+      "language:el",
+      "language:en",
+      "language:eo",
+      "language:es",
+      "language:et",
+      "language:eu",
+      "language:fa",
+      "language:fi",
+      "language:fo",
+      "language:fr",
+      "language:fy",
+      "language:ga",
+      "language:gd",
+      "language:gl",
+      "language:gn",
+      "language:he",
+      "language:hi",
+      "language:hr",
+      "language:hu",
+      "language:hy",
+      "language:ia",
+      "language:id",
+      "language:ie",
+      "language:io",
+      "language:is",
+      "language:it",
+      "language:ja",
+      "language:jv",
+      "language:ka",
+      "language:kk",
+      "language:km",
+      "language:ko",
+      "language:ku",
+      "language:kw",
+      "language:la",
+      "language:lb",
+      "language:lt",
+      "language:lv",
+      "language:mi",
+      "language:mk",
+      "language:ml",
+      "language:mn",
+      "language:mr",
+      "language:ms",
+      "language:mt",
+      "language:my",
+      "language:nb",
+      "language:nl",
+      "language:nn",
+      "language:no",
+      "language:oc",
+      "language:pl",
+      "language:pt",
+      "language:qu",
+      "language:rn",
+      "language:ro",
+      "language:ru",
+      "language:sh",
+      "language:sl",
+      "language:sq",
+      "language:sr",
+      "language:sv",
+      "language:sw",
+      "language:ta",
+      "language:te",
+      "language:th",
+      "language:tk",
+      "language:tl",
+      "language:tr",
+      "language:tt",
+      "language:ug",
+      "language:uk",
+      "language:ur",
+      "language:uz",
+      "language:vi",
+      "language:vo",
+      "language:yi",
+      "language:zh",
+      "language:ace",
+      "language:acm",
+      "language:acq",
+      "language:aeb",
+      "language:ajp",
+      "language:ak",
+      "language:als",
+      "language:am",
+      "language:apc",
+      "language:ars",
+      "language:ary",
+      "language:arz",
+      "language:as",
+      "language:ast",
+      "language:awa",
+      "language:ayr",
+      "language:azb",
+      "language:azj",
+      "language:ba",
+      "language:bm",
+      "language:ban",
+      "language:bem",
+      "language:bho",
+      "language:bjn",
+      "language:bo",
+      "language:bug",
+      "language:ceb",
+      "language:cjk",
+      "language:ckb",
+      "language:crh",
+      "language:dik",
+      "language:dyu",
+      "language:dz",
+      "language:ee",
+      "language:fj",
+      "language:fon",
+      "language:fur",
+      "language:fuv",
+      "language:gaz",
+      "language:gu",
+      "language:ht",
+      "language:ha",
+      "language:hne",
+      "language:ig",
+      "language:ilo",
+      "language:kab",
+      "language:kac",
+      "language:kam",
+      "language:kn",
+      "language:ks",
+      "language:kbp",
+      "language:kea",
+      "language:khk",
+      "language:ki",
+      "language:rw",
+      "language:ky",
+      "language:kmb",
+      "language:kmr",
+      "language:knc",
+      "language:kg",
+      "language:lo",
+      "language:lij",
+      "language:li",
+      "language:ln",
+      "language:lmo",
+      "language:ltg",
+      "language:lua",
+      "language:lg",
+      "language:luo",
+      "language:lus",
+      "language:lvs",
+      "language:mag",
+      "language:mai",
+      "language:mar",
+      "language:min",
+      "language:mni",
+      "language:mos",
+      "language:npi",
+      "language:nso",
+      "language:nus",
+      "language:ny",
+      "language:ory",
+      "language:pag",
+      "language:pa",
+      "language:pap",
+      "language:pbt",
+      "language:pes",
+      "language:plt",
+      "language:prs",
+      "language:quy",
+      "language:sg",
+      "language:sa",
+      "language:sat",
+      "language:scn",
+      "language:shn",
+      "language:si",
+      "language:sk",
+      "language:sm",
+      "language:sn",
+      "language:sd",
+      "language:so",
+      "language:st",
+      "language:sc",
+      "language:ss",
+      "language:su",
+      "language:swh",
+      "language:szl",
+      "language:taq",
+      "language:tg",
+      "language:ti",
+      "language:tpi",
+      "language:tn",
+      "language:ts",
+      "language:tum",
+      "language:tw",
+      "language:tzm",
+      "language:umb",
+      "language:uzn",
+      "language:vec",
+      "language:war",
+      "language:wo",
+      "language:xh",
+      "language:ydd",
+      "language:yo",
+      "language:yue",
+      "language:zsm",
+      "language:zu",
+      "license:apache-2.0",
+      "size_categories:100M<n<1B",
+      "arxiv:2211.01786",
+      "region:us"
+    ],
+    "createdAt": "2023-05-21T06:38:52+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "63cb84cc4b339204cea1159f",
+    "id": "atokforps/latent_v1_fullrun_alpha2_05",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-23T11:56:26+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "53e9cfdbb901e421abccaae3a1c9544ecd2acc08",
+    "downloads": 359944,
+    "tags": [
+      "modality:text",
+      "region:us"
+    ],
+    "createdAt": "2023-01-21T06:23:08+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "63cbefae7b5b4fad6e864ab6",
+    "id": "atokforps/latent_v1_fullrun_alpha3_14",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-31T14:02:26+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "880a5261bd8359175ded768c0db449248b758275",
+    "downloads": 355725,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2023-01-21T13:59:10+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "63cad969e5632cc0ef83716a",
+    "id": "atokforps/latent_v1_fullrun_alpha1_09",
+    "author": "atokforps",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2023-01-20T21:13:16+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "8a2fe74a53d4e2783f3da60256419ee5e63bc8a2",
+    "downloads": 314958,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2023-01-20T18:11:53+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  }
+]

@@ -1,0 +1,679 @@
+[
+  {
+    "_id": "67fdddfd74615d447bb7e383",
+    "id": "SeulGiPark/mistral-ocr-dataset",
+    "author": "SeulGiPark",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:52+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "0b2d0ae7469ba9308cac23f99e86caa3b739fa39",
+    "downloads": 2374,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-04-15T04:18:05+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "68090e764da8f3b498784fa3",
+    "id": "phenanthra/tmp",
+    "author": "phenanthra",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:50+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "2f117b25b6280022e9a4e95bde106aab1cc8e813",
+    "downloads": 14,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-04-23T15:59:50+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682e7173e2f982069b33c85e",
+    "id": "sgshdgdhsdg/WavDataset",
+    "author": "sgshdgdhsdg",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:36+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "72b87bbfa40858695e399c4bc12e02d6e5a03339",
+    "downloads": 0,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T00:36:03+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682d67773b5f51f421959942",
+    "id": "fcxfcx/SMOKE100K",
+    "author": "fcxfcx",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:34+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "4cae1565d0bb9c825755ac7867ec3fddfa6021d4",
+    "downloads": 109,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-21T05:41:11+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682eb45e8414076737400424",
+    "id": "MM-Reasoner/verl_format_batched_splits_v1",
+    "author": "MM-Reasoner",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:30+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "671b48873ce68c876d7fccdede9390aeba7a0480",
+    "downloads": 0,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:21:34+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "66f42d0da97a48083a85a33e",
+    "id": "lunaluan/chat_history_isr_7_2",
+    "author": "lunaluan",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:28+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "7471698dec452774d55ed6678a54fe24a702728b",
+    "downloads": 17,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2024-09-25T15:32:29+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "66f42c7328c4c5324aacb6be",
+    "id": "lunaluan/chat_history_isr_7_1",
+    "author": "lunaluan",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:23+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "35d622f0bfe00e040fbaf24a04103cabfe12b46a",
+    "downloads": 19,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2024-09-25T15:29:55+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682eb9ef95400739b0957d1a",
+    "id": "Gamedy/Sakiko-data-test",
+    "author": "Gamedy",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:19+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "34283bc931c51009c396a8dd50361142d68f43bb",
+    "downloads": 0,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:45:19+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "6827ff7c112a98d95ecc9a95",
+    "id": "IntMeGroup/MMDB",
+    "author": "IntMeGroup",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:11+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "6440de8a6664ed0b327a6e12e4e24b02b52566d4",
+    "downloads": 215,
+    "tags": [
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "createdAt": "2025-05-17T03:16:12+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682e40abb81ce9ed038679b2",
+    "id": "anonymous-researcher-hohoho/GenIR",
+    "author": "anonymous-researcher-hohoho",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:04+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "356ff2c3e0a7cf498ce7e258644e2227b89cbfdd",
+    "downloads": 0,
+    "tags": [
+      "license:mit",
+      "region:us"
+    ],
+    "createdAt": "2025-05-21T21:07:55+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682b79bfe716c2acd9f61174",
+    "id": "animetimm/e621-wdtagger-v1-w640",
+    "author": "animetimm",
+    "disabled": false,
+    "gated": "manual",
+    "lastModified": "2025-05-22T05:45:02+00:00",
+    "likes": 1,
+    "private": false,
+    "sha": "0c251648ac539e684817268f0776274e4f85556b",
+    "description": "\n\t\n\t\t\n\t\tE621 W640 Pruned Dataset V1\n\t\n\nThis is the re-encoded webp-format dataset for deepghs/e621-v1-seed.\nMetadata here are cleaned by @SmilingWolf, can be used for multi-label classification training.\nImages here are resized to min(width, height) <= 640.\n3714099 images in total.\n\n\t\n\t\t\n\t\n\t\n\t\tTrain\n\t\n\n3343590 train images in total, 50 train images shown here.\n\n\t\n\t\t\nid\nsplit\narchive_file\nfilename\nwidth\nheight\nrating\ngeneral_tags\ncharacter_tags\nspecies_tags\nartist_tags\n\n\n\t\t\n5217898\ntrain… See the full description on the dataset page: https://huggingface.co/datasets/animetimm/e621-wdtagger-v1-w640.",
+    "downloads": 500,
+    "tags": [
+      "task_categories:image-classification",
+      "task_categories:zero-shot-image-classification",
+      "task_categories:text-to-image",
+      "annotations_creators:no-annotation",
+      "source_datasets:e621",
+      "language:en",
+      "language:ja",
+      "license:other",
+      "size_categories:1M<n<10M",
+      "region:us",
+      "art",
+      "anime",
+      "not-for-all-audiences"
+    ],
+    "createdAt": "2025-05-19T18:34:39+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682e802d8b3fe7e362b781d7",
+    "id": "temp-data-store/batch_0002",
+    "author": "temp-data-store",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:45:02+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "e517d235936b12bd31a79edb658bf43469061b0a",
+    "downloads": 0,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T01:38:53+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682eb9a70d6b2f8327f05383",
+    "id": "RaFast/mendeley_ds",
+    "author": "RaFast",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:50+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "70817efe853cf4b93c642a5ddfc9076af520825e",
+    "downloads": 0,
+    "tags": [
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:44:07+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "66fae74234ceaf45bd5d5cea",
+    "id": "blueyo0/SA-Med3D-140K",
+    "author": "blueyo0",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:48+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "a72c03707c7103083440c8a42b5b746f7b074264",
+    "downloads": 1578,
+    "tags": [
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "createdAt": "2024-09-30T18:00:34+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "67a47037749ea2c4b9fafd4b",
+    "id": "agents-course/certificates",
+    "author": "agents-course",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:46+00:00",
+    "likes": 45,
+    "private": false,
+    "sha": "eafaa0fec34c709264005b1878b727a1d548b4c9",
+    "downloads": 26999,
+    "tags": [
+      "license:apache-2.0",
+      "size_categories:n<1K",
+      "format:imagefolder",
+      "modality:image",
+      "library:datasets",
+      "library:mlcroissant",
+      "region:us"
+    ],
+    "createdAt": "2025-02-06T08:17:59+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "67e044a39ccfe63587abf98f",
+    "id": "yhx91zdl/filecodebox",
+    "author": "yhx91zdl",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:43+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "f186d9c21c18ce4e8f226e6b524b88ce0eac5e22",
+    "downloads": 3650,
+    "tags": [
+      "license:mit",
+      "region:us"
+    ],
+    "createdAt": "2025-03-23T17:28:03+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682eb9c9b2cf954e82b97de4",
+    "id": "s61511484894/small_i",
+    "author": "s61511484894",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:41+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "da5a2e87429c0683e87913a48048226ef35496da",
+    "downloads": 0,
+    "tags": [
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:44:41+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "6826a8aaa0fcf41359ddba68",
+    "id": "charge-benchmark/Charge-040_0040-Sparse-Mono",
+    "author": "charge-benchmark",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:40+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "ff3d0f3ef9e3c172e474b2ada15f4b423200f76f",
+    "downloads": 20,
+    "tags": [
+      "modality:image",
+      "region:us"
+    ],
+    "createdAt": "2025-05-16T02:53:30+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "68244392d8826f59f72c5364",
+    "id": "ByteDance/BandwidthEstimationDataset",
+    "author": "ByteDance",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:23+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "777700e2d550882d29ac5d037fa0bcf8f3de8314",
+    "description": "This repo releases a dataset of trajectories for ByteDance Teams audio/video calls. The data is collected from audio/video peer-to-peer ByteDance Teams calls on the Douyin live streaming application. \nIt can be used to study bandwidth estimation (BWE), such as training deep learning models or constructing reward models for training.\nEach trajectory corresponds to one audio/video call leg and consists of a sequence of:\n\n51-dimensional observation vector: computed based on packet information… See the full description on the dataset page: https://huggingface.co/datasets/ByteDance/BandwidthEstimationDataset.",
+    "downloads": 0,
+    "tags": [
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "createdAt": "2025-05-14T07:17:38+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682eb886f4060fc097c11d1c",
+    "id": "IbrahimAlAzhar/BAGELS_Limitations_data_scholarly_text",
+    "author": "IbrahimAlAzhar",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:19+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "8277b2e8dec0ea8cf4e406e77dc2cd63c9e13b28",
+    "downloads": 0,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:39:18+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "682eb0c71d7637a25855448b",
+    "id": "saurabh5/llama-nemotron-rlvr",
+    "author": "saurabh5",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:16+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "ed7e5d96ce54c71aef5df98c412fe8447fb620dd",
+    "downloads": 0,
+    "tags": [
+      "size_categories:n<1K",
+      "format:parquet",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:06:15+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "6829f45fd6c0cf9d63b25c4a",
+    "id": "Markovstal/MarcoClone",
+    "author": "Markovstal",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:04+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "1d0d433781c2a271f67d3c60dff3ef59166ed958",
+    "downloads": 15,
+    "tags": [
+      "license:apache-2.0",
+      "size_categories:n<1K",
+      "format:json",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us"
+    ],
+    "createdAt": "2025-05-18T14:53:19+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "682c299f2605aeeb00d718a1",
+    "id": "IntMeGroup/MMDBtest",
+    "author": "IntMeGroup",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:44:01+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "deab8936391f758045c5a912dabb3bfd7b69898a",
+    "downloads": 110,
+    "tags": [
+      "license:apache-2.0",
+      "modality:image",
+      "region:us"
+    ],
+    "createdAt": "2025-05-20T07:05:03+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image"
+    ]
+  },
+  {
+    "_id": "682e726b8b3fe7e362b3e461",
+    "id": "comfyuiman/RavenTeenTitansLora",
+    "author": "comfyuiman",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:43:53+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "1dd2de905fca061480ac63ac866d51b84730ae33",
+    "description": "\n\t\n\t\t\n\t\tDataset Card for Dataset Name\n\t\n\n\n\nThis dataset card aims to be a base template for new datasets. It has been generated using this raw template.\n\n\t\n\t\t\n\t\tDataset Details\n\t\n\n\n\t\n\t\t\n\t\tDataset Description\n\t\n\n\n\n\n\n\nCurated by: [More Information Needed]\nFunded by [optional]: [More Information Needed]\nShared by [optional]: [More Information Needed]\nLanguage(s) (NLP): [More Information Needed]\nLicense: [More Information Needed]\n\n\n\t\n\t\t\n\t\tDataset Sources [optional]\n\t\n\n\n\n\nRepository: [More… See the full description on the dataset page: https://huggingface.co/datasets/comfyuiman/RavenTeenTitansLora.",
+    "downloads": 0,
+    "tags": [
+      "language:en",
+      "license:apache-2.0",
+      "modality:image",
+      "modality:text",
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T00:40:11+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Image",
+      "Text"
+    ]
+  },
+  {
+    "_id": "67eb39ec9c3049765889d084",
+    "id": "updatebao/geonamebase_1",
+    "author": "updatebao",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:43:49+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "8f404316806e26c9fcb55f9a5f2bce3fbfa5346f",
+    "downloads": 29794,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-04-01T00:57:16+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "670957c964cab942c0509010",
+    "id": "Pendrokar/TTS_Arena",
+    "author": "Pendrokar",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:43:30+00:00",
+    "likes": 4,
+    "private": false,
+    "sha": "28b5fa20755e8d44c6dafc510befd23e9fe551d1",
+    "description": "TTS Arena's DB is SQLlite DB file. The above is just a summary query that should be useful for TTS developers to evaluate faults of their model.\n\n\t\n\t\t\n\t\tWhy no audio samples?\n\t\n\nUnsafe. Cannot constantly oversee the output of uncontrolled HuggingFace Spaces. While it could be safeguarded by using an ASR model before uploading, something unwanted may still slip through.\n\n\t\n\t\t\n\t\tUseful queries for TTS developers and evaluators\n\t\n\n\n\t\n\t\t\n\t\tAll votes mentioning specified TTS model:\n\t\n\nSELECT… See the full description on the dataset page: https://huggingface.co/datasets/Pendrokar/TTS_Arena.",
+    "downloads": 1060,
+    "tags": [
+      "language:en",
+      "size_categories:1K<n<10K",
+      "format:csv",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us",
+      "arena"
+    ],
+    "createdAt": "2024-10-11T16:52:25+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text"
+    ]
+  },
+  {
+    "_id": "682eb589235b2b0386757e14",
+    "id": "park-ing/aihub_132_20age",
+    "author": "park-ing",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:42:52+00:00",
+    "likes": 0,
+    "private": false,
+    "sha": "97defc6d66c11e90b256a6aa3c01aac547b2c8cc",
+    "downloads": 0,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2025-05-22T05:26:33+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "67208d7670f231ff42209a9c",
+    "id": "WitchesSocialStream/Four-Leaf-Clover",
+    "author": "WitchesSocialStream",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:42:51+00:00",
+    "likes": 6,
+    "private": false,
+    "sha": "80de3b8f651cbb21e29127692bd4c70d5024d423",
+    "description": "\n\n\t\n\t\t\n\t\tFour Leaf Clover\n\t\n\nFour leaf clover is a raw dump of fresh 4chan posts.\n\n\t\n\t\t\n\t\tArchiverModes\n\t\n\nPreviously in ChabikoStream, there's 2 formats. While makes it easier to process, it caused a lot of trouble. As such, we have decided to only have PostStream ()\n\n\t\n\t\t\n\t\tFormats\n\t\n\nEach jsonl line represents a single post.\n\n\t\n\t\t\n\t\tModels\n\t\n\nRefer to the following pydantic model for parsing:\nclass AttachmentData(pydantic.BaseModel):\n    attachment_url: str\n    filename: str\n\n\nclass… See the full description on the dataset page: https://huggingface.co/datasets/WitchesSocialStream/Four-Leaf-Clover.",
+    "downloads": 2916,
+    "tags": [
+      "license:cc-by-4.0",
+      "region:us",
+      "not-for-all-audiences"
+    ],
+    "createdAt": "2024-10-29T07:23:34+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "6659e2898b177a87cd138d37",
+    "id": "hf-internal-testing/transformers_daily_ci",
+    "author": "hf-internal-testing",
+    "disabled": false,
+    "gated": false,
+    "lastModified": "2025-05-22T05:42:39+00:00",
+    "likes": 1,
+    "private": false,
+    "sha": "ca34224e99fc79ea2fec57c235a5b427f244816c",
+    "downloads": 685,
+    "tags": [
+      "region:us"
+    ],
+    "createdAt": "2024-05-31T14:45:29+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": []
+  },
+  {
+    "_id": "67f4e6c7c6c601a9572cd472",
+    "id": "deepghs-wip/Renai-Circulation",
+    "author": "deepghs-wip",
+    "disabled": false,
+    "gated": "manual",
+    "lastModified": "2025-05-22T05:42:39+00:00",
+    "likes": 1,
+    "private": false,
+    "sha": "a8a2af7740f9bb44654b093664258360a9506c21",
+    "description": "\n\t\n\t\t\n\t\tImages\n\t\n\n48736054 records in total. Only 100 records shown.\n\n\t\n\t\t\nid\npid\nmimetype\nfilename\nfile_size\nwidth\nheight\nmode\n\n\n\t\t\n103242216\n2\nimage/jpeg\n103242216_p2.jpg\n56133\n575\n447\nRGB\n\n\n103242216\n1\nimage/jpeg\n103242216_p1.jpg\n147322\n1492\n1142\nRGB\n\n\n103242216\n0image/jpeg\n103242216_p0.jpg\n69847\n461\n360\nRGB\n\n\n103242214\n0\nimage/jpeg\n103242214_p0.jpg\n9766795\n5593\n6809\nRGB\n\n\n103242212\n18\nimage/jpeg\n103242212_p18.jpg\n1597025\n1359\n992\nRGB\n\n\n103242212\n17\nimage/jpeg\n103242212_p17.jpg\n781566\n2048… See the full description on the dataset page: https://huggingface.co/datasets/deepghs-wip/Renai-Circulation.",
+    "downloads": 6449,
+    "tags": [
+      "annotations_creators:no-annotation",
+      "source_datasets:pixiv",
+      "language:en",
+      "language:ja",
+      "language:zh",
+      "language:ko",
+      "license:other",
+      "size_categories:10M<n<100M",
+      "modality:text",
+      "modality:image",
+      "modality:tabular",
+      "region:us",
+      "huggingface",
+      "transformers",
+      "analysis",
+      "text",
+      "image",
+      "tabular",
+      "parquet"
+    ],
+    "createdAt": "2025-04-08T09:05:11+00:00",
+    "key": "",
+    "viewer_sample_rows": [],
+    "modalities": [
+      "Text",
+      "Image",
+      "Tabular"
+    ]
+  }
+]
