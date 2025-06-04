@@ -516,7 +516,9 @@
     </div>
     
     <footer>
-        <p>&copy; 2025 HF-TrendRadar. All rights reserved.</p>
+        <p id="report-created-at">Report generated: Loading...</p>
+        <p>&copy; 2025 yesaouo. Licensed under the MIT License.
+</p>
     </footer>
 
     <script>
@@ -565,10 +567,16 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             loadApiKey();
-            fetch('https://yesaouo.github.io/HF-TrendRadar/data/output.json')
+            fetch('data/output.json')
                 .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
                 .then(data => {
                     allData = data;
+                    if (allData.created_at) {
+                        const createdAtDate = new Date(allData.created_at);
+                        document.getElementById('report-created-at').textContent = `Report generated: ${createdAtDate.toLocaleString()}`;
+                    } else {
+                        document.getElementById('report-created-at').textContent = 'Report generation time not available.';
+                    }
                     setupTabs();
                     loadTabData('downloads'); // Load initial tab
                 })

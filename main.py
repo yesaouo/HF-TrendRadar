@@ -3,6 +3,7 @@ import json
 import time
 import glob
 from pathlib import Path
+from datetime import datetime
 from dotenv import load_dotenv
 from hf_scraper import run_huggingface_data_pipeline
 from ai_dataset_digest import AIAgent
@@ -101,6 +102,7 @@ except Exception as e:
     last_modified_digest = prev_output.get("last_modified_digest")
 
 output = {
+    "created_at": datetime.now().isoformat(),
     "downloads": downloads_data if downloads_data else prev_output.get("downloads"),
     "likes": likes_data if likes_data else prev_output.get("likes"),
     "last_modified": last_modified_data if last_modified_data else prev_output.get("last_modified"),
