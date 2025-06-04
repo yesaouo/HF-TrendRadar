@@ -775,30 +775,32 @@
 
         function openAiChatModal() {
             if (!currentDatasetForChat) {
-                alert("No dataset selected for chat.");
+                alert("尚未選擇聊天用的資料集。");
                 return;
             }
             if (!geminiApiKey) {
-                alert("Please enter your Gemini API Key first.");
+                alert("請先輸入你的 Gemini API 金鑰。");
                 apiKeyInput.focus();
                 return;
             }
 
-            chatHistoryContainer.innerHTML = ''; // Clear previous chat
+            chatHistoryContainer.innerHTML = ''; // 清除之前的對話
             chatMessages = [
                 {
                     role: "user",
-                    parts: [{ text: `You are a helpful AI assistant. The user is asking about the following HuggingFace dataset. Please use this information to answer their questions. Dataset Information:\n\n${formatDatasetForPrompt(currentDatasetForChat)}` }]
+                    parts: [{
+                        text: `你是一位樂於助人的 AI 助手。使用者正在詢問以下 HuggingFace 資料集的相關問題，請根據這些資訊來回答他們的問題。資料集資訊如下：\n\n${formatDatasetForPrompt(currentDatasetForChat)}`
+                    }]
                 },
-                { // This initial model response sets the stage for the user's first question.
+                { // 初始模型回應，讓使用者能開始提問
                     role: "model",
-                    parts: [{ text: "Okay, I have the dataset information. How can I assist you with it?" }]
+                    parts: [{ text: "好的，我已經取得資料集資訊。請問你需要什麼協助？" }]
                 }
             ];
-            
-            // Display the initial model message
-            appendMessageToChatUI("Okay, I have the dataset information. How can I assist you with it?", "model");
-            
+
+            // 顯示初始的模型訊息
+            appendMessageToChatUI("好的，我已經取得資料集資訊。請問你需要什麼協助？", "model");
+
             aiChatModal.style.display = "block";
             chatMessageInput.focus();
         }
