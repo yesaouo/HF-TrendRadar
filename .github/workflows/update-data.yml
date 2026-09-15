@@ -1,0 +1,60 @@
+name: Update trend data
+
+on:
+  # 每天台北時間 00:00
+  schedule:
+    - cron: '0 16 * * *'
+  # 可在 Actions 頁面手動觸發
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check API key
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::缺少 repository secret GEMINI_API_KEY，請到 Settings → Secrets and variables → Actions 新增。"
+            exit 1
+          fi
+
+      - name: Run pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+
+      - name: Commit data
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/output.json
+          if [ -f data/history.json ]; then git add data/history.json; fi
+          if git diff --staged --quiet; then
+            echo "資料沒有變化，跳過 commit。"
+            exit 0
+          fi
+          git commit -m "自動更新趨勢資料：$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push

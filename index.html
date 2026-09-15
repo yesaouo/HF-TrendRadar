@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="hug.ico" type="image/x-icon">
     <title>HF-TrendRadar</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/18.0.12/lib/marked.umd.min.js"
+            integrity="sha384-1W3J5zmRIOV+OlYxSfzN5e3LuQ0/UhyGMh1q2hEV2+WHTEGDZVK3z/XCyKN1dVWn"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.15/purify.min.js"
+            integrity="sha384-uUMu9JDY09vBzRf9SPcK2VgUj+W/70J6Soc+Dded5P474ElQ63iv9j5N3DE7Kp3N"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         :root {
             --color-3d: #6a1b9a; /* Deep Purple */
@@ -97,6 +102,7 @@
 
         .tabs {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 30px;
             background-color: #fff;
@@ -427,6 +433,93 @@
             cursor: not-allowed;
         }
 
+        #digest-content .trend-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            background: none;
+            border: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+        #digest-content .trend-stat {
+            background-color: #fff;
+            border: 1px solid #e6e9ec;
+            border-radius: 8px;
+            padding: 10px 14px;
+            min-width: 110px;
+        }
+        #digest-content .trend-stat .value {
+            display: block;
+            font-size: 1.6em;
+            font-weight: 700;
+            color: var(--secondary-accent);
+            font-variant-numeric: tabular-nums;
+            line-height: 1.2;
+        }
+        #digest-content .trend-stat .label {
+            font-size: 0.8em;
+            color: #7b8a97;
+        }
+        #digest-content .trend-note {
+            font-size: 0.9em;
+            color: #7b8a97;
+        }
+        #digest-content .trend-lists {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        #digest-content .trend-lists > div {
+            background-color: #fff;
+            border: 1px solid #e6e9ec;
+            border-radius: 8px;
+            padding: 12px 15px;
+        }
+        #digest-content .trend-lists h4 {
+            margin: 0 0 8px;
+            color: var(--secondary-accent);
+        }
+        #digest-content .trend-lists ul {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 0.9em;
+        }
+        #digest-content .trend-lists a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        #digest-content .trend-lists a:hover { text-decoration: underline; }
+
+        .trend-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 10px 0 0;
+        }
+        .trend-chip {
+            font-size: 0.85em;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 12px;
+            background-color: rgba(255,255,255,0.22);
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+        .trend-chip.down { background-color: rgba(0,0,0,0.28); }
+        .trend-rank {
+            float: right;
+            font-weight: 700;
+            font-size: 0.95em;
+            opacity: 0.75;
+            font-variant-numeric: tabular-nums;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -452,7 +545,8 @@
         </div>
 
         <div class="tabs">
-            <button class="tab-button active" data-tab="downloads">Downloads</button>
+            <button class="tab-button active" data-tab="trending">Trending</button>
+            <button class="tab-button" data-tab="downloads">Downloads</button>
             <button class="tab-button" data-tab="likes">Likes</button>
             <button class="tab-button" data-tab="last_modified">Last Modified</button>
         </div>
@@ -504,7 +598,7 @@
     <div id="aiChatModal" class="modal chat-modal">
         <div class="modal-content chat-modal-content">
             <span class="close-button" id="close-chat-modal">×</span>
-            <h3>AI Assistant (Gemini 2.0 Flash)</h3>
+            <h3 id="chat-modal-title">AI Assistant</h3>
             <div id="chat-history" class="chat-history">
                 <!-- Chat messages will be appended here -->
             </div>
@@ -545,7 +639,10 @@
             "default": "var(--color-default)"
         };
 
+        const GEMINI_MODEL = 'gemini-flash-latest';
+
         let allData = {};
+        let datasetIndex = {}; // id -> dataset，給 Trending 分頁補完整資料用
         let geminiApiKey = '';
         let currentDatasetForChat = null;
         let chatMessages = []; // To store { role: 'user'/'model', parts: [{text: 'message'}] }
@@ -571,6 +668,7 @@
                 .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
                 .then(data => {
                     allData = data;
+                    buildDatasetIndex();
                     if (allData.created_at) {
                         const createdAtDate = new Date(allData.created_at);
                         document.getElementById('report-created-at').textContent = `Report generated: ${createdAtDate.toLocaleString()}`;
@@ -578,7 +676,7 @@
                         document.getElementById('report-created-at').textContent = 'Report generation time not available.';
                     }
                     setupTabs();
-                    loadTabData('downloads'); // Load initial tab
+                    selectTab(allData.trending?.available ? 'trending' : 'downloads');
                 })
                 .catch(handleFetchError);
             
@@ -624,34 +722,122 @@
 
         function handleFetchError(error) {
             console.error('Error:', error);
-            document.getElementById('datasets-grid').innerHTML = `<p>Error loading data: ${error.message}. Please check console.</p>`;
+            document.getElementById('datasets-grid').innerHTML = `<p>Error loading data: ${escapeHTML(String(error?.message ?? error))}. Please check console.</p>`;
             document.getElementById('digest-content').innerHTML = '<p>Failed to load digest.</p>';
         }
 
         function setupTabs() {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    loadTabData(button.dataset.tab);
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', () => selectTab(button.dataset.tab));
+            });
+        }
+
+        function selectTab(tabKey) {
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === tabKey);
+            });
+            loadTabData(tabKey);
+        }
+
+        function buildDatasetIndex() {
+            datasetIndex = {};
+            ['downloads', 'likes', 'last_modified'].forEach(key => {
+                (allData[key] || []).forEach(ds => {
+                    if (ds && ds.id) datasetIndex[ds.id] = ds;
                 });
             });
         }
 
         function loadTabData(tabKey) {
+            if (tabKey === 'trending') {
+                renderTrending();
+                return;
+            }
+
             const datasets = allData[tabKey] || [];
             const digest = allData[`${tabKey}_digest`] || "No digest available for this category.";
-            
+
             renderDatasetCards(datasets);
-            
+
             const digestTitleMap = {
                 'downloads': '下載量趨勢摘要',
                 'likes': '按讚數趨勢摘要',
                 'last_modified': '最近更新趨勢摘要'
             };
             document.getElementById('digest-title').textContent = digestTitleMap[tabKey] || '摘要報告';
-            document.getElementById('digest-content').innerHTML = marked.parse(digest);
+            document.getElementById('digest-content').innerHTML = renderMarkdown(digest);
+        }
+
+        function hfDatasetUrl(id) {
+            return 'https://huggingface.co/datasets/' + String(id).split('/').map(encodeURIComponent).join('/');
+        }
+
+        function renderIdList(ids) {
+            if (!ids || ids.length === 0) return '<p class="trend-note">無</p>';
+            const shown = ids.slice(0, 10).map(id =>
+                `<li><a href="${hfDatasetUrl(id)}" target="_blank" rel="noopener">${escapeHTML(id)}</a></li>`
+            ).join('');
+            const more = ids.length > 10 ? `<li class="trend-note">…另外 ${ids.length - 10} 個</li>` : '';
+            return `<ul>${shown}${more}</ul>`;
+        }
+
+        function renderTrendChips(trend) {
+            const rising = trend.downloads_delta >= 0;
+            const dir = rising ? 'up' : 'down';
+            const chips = [];
+            if (trend.downloads_pct !== null && trend.downloads_pct !== undefined) {
+                chips.push(`<span class="trend-chip ${dir}">${rising ? '▲' : '▼'} ${Math.abs(trend.downloads_pct)}%</span>`);
+            }
+            chips.push(`<span class="trend-chip ${dir}">${rising ? '+' : ''}${trend.downloads_delta.toLocaleString()} downloads</span>`);
+            if (trend.likes_delta) {
+                chips.push(`<span class="trend-chip">${trend.likes_delta > 0 ? '+' : ''}${trend.likes_delta.toLocaleString()} likes</span>`);
+            }
+            return `<div class="trend-chips">${chips.join('')}</div>`;
+        }
+
+        function renderTrending() {
+            const trending = allData.trending;
+            const digestEl = document.getElementById('digest-content');
+            const grid = document.getElementById('datasets-grid');
+            document.getElementById('digest-title').textContent = '趨勢雷達';
+
+            if (!trending || !trending.available) {
+                digestEl.innerHTML = `<p>${escapeHTML(trending?.reason || '尚未累積足夠的歷史快照，再跑一次資料更新就會出現。')}</p>`;
+                grid.innerHTML = '';
+                return;
+            }
+
+            const totals = trending.totals || {};
+            const fmtPct = v => (v === null || v === undefined) ? '—' : `${v > 0 ? '+' : ''}${v}%`;
+
+            digestEl.innerHTML = `
+                <div class="trend-summary">
+                    <div class="trend-stat"><span class="value">${trending.window_days}</span><span class="label">比較區間（天）</span></div>
+                    <div class="trend-stat"><span class="value">${totals.rising ?? 0}</span><span class="label">下載量上升</span></div>
+                    <div class="trend-stat"><span class="value">${totals.falling ?? 0}</span><span class="label">下載量下降</span></div>
+                    <div class="trend-stat"><span class="value">${fmtPct(totals.downloads_pct)}</span><span class="label">整體下載量變化</span></div>
+                    <div class="trend-stat"><span class="value">${trending.entered.length}</span><span class="label">新進榜</span></div>
+                </div>
+                <p class="trend-note">
+                    以 ${new Date(trending.baseline_date).toLocaleDateString()} 的快照為基準，
+                    對比 ${new Date(trending.current_date).toLocaleDateString()} 的數字。
+                    HF 的 downloads 是「近 30 天」滾動計數，所以這裡的變化代表下載「速率」的升降。
+                    排行只列近 30 天下載量 ≥ ${(trending.min_downloads || 0).toLocaleString()} 且仍在成長的資料集。
+                </p>
+                <div class="trend-lists">
+                    <div><h4>新進榜（${trending.entered.length}）</h4>${renderIdList(trending.entered)}</div>
+                    <div><h4>掉出榜外（${trending.exited.length}）</h4>${renderIdList(trending.exited)}</div>
+                </div>`;
+
+            const trendById = {};
+            const cards = [];
+            trending.items.forEach((item, i) => {
+                const dataset = datasetIndex[item.id];
+                if (!dataset) return;
+                trendById[item.id] = Object.assign({ rank: i + 1 }, item);
+                cards.push(dataset);
+            });
+            renderDatasetCards(cards, trendById);
         }
         
         function getModalityColorStyle(modalities) {
@@ -664,9 +850,9 @@
             return `background-image: linear-gradient(to right, ${colors.join(', ')});`;
         }
 
-        function renderDatasetCards(datasets) {
+        function renderDatasetCards(datasets, trendById) {
             const grid = document.getElementById('datasets-grid');
-            grid.innerHTML = ''; 
+            grid.innerHTML = '';
 
             if (!datasets || datasets.length === 0) {
                 grid.innerHTML = '<p>No datasets to display for this category.</p>';
@@ -679,24 +865,40 @@
                 card.style.cssText = getModalityColorStyle(dataset.modalities);
 
                 const desc = dataset.description ? (dataset.description.split('\n')[1]?.trim() || dataset.description.trim().substring(0,150) + '...') : 'No description.';
+                const trend = trendById && trendById[dataset.id];
                 card.innerHTML = `
                     <div>
-                        <h3>${dataset.id || 'N/A'}</h3>
-                        <p class="description">${desc}</p>
+                        ${trend ? `<span class="trend-rank">#${trend.rank}</span>` : ''}
+                        <h3>${escapeHTML(dataset.id || 'N/A')}</h3>
+                        <p class="description">${escapeHTML(desc)}</p>
+                        ${trend ? renderTrendChips(trend) : ''}
                     </div>
                     <div>
                         <p class="meta-info">
-                            Author: <strong>${dataset.author || 'N/A'}</strong><br>
+                            Author: <strong>${escapeHTML(dataset.author || 'N/A')}</strong><br>
                             Downloads: <strong>${dataset.downloads?.toLocaleString() || 'N/A'}</strong> | Likes: <strong>${dataset.likes?.toLocaleString() || 'N/A'}</strong><br>
                             Last Modified: <strong>${dataset.lastModified ? new Date(dataset.lastModified).toLocaleDateString() : 'N/A'}</strong>
                         </p>
                         <div class="modalities-list">
-                            ${dataset.modalities.map(m => `<span class="modality-badge">${m}</span>`).join('')}
+                            ${(dataset.modalities || []).map(m => `<span class="modality-badge">${escapeHTML(m)}</span>`).join('')}
                         </div>
                     </div>`;
                 card.addEventListener('click', () => openDatasetDetailsModal(dataset));
                 grid.appendChild(card);
             });
+        }
+
+        // AI 產出的 markdown 不能當成可信內容：資料集描述會被原封不動塞進 prompt，
+        // 有心人可以在 HF 上發布一個資料集，用描述誘導模型在報告裡吐出 <img onerror=...>，
+        // 直接在這個頁面上執行。所以 markdown 轉出來的 HTML 一律先過 DOMPurify。
+        function renderMarkdown(text) {
+            const source = text ?? '';
+            if (!window.DOMPurify) {
+                // DOMPurify 沒載進來（SRI 不符、CDN 被擋）時退成純文字，不冒險輸出原始 HTML
+                console.warn('DOMPurify 未載入，markdown 改以純文字顯示。');
+                return `<pre style="white-space:pre-wrap">${escapeHTML(String(source))}</pre>`;
+            }
+            return DOMPurify.sanitize(marked.parse(source));
         }
 
         function escapeHTML(str) {
@@ -730,7 +932,7 @@
             
             document.getElementById('modal-description').textContent = dataset.description || 'No full description.';
 
-            document.getElementById('modal-modalities-list').innerHTML = dataset.modalities.map(m => `<span class="modal-modality-badge">${m}</span>`).join('');
+            document.getElementById('modal-modalities-list').innerHTML = (dataset.modalities || []).map(m => `<span class="modal-modality-badge">${escapeHTML(m)}</span>`).join('');
             
             document.getElementById('modal-tags').innerHTML = (dataset.tags && dataset.tags.length > 0)
                 ? dataset.tags.map(tag => `<span class="tag-badge">${escapeHTML(tag)}</span>`).join('')
@@ -784,6 +986,8 @@
                 return;
             }
 
+            document.getElementById('chat-modal-title').textContent = `AI Assistant (${GEMINI_MODEL})`;
+
             chatHistoryContainer.innerHTML = ''; // 清除之前的對話
             chatMessages = [
                 {
@@ -809,7 +1013,11 @@
             const messageDiv = document.createElement('div');
             const roleClasses = typeof role === 'string' ? role.split(' ') : [];
             messageDiv.classList.add('chat-message', ...roleClasses);
-            messageDiv.innerHTML = (role === 'model') ? marked.parse(message) : message;
+            if (role === 'model') {
+                messageDiv.innerHTML = renderMarkdown(message);
+            } else {
+                messageDiv.textContent = message; // 使用者輸入不進 innerHTML
+            }
             chatHistoryContainer.appendChild(messageDiv);
             chatHistoryContainer.scrollTop = chatHistoryContainer.scrollHeight; // Scroll to bottom
         }
@@ -825,12 +1033,15 @@
             appendMessageToChatUI("Thinking...", "model system"); // Typing indicator
 
 
-            const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${geminiApiKey}`;
+            const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
             try {
                 const response = await fetch(GEMINI_API_URL, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-goog-api-key': geminiApiKey,
+                    },
                     body: JSON.stringify({
                         contents: chatMessages,
                         generationConfig: {

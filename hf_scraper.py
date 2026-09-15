@@ -1,5 +1,4 @@
 import requests
-import os
 import json
 from datetime import datetime, timezone
 import time
@@ -149,44 +148,24 @@ def group_by_modality(datasets):
     return grouped
 
 def run_huggingface_data_pipeline(sort_by_option, limit_per_sort):
-    """Runs the full data fetching, processing, and grouping pipeline for a given sort_by option."""
+    """Fetches and processes datasets for one sort_by option; returns the list (None on failure)."""
     print(f"\n--- Starting Hugging Face dataset processing for sort_by='{sort_by_option}' ---")
 
     # 資料擷取 (Part 1: Main list)
     raw_datasets = fetch_huggingface_datasets(sort_by=sort_by_option, limit=limit_per_sort)
 
-    if raw_datasets:
-        # 資料擷取 (Part 2: Viewer API) & 資料預處理
-        print(f"\n--- Starting dataset preprocessing for {sort_by_option} ---")
-        all_processed_data = process_datasets(raw_datasets)
-        print(f"--- Finished dataset preprocessing for {sort_by_option} ---")
-
-        # 分類標籤 (Grouping)
-        grouped_datasets = group_by_modality(all_processed_data)
-
-        # # --- Output Results ---
-        # print("\n--- Datasets Grouped by Modality ---")
-        # for modality, datasets_in_group in grouped_datasets.items():
-        #     print(f"\n modality: {modality} ({len(datasets_in_group)} datasets)")
-        #     # Print first 3 for brevity
-        #     for i, ds_item in enumerate(datasets_in_group[:3]):
-        #         print(f"  - {ds_item.get('id')} (Likes: {ds_item.get('likes', 0)}, Downloads: {ds_item.get('downloads',0)})")
-        #     if len(datasets_in_group) > 3:
-        #         print(f"  ... and {len(datasets_in_group) - 3} more.")
-
-        os.makedirs("data", exist_ok=True)
-        timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-        output_filename = os.path.join("data", f"{sort_by_option}_{timestamp}.json")
-        try:
-            with open(output_filename, "w", encoding="utf-8") as f:
-                json.dump(all_processed_data, f, indent=2, ensure_ascii=False)
-            print(f"\nFull processed data for '{sort_by_option}' saved to {output_filename}")
-        except IOError as e:
-            print(f"Error saving data to file {output_filename}: {e}")
-    else:
+    if not raw_datasets:
         print(f"Could not retrieve initial dataset list for sort_by='{sort_by_option}'. Skipping this run.")
+        return None
 
-    print(f"\n--- Processing complete for sort_by='{sort_by_option}' ---")
+    # 資料擷取 (Part 2: Viewer API) & 資料預處理
+    print(f"\n--- Starting dataset preprocessing for {sort_by_option} ---")
+    all_processed_data = process_datasets(raw_datasets)
+    print(f"--- Finished dataset preprocessing for {sort_by_option} ---")
+
+    print(f"\n--- Processing complete for sort_by='{sort_by_option}': "
+          f"{len(all_processed_data)} datasets ---")
+    return all_processed_data
 
 # --- Main Execution ---
 if __name__ == "__main__":

@@ -1,14 +1,13 @@
 import os
 import json
 import time
-import glob
-from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from dotenv import load_dotenv
 from hf_scraper import run_huggingface_data_pipeline
 from ai_dataset_digest import AIAgent
+import trend_history
 
-def retry_with_delay(func, *args, retries=5, error_delay=60):
+def retry_with_delay(func, *args, retries=3, error_delay=30):
     for attempt in range(retries):
         try:
             return func(*args)
@@ -19,19 +18,6 @@ def retry_with_delay(func, *args, retries=5, error_delay=60):
                 time.sleep(error_delay)
             else:
                 raise
-
-def load_latest_json(sort_by):
-    file_path = f"data/{sort_by}_*.json"
-    files = glob.glob(file_path)
-
-    if not files:
-        print(f"沒有找到符合 {file_path} 的檔案。")
-        return None
-    else:
-        latest_file = max(files, key=os.path.getmtime)
-        with open(latest_file, 'r', encoding='utf-8') as f:
-            print(f"已開啟最新的檔案：{Path(latest_file).name}")
-            return json.load(f)
 
 
 load_dotenv()
@@ -48,8 +34,14 @@ print(" Starting Hugging Face Data Pipeline for Multiple Sorts ")
 print("========================================================")
 start_time = time.time()
 
+scraped = {}
 for sort_criteria in sort_options:
-    run_huggingface_data_pipeline(sort_by_option=sort_criteria, limit_per_sort=NUM_DATASETS_TO_FETCH_PER_SORT)
+    datasets = run_huggingface_data_pipeline(
+        sort_by_option=sort_criteria,
+        limit_per_sort=NUM_DATASETS_TO_FETCH_PER_SORT,
+    )
+    if datasets:
+        scraped[sort_criteria] = datasets
     print("\n--------------------------------------------------------\n")
 
 elapsed = time.time() - start_time
@@ -64,10 +56,29 @@ if os.path.exists(output_path):
 else:
     prev_output = {}
 
-downloads_data = load_latest_json('downloads')
+history = trend_history.load_history()
+if scraped:
+    trend_history.append_snapshot(history, trend_history.build_snapshot(scraped))
+    trend_history.save_history(history)
+else:
+    print("這次一份資料都沒爬到，不新增歷史快照。")
+
+trending = trend_history.compute_trending(history)
+if trending.get("available"):
+    print(f"趨勢計算完成：近 {trending['window_days']} 天有 "
+          f"{len(trending['items'])} 個資料集動能為正，"
+          f"新進榜 {len(trending['entered'])}、掉出榜 {len(trending['exited'])}。")
+else:
+    print(f"趨勢暫時算不出來：{trending['reason']}（摘要會略過動能那一段）")
+
+digest_times = dict(prev_output.get("digests_generated_at") or {})
+run_time = datetime.now(timezone.utc).isoformat()
+
+downloads_data = scraped.get("downloads")
 try:
     if downloads_data:
-        downloads_digest = retry_with_delay(agent.generate_downloads_digest, downloads_data)
+        downloads_digest = retry_with_delay(agent.generate_downloads_digest, downloads_data, trending)
+        digest_times["downloads"] = run_time
         print("下載量數據摘要生成完成")
         print("等待30秒...")
         time.sleep(30)
@@ -77,10 +88,11 @@ except Exception as e:
     print(f"下載量摘要生成失敗: {e}")
     downloads_digest = prev_output.get("downloads_digest")
 
-likes_data = load_latest_json('likes')
+likes_data = scraped.get("likes")
 try:
     if likes_data:
-        likes_digest = retry_with_delay(agent.generate_likes_digest, likes_data)
+        likes_digest = retry_with_delay(agent.generate_likes_digest, likes_data, trending)
+        digest_times["likes"] = run_time
         print("按讚數據摘要生成完成")
         print("等待30秒...")
         time.sleep(30)
@@ -90,10 +102,11 @@ except Exception as e:
     print(f"按讚摘要生成失敗: {e}")
     likes_digest = prev_output.get("likes_digest")
 
-last_modified_data = load_latest_json('lastModified')
+last_modified_data = scraped.get("lastModified")
 try:
     if last_modified_data:
-        last_modified_digest = retry_with_delay(agent.generate_lastModified_digest, last_modified_data)
+        last_modified_digest = retry_with_delay(agent.generate_lastModified_digest, last_modified_data, trending)
+        digest_times["last_modified"] = run_time
         print("最近更新數據摘要生成完成")
     else:
         last_modified_digest = prev_output.get("last_modified_digest")
@@ -102,13 +115,15 @@ except Exception as e:
     last_modified_digest = prev_output.get("last_modified_digest")
 
 output = {
-    "created_at": datetime.now().isoformat(),
+    "created_at": datetime.now(timezone.utc).isoformat(),
     "downloads": downloads_data if downloads_data else prev_output.get("downloads"),
     "likes": likes_data if likes_data else prev_output.get("likes"),
     "last_modified": last_modified_data if last_modified_data else prev_output.get("last_modified"),
     "downloads_digest": downloads_digest,
     "likes_digest": likes_digest,
-    "last_modified_digest": last_modified_digest
+    "last_modified_digest": last_modified_digest,
+    "digests_generated_at": digest_times,
+    "trending": trending
 }
 
 with open(output_path, "w", encoding="utf-8") as f:
