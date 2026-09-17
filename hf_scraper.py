@@ -19,8 +19,10 @@ MODALITY_KEYWORDS = {
 REQUEST_HEADERS = {
     "User-Agent": "MyPythonScript/1.0 (fetching HF dataset info)"
 }
-# Delay between viewer API calls to be polite to the server
 VIEWER_API_DELAY_SECONDS = 0.2
+MAX_SAMPLE_ROWS = 5
+MAX_CELL_CHARS = 300
+MAX_LIST_ITEMS = 5
 
 # --- Helper Functions ---
 
@@ -73,7 +75,7 @@ def fetch_dataset_viewer_sample(dataset_id_hf_format):
         "config": "default",
         "split": "train",
         "offset": 0,
-        "length": 10
+        "length": MAX_SAMPLE_ROWS
     }
     viewer_url = f"{VIEWER_API_URL}"
     # print(f"  Fetching viewer data for {dataset_id_hf_format} from {viewer_url} with params: {params}")
@@ -95,6 +97,33 @@ def fetch_dataset_viewer_sample(dataset_id_hf_format):
         # print(f"  Error decoding JSON from viewer API for {dataset_id_hf_format}: {e}")
         return []
 
+def _slim_cell(value):
+    """把單一欄位縮到可存的大小。"""
+    if isinstance(value, str):
+        return value if len(value) <= MAX_CELL_CHARS else value[:MAX_CELL_CHARS] + "…"
+    if isinstance(value, dict):
+        if isinstance(value.get("src"), str):
+            return value
+        return {k: _slim_cell(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_slim_cell(v) for v in value[:MAX_LIST_ITEMS]]
+    return value
+
+
+def slim_sample_rows(rows):
+    """只保留前 MAX_SAMPLE_ROWS 筆，並把每個欄位縮短。"""
+    slimmed = []
+    for row in (rows or [])[:MAX_SAMPLE_ROWS]:
+        cells = row.get("row")
+        if not isinstance(cells, dict):
+            continue
+        slimmed.append({
+            "row_idx": row.get("row_idx"),
+            "row": {key: _slim_cell(value) for key, value in cells.items()},
+        })
+    return slimmed
+
+
 def process_datasets(datasets_raw):
     """Processes raw dataset data, cleans fields, and fetches viewer samples."""
     processed_datasets = []
@@ -112,7 +141,7 @@ def process_datasets(datasets_raw):
         processed_ds["lastModified"] = format_to_iso8601(ds_data.get("lastModified"))
 
         # 2. Fetch viewer data
-        processed_ds["viewer_sample_rows"] = fetch_dataset_viewer_sample(ds_data.get("id"))
+        processed_ds["viewer_sample_rows"] = slim_sample_rows(fetch_dataset_viewer_sample(ds_data.get("id")))
 
         # 3. Identify modalities from tags
         processed_ds["modalities"] = []

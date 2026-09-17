@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="hug.ico" type="image/x-icon">
-    <title>HF-TrendRadar</title>
+    <title>HF-TrendRadar — HuggingFace 資料集趨勢雷達</title>
+    <meta name="description" content="每天自動追蹤 Hugging Face 資料集的熱度與成長動能，提供三種排行榜、動能排名與 AI 洞察報告。">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HF-TrendRadar">
+    <meta property="og:title" content="HF-TrendRadar — HuggingFace 資料集趨勢雷達">
+    <meta property="og:description" content="每天自動追蹤 Hugging Face 資料集的熱度與成長動能，提供三種排行榜、動能排名與 AI 洞察報告。">
+    <meta property="og:url" content="https://yesaouo.github.io/HF-TrendRadar/">
+    <meta property="og:image" content="https://yesaouo.github.io/HF-TrendRadar/assets/og.png">
+    <meta name="twitter:card" content="summary_large_image">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/18.0.12/lib/marked.umd.min.js"
             integrity="sha384-1W3J5zmRIOV+OlYxSfzN5e3LuQ0/UhyGMh1q2hEV2+WHTEGDZVK3z/XCyKN1dVWn"
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -13,667 +21,1022 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         :root {
-            --color-3d: #6a1b9a; /* Deep Purple */
-            --color-audio: #ff8f00; /* Amber */
-            --color-geospatial: #00897b; /* Teal */
-            --color-image: #1e88e5; /* Blue */
-            --color-tabular: #795548; /* Brown */
-            --color-text: #e53935; /* Red */
-            --color-timeseries: #039be5; /* Light Blue */
-            --color-video: #d81b60; /* Pink */
-            --color-default: #546e7a; /* Blue Grey */
-            --text-color-on-dark: #f5f5f5;
-            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            --primary-accent: #3498db;
-            --secondary-accent: #2c3e50;
+            color-scheme: light dark;
+
+            --bg: #f3f5f8;
+            --surface: #ffffff;
+            --surface-2: #f7f9fb;
+            --text: #1f2933;
+            --text-muted: #626e77;
+            --border: #e2e8ee;
+            --border-strong: #cfd8e0;
+
+            --accent: #2f6fb0;
+            --accent-hover: #255c95;
+            --accent-contrast: #ffffff;
+            --header-bg: #22303d;
+            --header-text: #f2f6f9;
+            --header-muted: #a9b8c4;
+
+            --up: #1a7f4b;
+            --down: #b3452f;
+            --ok: #1a7f4b;
+
+            --shadow-sm: 0 1px 2px rgba(16, 24, 32, .05);
+            --shadow-md: 0 1px 2px rgba(16, 24, 32, .05), 0 6px 16px rgba(16, 24, 32, .07);
+            --shadow-lg: 0 12px 32px rgba(16, 24, 32, .18);
+            --radius: 10px;
+
+            --modality-3d: #6a1b9a;
+            --modality-audio: #a65a00;
+            --modality-geospatial: #00796b;
+            --modality-image: #1565c0;
+            --modality-tabular: #6d4c41;
+            --modality-text: #c62828;
+            --modality-timeseries: #0277bd;
+            --modality-video: #ad1457;
+            --modality-default: #546e7a;
         }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #11161b;
+                --surface: #1a222a;
+                --surface-2: #212b34;
+                --text: #e5edf4;
+                --text-muted: #94a3b0;
+                --border: #2b3742;
+                --border-strong: #3a4753;
+
+                --accent: #5aa7e8;
+                --accent-hover: #7cbaee;
+                --accent-contrast: #0c1116;
+                --header-bg: #151d24;
+                --header-text: #e5edf4;
+                --header-muted: #8fa0ad;
+
+                --up: #46c98a;
+                --down: #ef8a6e;
+                --ok: #46c98a;
+
+                --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+                --shadow-md: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 16px rgba(0, 0, 0, .35);
+                --shadow-lg: 0 12px 32px rgba(0, 0, 0, .55);
+
+                --modality-3d: #c084e8;
+                --modality-audio: #f0a53f;
+                --modality-geospatial: #4db6ac;
+                --modality-image: #64b5f6;
+                --modality-tabular: #bcaaa4;
+                --modality-text: #ef9a9a;
+                --modality-timeseries: #4fc3f7;
+                --modality-video: #f48fb1;
+                --modality-default: #90a4ae;
+            }
+        }
+
+        * { box-sizing: border-box; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             margin: 0;
-            background-color: #f4f6f8;
-            color: #333;
+            background-color: var(--bg);
+            color: var(--text);
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 24px 16px 8px;
         }
 
+        /* ---------- Header ---------- */
         header {
-            background-color: var(--secondary-accent);
-            color: white;
-            padding: 20px 0;
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 28px 16px;
             text-align: center;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: clamp(1.4em, 4vw, 2.1em);
+            letter-spacing: -0.01em;
+            line-height: 1.25;
         }
 
         header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-            color: #bdc3c7;
+            margin: 8px 0 0;
+            font-size: 0.95em;
+            color: var(--header-muted);
         }
 
-        .api-key-section {
-            background-color: #fff;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .api-key-section label {
-            font-weight: bold;
-            color: var(--secondary-accent);
-        }
-        .api-key-section input[type="password"], .api-key-section input[type="text"] {
-            flex-grow: 1;
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .api-key-section button {
-            padding: 8px 15px;
-            background-color: var(--primary-accent);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .api-key-section button:hover {
-            background-color: #2980b9;
-        }
-        #api-key-status {
-            font-size: 0.9em;
-            color: #27ae60;
-        }
-
-
+        /* ---------- Tabs ---------- */
         .tabs {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 30px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
+            margin-bottom: 24px;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
             overflow: hidden;
         }
 
         .tab-button {
-            padding: 15px 25px;
+            padding: 13px 20px;
             cursor: pointer;
             border: none;
             background-color: transparent;
-            font-size: 1.1em;
-            color: #34495e;
-            transition: background-color 0.3s, color 0.3s;
-            flex-grow: 1;
+            font-size: 1em;
+            font-family: inherit;
+            color: var(--text-muted);
+            transition: background-color .2s, color .2s;
+            flex: 1 1 120px;
             text-align: center;
+            font-weight: 600;
         }
 
-        .tab-button:not(:last-child) {
-            border-right: 1px solid #ecf0f1;
-        }
-        
         .tab-button.active {
-            background-color: var(--primary-accent);
-            color: white;
-            font-weight: bold;
+            background-color: var(--accent);
+            color: var(--accent-contrast);
         }
 
         .tab-button:hover:not(.active) {
-            background-color: #ecf0f1;
+            background-color: var(--surface-2);
+            color: var(--text);
+        }
+        .tab-button:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: -2px;
         }
 
+        /* ---------- 摘要區 ---------- */
         .digest-section {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
-            margin-bottom: 30px;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            padding: 22px 24px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 28px;
+        }
+        .digest-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 4px 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
         }
         .digest-section h2 {
-            margin-top: 0;
-            color: var(--secondary-accent);
-            border-bottom: 2px solid var(--primary-accent);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            margin: 0;
+            font-size: 1.25em;
+            color: var(--text);
         }
-        .digest-section div {
+        .digest-meta {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            margin-left: auto;
+        }
+        .digest-meta.stale { color: var(--down); }
+
+        #digest-content {
             word-wrap: break-word;
-            background-color: #f9f9f9;
-            padding: 15px;
+            font-size: 0.97em;
+        }
+        #digest-content > :first-child { margin-top: 0; }
+        #digest-content > :last-child { margin-bottom: 0; }
+        #digest-content h1, #digest-content h2,
+        #digest-content h3, #digest-content h4 {
+            margin: 1.4em 0 .5em;
+            line-height: 1.35;
+            color: var(--text);
+        }
+        #digest-content h1 { font-size: 1.3em; }
+        #digest-content h2 { font-size: 1.15em; }
+        #digest-content h3 { font-size: 1.05em; }
+        #digest-content h4 { font-size: 1em; color: var(--text-muted); }
+        #digest-content ul, #digest-content ol { padding-left: 1.4em; }
+        #digest-content li { margin-bottom: .35em; }
+        #digest-content a { color: var(--accent); }
+        #digest-content code {
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
             border-radius: 4px;
-            border: 1px solid #eee;
+            padding: .1em .35em;
+            font-size: .9em;
+        }
+        #digest-content pre {
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px;
+            overflow-x: auto;
+        }
+        #digest-content pre code { border: none; padding: 0; background: none; }
+        #digest-content blockquote {
+            margin: 1em 0;
+            padding-left: 14px;
+            border-left: 3px solid var(--border-strong);
+            color: var(--text-muted);
+        }
+        #digest-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 1.5em 0;
+        }
+        #digest-content table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1em 0;
+        }
+        #digest-content th, #digest-content td {
+            border: 1px solid var(--border);
+            padding: 6px 10px;
+            text-align: left;
+        }
+        #digest-content th { background-color: var(--surface-2); }
+
+        /* ---------- Trending 統計 ---------- */
+        .trend-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .trend-stat {
+            flex: 1 1 110px;
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+        }
+        .trend-stat .value {
+            display: block;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--text);
+            font-variant-numeric: tabular-nums;
+            line-height: 1.2;
+        }
+        .trend-stat .label {
+            font-size: 0.8em;
+            color: var(--text-muted);
+        }
+        .trend-note {
+            font-size: 0.88em;
+            color: var(--text-muted);
+        }
+        .trend-lists {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+            margin-top: 16px;
+        }
+        .trend-lists > div {
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+        }
+        .trend-lists h4 {
+            margin: 0 0 8px;
             font-size: 0.95em;
+            color: var(--text);
+        }
+        .trend-lists ul {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 0.9em;
+        }
+        .trend-lists a {
+            color: var(--accent);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .trend-lists a:hover { text-decoration: underline; }
+
+        /* ---------- 工具列：搜尋 / 篩選 / 排序 ---------- */
+        .toolbar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+        .toolbar[hidden] { display: none; }
+        .toolbar-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        #filter-search {
+            flex: 1 1 240px;
+            min-width: 0;
+            padding: 9px 14px;
+            border: 1px solid var(--border-strong);
+            border-radius: 999px;
+            background-color: var(--surface);
+            color: var(--text);
+            font-size: 0.95em;
+            font-family: inherit;
+        }
+        #filter-search:focus-visible,
+        #filter-sort:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 1px;
+        }
+        .sort-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 0 1 auto;
+        }
+        .sort-label {
+            font-size: 0.88em;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+        #filter-sort {
+            padding: 9px 12px;
+            border: 1px solid var(--border-strong);
+            border-radius: 8px;
+            background-color: var(--surface);
+            color: var(--text);
+            font-family: inherit;
+            font-size: 0.92em;
+            min-width: 0;
         }
 
+        @media (max-width: 560px) {
+            .toolbar { gap: 12px; }
+            #filter-search { flex: 1 1 100%; }
+            .sort-group { flex: 1 1 100%; }
+            #filter-sort { flex: 1; }
+            .filter-modalities { gap: 5px; }
+            .modality-filter { padding: 4px 9px; }
+        }
+        .filter-modalities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .filter-modalities:empty { display: none; }
+
+        .modality-filter {
+            font-family: inherit;
+            cursor: pointer;
+            padding: 4px 11px;
+            border-radius: 999px;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 78%, var(--text));
+            background-color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 10%, transparent);
+            border: 1px solid color-mix(in srgb, var(--badge-color, var(--modality-default)) 30%, transparent);
+            transition: background-color .15s, border-color .15s;
+        }
+        .modality-filter:hover {
+            background-color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 18%, transparent);
+        }
+        .modality-filter[aria-pressed="true"] {
+            background-color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 22%, transparent);
+            border-color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 70%, transparent);
+        }
+        .modality-filter::before {
+            content: "✓";
+            visibility: hidden;
+            margin-right: .35em;
+        }
+        .modality-filter[aria-pressed="true"]::before { visibility: visible; }
+        .modality-filter:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 1px;
+        }
+        .modality-filter .count {
+            opacity: .65;
+            font-weight: 500;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .toolbar-foot {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.87em;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+        }
+        .link-button {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: var(--accent);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .link-button:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+        .digest-section[hidden] { display: none; }
+        .loading-note {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+        }
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            background-color: var(--surface);
+            border: 1px dashed var(--border-strong);
+            border-radius: var(--radius);
+        }
+
+        /* ---------- 資料集卡片 ---------- */
         .datasets-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr));
+            gap: 16px;
             margin-bottom: 30px;
         }
 
         .dataset-card {
-            color: var(--text-color-on-dark);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            position: relative;
+            background-color: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px 18px 18px 22px;
+            box-shadow: var(--shadow-sm);
+            transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
             cursor: pointer;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            gap: 12px;
+            overflow: hidden;
+        }
+
+        .dataset-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 4px;
+            background: var(--card-accent, var(--modality-default));
         }
 
         .dataset-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-strong);
+        }
+
+        .card-open {
+            font: inherit;
+            color: inherit;
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+        }
+        .card-open:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+        .dataset-card:has(.card-open:focus-visible) {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
         }
 
         .dataset-card h3 {
-            margin-top: 0;
-            font-size: 1.4em;
-            word-break: break-all;
-        }
-        .dataset-card p {
-            margin-bottom: 10px;
-            font-size: 0.9em;
-            opacity: 0.9;
+            margin: 0;
+            font-size: 1.05em;
+            line-height: 1.4;
+            word-break: break-word;
+            color: var(--text);
         }
         .dataset-card .description {
-             flex-grow: 1;
-             margin-bottom: 15px;
-             overflow: hidden;
-             text-overflow: ellipsis;
-             display: -webkit-box;
-             -webkit-line-clamp: 3;
-             -webkit-box-orient: vertical;
+            margin: 0;
+            font-size: 0.9em;
+            color: var(--text-muted);
+            flex-grow: 1;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
         }
-
-        .dataset-card .meta-info {
-            font-size: 0.85em;
-            opacity: 0.8;
+        .dataset-card .card-foot {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             margin-top: auto;
         }
+        .dataset-card .meta-info {
+            margin: 0;
+            font-size: 0.85em;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+            border-top: 1px solid var(--border);
+            padding-top: 10px;
+        }
         .dataset-card .meta-info strong {
-            opacity: 1;
+            color: var(--text);
+            font-weight: 600;
         }
 
         .modalities-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
+            gap: 6px;
         }
 
         .modality-badge {
-            padding: 5px 10px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            background-color: rgba(0,0,0,0.2);
-            color: var(--text-color-on-dark);
-            font-weight: 500;
+            padding: 3px 9px;
+            border-radius: 999px;
+            font-size: 0.76em;
+            font-weight: 600;
+            letter-spacing: .02em;
+            color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 78%, var(--text));
+            background-color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 13%, transparent);
+            border: 1px solid color-mix(in srgb, var(--badge-color, var(--modality-default)) 32%, transparent);
         }
 
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.6);
-            animation: fadeIn 0.3s;
+        /* ---------- Trending 卡片上的變化幅度 ---------- */
+        .trend-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .trend-chip {
+            font-size: 0.82em;
+            font-weight: 600;
+            padding: 3px 9px;
+            border-radius: 999px;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+            color: var(--text-muted);
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+        }
+        .trend-chip.up {
+            color: var(--up);
+            background-color: color-mix(in srgb, var(--up) 12%, transparent);
+            border-color: color-mix(in srgb, var(--up) 30%, transparent);
+        }
+        .trend-chip.down {
+            color: var(--down);
+            background-color: color-mix(in srgb, var(--down) 12%, transparent);
+            border-color: color-mix(in srgb, var(--down) 30%, transparent);
+        }
+        .card-head {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .card-head h3 { flex: 1; }
+        .trend-rank {
+            flex-shrink: 0;
+            font-weight: 700;
+            font-size: 0.8em;
+            font-variant-numeric: tabular-nums;
+            color: var(--text-muted);
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 2px 8px;
+        }
+
+        /* ---------- Modal ---------- */
+        dialog.modal {
+            padding: 0;
+            border: none;
+            background: transparent;
+            color: var(--text);
+            width: min(92%, 700px);
+            max-width: 100%;
+            max-height: 90vh;
+            overflow: visible;
+        }
+        dialog.modal::backdrop {
+            background-color: rgba(8, 12, 16, .6);
+            animation: fadeIn .25s;
         }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         .modal-content {
-            background-color: #fefefe;
-            margin: 8% auto;
-            padding: 30px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 700px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            background-color: var(--surface);
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
             position: relative;
-            color: #333;
-            animation: slideIn 0.3s;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideIn .25s;
         }
-         @keyframes slideIn { from { transform: translateY(-30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-        
+        @keyframes slideIn { from { transform: translateY(-18px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+        .modal-header {
+            padding-right: 36px;
+            margin-bottom: 18px;
+        }
         .modal-content h2 {
-            margin-top: 0;
-            color: var(--secondary-accent);
-            border-bottom: 2px solid var(--primary-accent);
-            padding-bottom: 10px;
+            margin: 0 0 4px;
+            font-size: 1.2em;
+            line-height: 1.4;
+            color: var(--text);
+            word-break: break-word;
+        }
+        .modal-content h2 a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .modal-content h2 a:hover { color: var(--accent); }
+        .modal-content h2 svg { flex-shrink: 0; opacity: .55; }
+        .modal-author {
+            margin: 0;
+            font-size: 0.9em;
+            color: var(--text-muted);
         }
 
-        .modal-content p {
-            margin-bottom: 12px;
+        .modal-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 18px;
         }
-        .modal-content strong {
-            color: #34495e;
+        .modal-stat {
+            flex: 1 1 100px;
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+        }
+        .modal-stat[hidden] { display: none; }
+        .modal-stat .value {
+            display: block;
+            font-size: 1.4em;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            line-height: 1.25;
+        }
+        .modal-stat .label {
+            font-size: 0.78em;
+            color: var(--text-muted);
+        }
+        .modal-stat.up .value { color: var(--up); }
+        .modal-stat.down .value { color: var(--down); }
+
+        .modal-props {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: 10px 18px;
+            align-items: baseline;
+            margin: 0 0 22px;
+            padding: 16px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .modal-props dt {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+        .modal-props dd {
+            margin: 0;
+            font-variant-numeric: tabular-nums;
+            min-width: 0;
+        }
+        @media (max-width: 480px) {
+            .modal-props { grid-template-columns: 1fr; gap: 2px 0; }
+            .modal-props dt { margin-top: 12px; }
+            .modal-props dt:first-child { margin-top: 0; }
+        }
+
+        .modal-section { margin-bottom: 22px; }
+        .modal-section h3 {
+            margin: 0 0 8px;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: var(--text-muted);
+            letter-spacing: .03em;
+            text-transform: uppercase;
         }
 
         .modal-content .description-full {
             max-height: 200px;
             overflow-y: auto;
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #eee;
+            background-color: var(--surface-2);
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
             margin-bottom: 15px;
             white-space: pre-wrap;
             word-wrap: break-word;
+            font-size: .92em;
         }
+        .tags-toggle {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            font-size: 0.85em;
+            color: var(--accent);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .tags-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
         .modal-content .tags-list, .modal-content .modal-modalities-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
+            gap: 6px;
+            align-items: center;
         }
-        .modal-content .tag-badge, .modal-content .modal-modality-badge {
-            padding: 5px 10px;
-            border-radius: 12px;
-            font-size: 0.9em;
-            background-color: #e0e0e0;
+        .modal-content .tag-badge {
+            padding: 3px 9px;
+            border-radius: 999px;
+            font-size: 0.82em;
+            background-color: var(--surface-2);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
         }
-         .modal-content .modal-modality-badge {
-            background-color: var(--primary-accent);
-            color: white;
-         }
+        .modal-content .modal-modality-badge {
+            padding: 3px 9px;
+            border-radius: 999px;
+            font-size: 0.82em;
+            font-weight: 600;
+            color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 78%, var(--text));
+            background-color: color-mix(in srgb, var(--badge-color, var(--modality-default)) 13%, transparent);
+            border: 1px solid color-mix(in srgb, var(--badge-color, var(--modality-default)) 32%, transparent);
+        }
 
-        .modal-content .viewer-samples h4 {
-            margin-bottom: 5px;
+        .modal-content .viewer-samples img,
+        .modal-content .viewer-samples video {
+            max-width: 160px;
+            max-height: 160px;
+            margin: 4px 4px 4px 0;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            vertical-align: top;
+            background-color: var(--surface-2);
         }
-        .modal-content .viewer-samples img {
-            max-width: 100px;
-            max-height: 100px;
-            margin: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+        .modal-content .viewer-samples video { width: 240px; max-width: 100%; }
+        .sample-note {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            margin: 8px 0 0;
+        }
+        .sample-note a {
+            color: var(--accent);
+            margin-left: 6px;
         }
         .modal-content .viewer-samples pre {
-             background-color: #f9f9f9;
-             padding: 10px;
-             border-radius: 4px;
-             border: 1px solid #eee;
-             font-size: 0.85em;
-             max-height: 150px;
-             overflow-y: auto;
+            background-color: var(--surface-2);
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            font-size: 0.85em;
+            max-height: 150px;
+            overflow: auto;
         }
 
         .ai-button {
             display: block;
-            width: calc(100% - 40px); /* Adjust width as needed */
-            margin: 20px auto 0;
+            width: 100%;
+            margin: 22px 0 0;
             padding: 12px 20px;
-            background-color: #27ae60; /* Green for AI */
-            color: white;
+            background-color: var(--accent);
+            color: var(--accent-contrast);
             border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color .2s;
         }
-        .ai-button:hover {
-            background-color: #229954;
-        }
+        .ai-button:hover { background-color: var(--accent-hover); }
+        .ai-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .ai-button.copied { background-color: var(--up); }
 
         .close-button {
-            color: #aaa;
+            color: var(--text-muted);
             position: absolute;
-            top: 15px;
-            right: 25px;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .close-button:hover,
-        .close-button:focus {
-            color: #333;
-            text-decoration: none;
+            top: 14px;
+            right: 20px;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: 400;
             cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0 4px;
+            font-family: inherit;
         }
-
-        /* Chat Modal Styles */
-        .chat-modal .modal-content {
-            max-width: 500px; /* Smaller for chat */
-            height: 70vh; /* Taller for chat */
-            max-height: 600px;
-            display: flex;
-            flex-direction: column;
-        }
-        .chat-modal-content h3 {
-            margin-top:0; 
-            padding-bottom:10px; 
-            border-bottom: 1px solid #eee; 
-            color: var(--secondary-accent);
-        }
-        .chat-history {
-            flex-grow: 1;
-            overflow-y: auto;
-            padding: 10px;
-            border: 1px solid #eee;
+        .close-button:hover { color: var(--text); }
+        .close-button:focus-visible {
+            color: var(--text);
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
             border-radius: 4px;
-            margin-bottom: 15px;
-            background-color: #f9f9f9;
-        }
-        .chat-message {
-            margin-bottom: 10px;
-            padding: 8px 12px;
-            border-radius: 15px;
-            max-width: 80%;
-            word-wrap: break-word;
-        }
-        .chat-message.user {
-            background-color: var(--primary-accent);
-            color: white;
-            margin-left: auto;
-            border-bottom-right-radius: 5px;
-        }
-        .chat-message.model {
-            background-color: #e9ecef;
-            color: #333;
-            margin-right: auto;
-            border-bottom-left-radius: 5px;
-        }
-        .chat-message.system { /* For potential system messages */
-            background-color: #fff3cd;
-            color: #856404;
-            text-align: center;
-            font-style: italic;
-            font-size: 0.9em;
-            border-radius: 5px;
-        }
-        .chat-message p:last-child { margin-bottom: 0; } /* Fix extra space from Markdown */
-        
-        .chat-input-area {
-            display: flex;
-            gap: 10px;
-        }
-        #chat-message-input {
-            flex-grow: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-        }
-        #send-chat-message {
-            padding: 10px 20px;
-            background-color: var(--primary-accent);
-            color: white;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        #send-chat-message:hover {
-            background-color: #2980b9;
-        }
-        #send-chat-message:disabled {
-            background-color: #bdc3c7;
-            cursor: not-allowed;
         }
 
-        #digest-content .trend-summary {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            background: none;
-            border: none;
-            padding: 0;
-            margin-bottom: 15px;
-        }
-        #digest-content .trend-stat {
-            background-color: #fff;
-            border: 1px solid #e6e9ec;
-            border-radius: 8px;
-            padding: 10px 14px;
-            min-width: 110px;
-        }
-        #digest-content .trend-stat .value {
-            display: block;
-            font-size: 1.6em;
-            font-weight: 700;
-            color: var(--secondary-accent);
-            font-variant-numeric: tabular-nums;
-            line-height: 1.2;
-        }
-        #digest-content .trend-stat .label {
-            font-size: 0.8em;
-            color: #7b8a97;
-        }
-        #digest-content .trend-note {
-            font-size: 0.9em;
-            color: #7b8a97;
-        }
-        #digest-content .trend-lists {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-            background: none;
-            border: none;
-            padding: 0;
-        }
-        #digest-content .trend-lists > div {
-            background-color: #fff;
-            border: 1px solid #e6e9ec;
-            border-radius: 8px;
-            padding: 12px 15px;
-        }
-        #digest-content .trend-lists h4 {
-            margin: 0 0 8px;
-            color: var(--secondary-accent);
-        }
-        #digest-content .trend-lists ul {
-            margin: 0;
-            padding-left: 18px;
-            font-size: 0.9em;
-        }
-        #digest-content .trend-lists a {
-            color: var(--primary-accent);
-            text-decoration: none;
-            word-break: break-all;
-        }
-        #digest-content .trend-lists a:hover { text-decoration: underline; }
-
-        .trend-chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 10px 0 0;
-        }
-        .trend-chip {
-            font-size: 0.85em;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 12px;
-            background-color: rgba(255,255,255,0.22);
-            font-variant-numeric: tabular-nums;
-            white-space: nowrap;
-        }
-        .trend-chip.down { background-color: rgba(0,0,0,0.28); }
-        .trend-rank {
-            float: right;
-            font-weight: 700;
-            font-size: 0.95em;
-            opacity: 0.75;
-            font-variant-numeric: tabular-nums;
-        }
-
+        /* ---------- Footer ---------- */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 24px 16px;
             margin-top: 40px;
-            background-color: var(--secondary-accent);
-            color: #bdc3c7;
-            font-size: 0.9em;
+            background-color: var(--header-bg);
+            color: var(--header-muted);
+            font-size: 0.87em;
+        }
+        footer p { margin: 4px 0; }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+            .dataset-card:hover { transform: none; }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>HuggingFace Dataset 趨勢雷達系統</h1>
-        <p>(HF-TrendRadar)</p>
+        <p>每天追蹤 Hugging Face 資料集的熱度與成長動能</p>
     </header>
 
     <div class="container">
-        <div class="api-key-section">
-            <label for="gemini-api-key">Gemini API Key:</label>
-            <input type="password" id="gemini-api-key" placeholder="Enter your API Key">
-            <button id="save-api-key-button">Save Key</button>
-            <span id="api-key-status"></span>
+        <div class="tabs" role="tablist" aria-label="排行榜分類">
+            <button class="tab-button active" role="tab" id="tab-trending" aria-controls="tab-panel" aria-selected="true" data-tab="trending">Trending</button>
+            <button class="tab-button" role="tab" id="tab-downloads" aria-controls="tab-panel" aria-selected="false" tabindex="-1" data-tab="downloads">Downloads</button>
+            <button class="tab-button" role="tab" id="tab-likes" aria-controls="tab-panel" aria-selected="false" tabindex="-1" data-tab="likes">Likes</button>
+            <button class="tab-button" role="tab" id="tab-last_modified" aria-controls="tab-panel" aria-selected="false" tabindex="-1" data-tab="last_modified">Last Modified</button>
         </div>
 
-        <div class="tabs">
-            <button class="tab-button active" data-tab="trending">Trending</button>
-            <button class="tab-button" data-tab="downloads">Downloads</button>
-            <button class="tab-button" data-tab="likes">Likes</button>
-            <button class="tab-button" data-tab="last_modified">Last Modified</button>
-        </div>
+        <div id="tab-panel" role="tabpanel" aria-labelledby="tab-trending" tabindex="-1">
 
-        <div id="digest-section" class="digest-section">
-            <h2 id="digest-title">摘要報告</h2>
+        <div id="digest-section" class="digest-section" hidden>
+            <div class="digest-header">
+                <h2 id="digest-title">摘要報告</h2>
+                <span id="digest-meta" class="digest-meta"></span>
+            </div>
             <div id="digest-content"></div>
         </div>
 
-        <div id="datasets-grid" class="datasets-grid">
-            <!-- Dataset cards will be injected here by JavaScript -->
+        <div id="toolbar" class="toolbar" hidden>
+            <div class="toolbar-row">
+                <input type="search" id="filter-search" autocomplete="off"
+                       placeholder="搜尋資料集 ID、作者或描述…" aria-label="搜尋資料集">
+                <div class="sort-group">
+                    <label class="sort-label" for="filter-sort">排序</label>
+                    <select id="filter-sort">
+                        <option value="default">預設順序</option>
+                        <option value="downloads">Downloads</option>
+                        <option value="likes">Likes</option>
+                        <option value="lastModified">Last Modified</option>
+                        <option value="name">Name A→Z</option>
+                    </select>
+                </div>
+            </div>
+            <div id="filter-modalities" class="filter-modalities"></div>
+            <div class="toolbar-foot">
+                <span id="filter-count" role="status" aria-live="polite"></span>
+                <button type="button" id="filter-clear" class="link-button" hidden>清除篩選</button>
+            </div>
         </div>
+
+        <div id="datasets-grid" class="datasets-grid">
+            <p class="loading-note">載入資料中…</p>
+        </div>
+        </div><!-- /#tab-panel -->
     </div>
 
     <!-- Dataset Details Modal -->
-    <div id="datasetModal" class="modal">
+    <dialog id="datasetModal" class="modal" aria-labelledby="modal-title-text">
         <div class="modal-content">
-            <span class="close-button" id="close-dataset-modal">×</span>
-            <h2 style="display: flex; align-items: center;">
-                <a id="modal-title-link" href="#" target="_blank" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                    <span id="modal-title-text">Dataset Details</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px; opacity: 0.7;">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                </a>
-            </h2>
-            <p><strong>Author:</strong> <span id="modal-author"></span></p>
-            <p><strong>Downloads:</strong> <span id="modal-downloads"></span></p>
-            <p><strong>Likes:</strong> <span id="modal-likes"></span></p>
-            <p><strong>Created At:</strong> <span id="modal-createdAt"></span></p>
-            <p><strong>Last Modified:</strong> <span id="modal-lastModified"></span></p>
-            <p><strong>Modalities:</strong></p>
-            <div id="modal-modalities-list" class="modal-modalities-list"></div>
-            <p><strong>Description:</strong></p>
-            <div id="modal-description" class="description-full"></div>
-            <p><strong>Tags:</strong></p>
-            <div id="modal-tags" class="tags-list"></div>
-            <div class="viewer-samples">
-                <h4>Viewer Samples (if any):</h4>
-                <div id="modal-viewer-samples"></div>
-            </div>
-            <button id="ai-assistant-button" class="ai-button">AI Assistant</button>
-        </div>
-    </div>
+            <button type="button" class="close-button" id="close-dataset-modal" aria-label="關閉">×</button>
+            <header class="modal-header">
+                <h2>
+                    <a id="modal-title-link" href="#" target="_blank" rel="noopener">
+                        <span id="modal-title-text">Dataset Details</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </h2>
+                <p class="modal-author">by <span id="modal-author"></span></p>
+            </header>
 
-    <!-- AI Chat Modal -->
-    <div id="aiChatModal" class="modal chat-modal">
-        <div class="modal-content chat-modal-content">
-            <span class="close-button" id="close-chat-modal">×</span>
-            <h3 id="chat-modal-title">AI Assistant</h3>
-            <div id="chat-history" class="chat-history">
-                <!-- Chat messages will be appended here -->
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <span class="value" id="modal-downloads"></span>
+                    <span class="label">Downloads</span>
+                </div>
+                <div class="modal-stat">
+                    <span class="value" id="modal-likes"></span>
+                    <span class="label">Likes</span>
+                </div>
+                <div class="modal-stat" id="modal-trend-stat" hidden>
+                    <span class="value" id="modal-trend"></span>
+                    <span class="label" id="modal-trend-label"></span>
+                </div>
             </div>
-            <div class="chat-input-area">
-                <input type="text" id="chat-message-input" placeholder="Ask about this dataset...">
-                <button id="send-chat-message">Send</button>
-            </div>
+
+            <dl class="modal-props">
+                <dt>Modalities</dt>
+                <dd id="modal-modalities-list" class="modal-modalities-list"></dd>
+                <dt>License</dt><dd id="modal-license"></dd>
+                <dt>Tasks</dt><dd id="modal-tasks"></dd>
+                <dt>Size</dt><dd id="modal-size"></dd>
+                <dt>Languages</dt><dd id="modal-languages"></dd>
+                <dt>Created At</dt><dd id="modal-createdAt"></dd>
+                <dt>Last Modified</dt><dd id="modal-lastModified"></dd>
+            </dl>
+
+            <section class="modal-section">
+                <h3>Description</h3>
+                <div id="modal-description" class="description-full"></div>
+            </section>
+
+            <section class="modal-section">
+                <h3>Tags</h3>
+                <div id="modal-tags" class="tags-list"></div>
+            </section>
+
+            <section class="modal-section viewer-samples">
+                <h3>Viewer Samples</h3>
+                <div id="modal-viewer-samples"></div>
+            </section>
+
+            <button type="button" id="copy-prompt-button" class="ai-button">複製提示詞</button>
         </div>
-    </div>
+    </dialog>
+
     
     <footer>
-        <p id="report-created-at">Report generated: Loading...</p>
-        <p>&copy; 2025 yesaouo. Licensed under the MIT License.
+        <p id="report-created-at">載入中…</p>
+        <p>&copy; 2025 yesaouo・採用 MIT License 授權
 </p>
     </footer>
 
     <script>
-        const MODALITY_KEYWORDS = {
-            "3d": "3D",
-            "audio": "Audio",
-            "geospatial": "Geospatial",
-            "image": "Image",
-            "tabular": "Tabular",
-            "text": "Text",
-            "timeseries": "Time-Series",
-            "video": "Video"
-        };
-
         const MODALITY_COLORS = {
-            "3D": "var(--color-3d)",
-            "Audio": "var(--color-audio)",
-            "Geospatial": "var(--color-geospatial)",
-            "Image": "var(--color-image)",
-            "Tabular": "var(--color-tabular)",
-            "Text": "var(--color-text)",
-            "Time-Series": "var(--color-timeseries)",
-            "Video": "var(--color-video)",
-            "default": "var(--color-default)"
+            "3D": "var(--modality-3d)",
+            "Audio": "var(--modality-audio)",
+            "Geospatial": "var(--modality-geospatial)",
+            "Image": "var(--modality-image)",
+            "Tabular": "var(--modality-tabular)",
+            "Text": "var(--modality-text)",
+            "Time-Series": "var(--modality-timeseries)",
+            "Video": "var(--modality-video)",
+            "default": "var(--modality-default)"
         };
-
-        const GEMINI_MODEL = 'gemini-flash-latest';
 
         let allData = {};
         let datasetIndex = {}; // id -> dataset，給 Trending 分頁補完整資料用
-        let geminiApiKey = '';
-        let currentDatasetForChat = null;
-        let chatMessages = []; // To store { role: 'user'/'model', parts: [{text: 'message'}] }
+        let trendIndex = {};   // id -> 動能與排名
+        let currentDataset = null;
+        let currentDatasets = [];       // 目前分頁的資料集
+        let currentTrendById = null;    // Trending 分頁才有：id -> 動能與排名
+        const filterState = { query: "", modalities: new Set(), sort: "default" };
 
         // DOM Elements
-        const apiKeyInput = document.getElementById('gemini-api-key');
-        const saveApiKeyButton = document.getElementById('save-api-key-button');
-        const apiKeyStatus = document.getElementById('api-key-status');
         
         const datasetModal = document.getElementById('datasetModal');
         const closeDatasetModalButton = document.getElementById('close-dataset-modal');
         
-        const aiAssistantButton = document.getElementById('ai-assistant-button');
-        const aiChatModal = document.getElementById('aiChatModal');
-        const closeChatModalButton = document.getElementById('close-chat-modal');
-        const chatHistoryContainer = document.getElementById('chat-history');
-        const chatMessageInput = document.getElementById('chat-message-input');
-        const sendChatMessageButton = document.getElementById('send-chat-message');
+        const copyPromptButton = document.getElementById('copy-prompt-button');
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadApiKey();
             fetch('data/output.json')
                 .then(response => response.ok ? response.json() : Promise.reject(`HTTP error! status: ${response.status}`))
                 .then(data => {
                     allData = data;
+                    document.getElementById('digest-section').hidden = false;
                     buildDatasetIndex();
                     if (allData.created_at) {
                         const createdAtDate = new Date(allData.created_at);
-                        document.getElementById('report-created-at').textContent = `Report generated: ${createdAtDate.toLocaleString()}`;
+                        document.getElementById('report-created-at').textContent = `資料更新於 ${createdAtDate.toLocaleString()}`;
                     } else {
-                        document.getElementById('report-created-at').textContent = 'Report generation time not available.';
+                        document.getElementById('report-created-at').textContent = '無法取得資料更新時間';
                     }
                     setupTabs();
                     selectTab(allData.trending?.available ? 'trending' : 'downloads');
@@ -683,58 +1046,49 @@
             setupEventListeners();
         });
 
-        function loadApiKey() {
-            geminiApiKey = localStorage.getItem('geminiApiKey') || '';
-            if (geminiApiKey) {
-                apiKeyInput.value = geminiApiKey; // Keep it as password type for display
-                apiKeyStatus.textContent = 'API Key loaded from storage.';
-                setTimeout(() => apiKeyStatus.textContent = '', 3000);
-            }
-        }
 
         function setupEventListeners() {
-            saveApiKeyButton.addEventListener('click', () => {
-                geminiApiKey = apiKeyInput.value.trim();
-                if (geminiApiKey) {
-                    localStorage.setItem('geminiApiKey', geminiApiKey);
-                    apiKeyStatus.textContent = 'API Key saved!';
-                } else {
-                    localStorage.removeItem('geminiApiKey');
-                    apiKeyStatus.textContent = 'API Key cleared.';
-                }
-                setTimeout(() => apiKeyStatus.textContent = '', 3000);
-            });
+            setupFilters();
+            closeDatasetModalButton.onclick = () => datasetModal.close();
+            copyPromptButton.addEventListener('click', copyPromptToClipboard);
 
-            closeDatasetModalButton.onclick = () => datasetModal.style.display = "none";
-            aiAssistantButton.addEventListener('click', openAiChatModal);
-            closeChatModalButton.onclick = () => aiChatModal.style.display = "none";
-            
-            sendChatMessageButton.addEventListener('click', sendChatMessage);
-            chatMessageInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') sendChatMessage();
+            datasetModal.addEventListener('click', (event) => {
+                if (event.target === datasetModal) datasetModal.close();
             });
-
-            window.onclick = (event) => {
-                if (event.target == datasetModal) datasetModal.style.display = "none";
-                if (event.target == aiChatModal) aiChatModal.style.display = "none";
-            };
         }
 
         function handleFetchError(error) {
             console.error('Error:', error);
-            document.getElementById('datasets-grid').innerHTML = `<p>Error loading data: ${escapeHTML(String(error?.message ?? error))}. Please check console.</p>`;
-            document.getElementById('digest-content').innerHTML = '<p>Failed to load digest.</p>';
+            document.getElementById('digest-section').hidden = false;
+            document.getElementById('datasets-grid').innerHTML = `<p>載入資料失敗：${escapeHTML(String(error?.message ?? error))}（詳細訊息請看瀏覽器主控台）</p>`;
+            document.getElementById('digest-content').innerHTML = '<p>摘要載入失敗</p>';
         }
 
         function setupTabs() {
-            document.querySelectorAll('.tab-button').forEach(button => {
+            const tabs = [...document.querySelectorAll('.tab-button')];
+            tabs.forEach((button, i) => {
                 button.addEventListener('click', () => selectTab(button.dataset.tab));
+                button.addEventListener('keydown', (e) => {
+                    const offset = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+                    let target = null;
+                    if (offset !== undefined) target = tabs[(i + offset + tabs.length) % tabs.length];
+                    else if (e.key === 'Home') target = tabs[0];
+                    else if (e.key === 'End') target = tabs[tabs.length - 1];
+                    if (!target) return;
+                    e.preventDefault();
+                    selectTab(target.dataset.tab);
+                    target.focus();
+                });
             });
         }
 
         function selectTab(tabKey) {
             document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.tab === tabKey);
+                const selected = btn.dataset.tab === tabKey;
+                btn.classList.toggle('active', selected);
+                btn.setAttribute('aria-selected', selected);
+                btn.tabIndex = selected ? 0 : -1;
+                if (selected) document.getElementById('tab-panel').setAttribute('aria-labelledby', btn.id);
             });
             loadTabData(tabKey);
         }
@@ -746,6 +1100,11 @@
                     if (ds && ds.id) datasetIndex[ds.id] = ds;
                 });
             });
+
+            trendIndex = {};
+            ((allData.trending && allData.trending.items) || []).forEach((item, i) => {
+                trendIndex[item.id] = Object.assign({ rank: i + 1 }, item);
+            });
         }
 
         function loadTabData(tabKey) {
@@ -755,9 +1114,9 @@
             }
 
             const datasets = allData[tabKey] || [];
-            const digest = allData[`${tabKey}_digest`] || "No digest available for this category.";
+            const digest = allData[`${tabKey}_digest`] || "這個分類還沒有摘要。";
 
-            renderDatasetCards(datasets);
+            showDatasets(datasets, null);
 
             const digestTitleMap = {
                 'downloads': '下載量趨勢摘要',
@@ -766,6 +1125,24 @@
             };
             document.getElementById('digest-title').textContent = digestTitleMap[tabKey] || '摘要報告';
             document.getElementById('digest-content').innerHTML = renderMarkdown(digest);
+            renderDigestMeta(tabKey);
+        }
+
+        function renderDigestMeta(tabKey) {
+            const el = document.getElementById('digest-meta');
+            const generated = allData.digests_generated_at?.[tabKey];
+            if (!generated) {
+                el.textContent = '';
+                el.classList.remove('stale');
+                return;
+            }
+            const at = new Date(generated);
+            const runAt = allData.created_at ? new Date(allData.created_at) : at;
+            const stale = (runAt - at) > 60 * 60 * 1000;
+            el.classList.toggle('stale', stale);
+            el.textContent = stale
+                ? `⚠ 此摘要沿用 ${at.toLocaleDateString()} 的結果`
+                : `AI 產生於 ${at.toLocaleString()}`;
         }
 
         function hfDatasetUrl(id) {
@@ -798,12 +1175,16 @@
         function renderTrending() {
             const trending = allData.trending;
             const digestEl = document.getElementById('digest-content');
-            const grid = document.getElementById('datasets-grid');
             document.getElementById('digest-title').textContent = '趨勢雷達';
+            const metaEl = document.getElementById('digest-meta');
+            metaEl.classList.remove('stale');
+            metaEl.textContent = allData.created_at
+                ? `資料更新於 ${new Date(allData.created_at).toLocaleString()}`
+                : '';
 
             if (!trending || !trending.available) {
                 digestEl.innerHTML = `<p>${escapeHTML(trending?.reason || '尚未累積足夠的歷史快照，再跑一次資料更新就會出現。')}</p>`;
-                grid.innerHTML = '';
+                showDatasets([]);
                 return;
             }
 
@@ -829,25 +1210,128 @@
                     <div><h4>掉出榜外（${trending.exited.length}）</h4>${renderIdList(trending.exited)}</div>
                 </div>`;
 
-            const trendById = {};
-            const cards = [];
-            trending.items.forEach((item, i) => {
-                const dataset = datasetIndex[item.id];
-                if (!dataset) return;
-                trendById[item.id] = Object.assign({ rank: i + 1 }, item);
-                cards.push(dataset);
-            });
-            renderDatasetCards(cards, trendById);
+            const cards = trending.items.map(item => datasetIndex[item.id]).filter(Boolean);
+            showDatasets(cards, trendIndex);
         }
         
-        function getModalityColorStyle(modalities) {
-            if (!modalities || modalities.length === 0) return `background-color: ${MODALITY_COLORS.default};`;
-            if (modalities.length === 1) return `background-color: ${MODALITY_COLORS[modalities[0]] || MODALITY_COLORS.default};`;
-            
-            const colors = modalities.map(m => MODALITY_COLORS[m] || MODALITY_COLORS.default);
-            while (colors.length < 2 && colors.length > 0) colors.push(MODALITY_COLORS.default);
-            if (colors.length < 2) return `background-color: ${MODALITY_COLORS.default};`;
-            return `background-image: linear-gradient(to right, ${colors.join(', ')});`;
+        function modalityColor(modality) {
+            return MODALITY_COLORS[modality] || MODALITY_COLORS.default;
+        }
+
+        function getModalityAccent(modalities) {
+            const list = (modalities || []).map(modalityColor);
+            if (list.length === 0) return MODALITY_COLORS.default;
+            if (list.length === 1) return list[0];
+            const step = 100 / list.length;
+            const stops = list.map((c, i) => `${c} ${i * step}% ${(i + 1) * step}%`);
+            return `linear-gradient(to bottom, ${stops.join(', ')})`;
+        }
+
+        function renderModalityBadges(modalities, className) {
+            return (modalities || []).map(m =>
+                `<span class="${className}" style="--badge-color: ${modalityColor(m)}">${escapeHTML(m)}</span>`
+            ).join('');
+        }
+
+        // ---------- 搜尋 / 篩選 / 排序 ----------
+
+        const SORTERS = {
+            downloads: (a, b) => (b.downloads || 0) - (a.downloads || 0),
+            likes: (a, b) => (b.likes || 0) - (a.likes || 0),
+            lastModified: (a, b) => new Date(b.lastModified || 0) - new Date(a.lastModified || 0),
+            name: (a, b) => String(a.id || '').localeCompare(String(b.id || '')),
+        };
+
+        function setupFilters() {
+            document.getElementById('filter-search').addEventListener('input', (e) => {
+                filterState.query = e.target.value.trim().toLowerCase();
+                applyFilters();
+            });
+            document.getElementById('filter-sort').addEventListener('change', (e) => {
+                filterState.sort = e.target.value;
+                applyFilters();
+            });
+            document.getElementById('filter-clear').addEventListener('click', resetFilters);
+        }
+
+        function resetFilters() {
+            filterState.query = '';
+            filterState.modalities.clear();
+            filterState.sort = 'default';
+            document.getElementById('filter-search').value = '';
+            document.getElementById('filter-sort').value = 'default';
+            renderModalityFilters();
+            applyFilters();
+        }
+
+        function showDatasets(datasets, trendById) {
+            currentDatasets = datasets || [];
+            currentTrendById = trendById || null;
+
+            const available = new Set();
+            currentDatasets.forEach(d => (d.modalities || []).forEach(m => available.add(m)));
+            [...filterState.modalities].forEach(m => {
+                if (!available.has(m)) filterState.modalities.delete(m);
+            });
+
+            document.getElementById('toolbar').hidden = currentDatasets.length === 0;
+            renderModalityFilters();
+            applyFilters();
+        }
+
+        function renderModalityFilters() {
+            const box = document.getElementById('filter-modalities');
+            const counts = new Map();
+            currentDatasets.forEach(d => (d.modalities || []).forEach(m => counts.set(m, (counts.get(m) || 0) + 1)));
+
+            const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+            box.innerHTML = sorted.map(([m, n]) =>
+                `<button type="button" class="modality-filter" data-modality="${escapeHTML(m)}"` +
+                ` style="--badge-color: ${modalityColor(m)}"` +
+                ` aria-pressed="${filterState.modalities.has(m)}">` +
+                `${escapeHTML(m)} <span class="count">${n}</span></button>`
+            ).join('');
+
+            box.querySelectorAll('.modality-filter').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const m = btn.dataset.modality;
+                    if (filterState.modalities.has(m)) {
+                        filterState.modalities.delete(m);
+                    } else {
+                        filterState.modalities.add(m);
+                    }
+                    btn.setAttribute('aria-pressed', filterState.modalities.has(m));
+                    applyFilters();
+                });
+            });
+        }
+
+        function applyFilters() {
+            const { query, modalities, sort } = filterState;
+
+            let list = currentDatasets.filter(dataset => {
+                if (modalities.size && !(dataset.modalities || []).some(m => modalities.has(m))) return false;
+                if (!query) return true;
+                return [dataset.id, dataset.author, dataset.description]
+                    .some(v => String(v || '').toLowerCase().includes(query));
+            });
+
+            if (SORTERS[sort]) list = [...list].sort(SORTERS[sort]);
+
+            const grid = document.getElementById('datasets-grid');
+            if (!list.length && currentDatasets.length) {
+                grid.innerHTML = '<div class="empty-state">沒有符合條件的資料集。' +
+                    ' <button type="button" class="link-button" id="empty-clear">清除篩選</button></div>';
+                document.getElementById('empty-clear').addEventListener('click', resetFilters);
+            } else {
+                renderDatasetCards(list, currentTrendById);
+            }
+
+            const total = currentDatasets.length;
+            document.getElementById('filter-count').textContent =
+                list.length === total ? `共 ${total} 筆` : `顯示 ${list.length} / ${total} 筆`;
+            document.getElementById('filter-clear').hidden =
+                !(query || modalities.size || sort !== 'default');
         }
 
         function renderDatasetCards(datasets, trendById) {
@@ -855,33 +1339,33 @@
             grid.innerHTML = '';
 
             if (!datasets || datasets.length === 0) {
-                grid.innerHTML = '<p>No datasets to display for this category.</p>';
+                grid.innerHTML = '<p>這個分類沒有資料集可顯示。</p>';
                 return;
             }
 
             datasets.forEach(dataset => {
                 const card = document.createElement('div');
                 card.className = 'dataset-card';
-                card.style.cssText = getModalityColorStyle(dataset.modalities);
+                card.style.setProperty('--card-accent', getModalityAccent(dataset.modalities));
 
                 const desc = dataset.description ? (dataset.description.split('\n')[1]?.trim() || dataset.description.trim().substring(0,150) + '...') : 'No description.';
                 const trend = trendById && trendById[dataset.id];
                 card.innerHTML = `
-                    <div>
+                    <div class="card-head">
+                        <h3><button type="button" class="card-open">${escapeHTML(dataset.id || 'N/A')}</button></h3>
                         ${trend ? `<span class="trend-rank">#${trend.rank}</span>` : ''}
-                        <h3>${escapeHTML(dataset.id || 'N/A')}</h3>
-                        <p class="description">${escapeHTML(desc)}</p>
-                        ${trend ? renderTrendChips(trend) : ''}
                     </div>
-                    <div>
-                        <p class="meta-info">
-                            Author: <strong>${escapeHTML(dataset.author || 'N/A')}</strong><br>
-                            Downloads: <strong>${dataset.downloads?.toLocaleString() || 'N/A'}</strong> | Likes: <strong>${dataset.likes?.toLocaleString() || 'N/A'}</strong><br>
-                            Last Modified: <strong>${dataset.lastModified ? new Date(dataset.lastModified).toLocaleDateString() : 'N/A'}</strong>
-                        </p>
+                    <p class="description">${escapeHTML(desc)}</p>
+                    ${trend ? renderTrendChips(trend) : ''}
+                    <div class="card-foot">
                         <div class="modalities-list">
-                            ${(dataset.modalities || []).map(m => `<span class="modality-badge">${escapeHTML(m)}</span>`).join('')}
+                            ${renderModalityBadges(dataset.modalities, 'modality-badge')}
                         </div>
+                        <p class="meta-info">
+                            <strong>${escapeHTML(dataset.author || 'N/A')}</strong><br>
+                            ${dataset.downloads?.toLocaleString() || 'N/A'} downloads · ${dataset.likes?.toLocaleString() || 'N/A'} likes<br>
+                            更新於 ${dataset.lastModified ? new Date(dataset.lastModified).toLocaleDateString() : 'N/A'}
+                        </p>
                     </div>`;
                 card.addEventListener('click', () => openDatasetDetailsModal(dataset));
                 grid.appendChild(card);
@@ -894,7 +1378,6 @@
         function renderMarkdown(text) {
             const source = text ?? '';
             if (!window.DOMPurify) {
-                // DOMPurify 沒載進來（SRI 不符、CDN 被擋）時退成純文字，不冒險輸出原始 HTML
                 console.warn('DOMPurify 未載入，markdown 改以純文字顯示。');
                 return `<pre style="white-space:pre-wrap">${escapeHTML(String(source))}</pre>`;
             }
@@ -910,8 +1393,92 @@
                 .replace(/'/g, '&#39;');
         }
         
+        function cleanDescription(text) {
+            return String(text || '')
+                .replace(/\t/g, ' ')
+                .replace(/[ \u00a0]+$/gm, '')
+                .replace(/\n{3,}/g, '\n\n')
+                .trim();
+        }
+
+        const TAG_FACETS = ['license', 'task_categories', 'size_categories', 'language'];
+        const MAX_TAGS_SHOWN = 20;
+
+        function groupTags(tags) {
+            const groups = { license: [], task_categories: [], size_categories: [], language: [], other: [] };
+            (tags || []).forEach(tag => {
+                const idx = tag.indexOf(':');
+                const prefix = idx > 0 ? tag.slice(0, idx) : '';
+                if (prefix === 'modality') return;   // 已有獨立欄位
+                if (TAG_FACETS.includes(prefix)) groups[prefix].push(tag.slice(idx + 1));
+                else groups.other.push(tag);
+            });
+            return groups;
+        }
+
+        function renderBadgeList(targetId, values, emptyText) {
+            document.getElementById(targetId).innerHTML = values.length
+                ? values.map(v => `<span class="tag-badge">${escapeHTML(v)}</span>`).join(' ')
+                : `<span>${escapeHTML(emptyText)}</span>`;
+        }
+
+        function renderTagList(tags) {
+            const container = document.getElementById('modal-tags');
+            if (!tags.length) {
+                container.innerHTML = '<span>沒有標籤</span>';
+                return;
+            }
+            let expanded = false;
+            const draw = () => {
+                const shown = expanded ? tags : tags.slice(0, MAX_TAGS_SHOWN);
+                container.innerHTML = shown.map(t => `<span class="tag-badge">${escapeHTML(t)}</span>`).join(' ');
+                if (tags.length > MAX_TAGS_SHOWN) {
+                    const toggle = document.createElement('button');
+                    toggle.type = 'button';
+                    toggle.className = 'tags-toggle';
+                    toggle.textContent = expanded ? '收合' : `顯示全部 ${tags.length.toLocaleString()} 個`;
+                    toggle.addEventListener('click', () => { expanded = !expanded; draw(); });
+                    container.appendChild(toggle);
+                }
+            };
+            draw();
+        }
+
+        function renderSampleRow(sample, container) {
+            const cells = sample.row || {};
+            const others = {};
+
+            Object.entries(cells).forEach(([name, value]) => {
+                const src = value && typeof value === 'object' ? value.src : null;
+                if (typeof src !== 'string') {
+                    others[name] = value;
+                    return;
+                }
+                const isVideo = /\.(mp4|webm|ogv|mov)(\?|$)/i.test(src) || /video/i.test(name);
+                if (isVideo) {
+                    const video = document.createElement('video');
+                    video.src = src;
+                    video.setAttribute('controls', '');
+                    video.setAttribute('preload', 'none');
+                    container.appendChild(video);
+                } else {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.setAttribute('loading', 'lazy');
+                    img.alt = `${name} 樣本 ${sample.row_idx ?? ''}`.trim();
+                    container.appendChild(img);
+                }
+            });
+
+            if (Object.keys(others).length > 0) {
+                const pre = document.createElement('pre');
+                pre.textContent = JSON.stringify(others, null, 2);
+                container.appendChild(pre);
+            }
+        }
+
         function openDatasetDetailsModal(dataset) {
-            currentDatasetForChat = dataset; // Set for AI assistant
+            currentDataset = dataset; // Set for AI assistant
             const datasetId = dataset.id || 'N/A';
             document.getElementById('modal-title-text').textContent = datasetId;
             const titleLink = document.getElementById('modal-title-link');
@@ -925,174 +1492,108 @@
                 titleLink.removeAttribute('title');
             }
             document.getElementById('modal-author').textContent = dataset.author || 'N/A';
+
+            const trend = trendIndex[dataset.id];
+            const trendStat = document.getElementById('modal-trend-stat');
+            const hasTrend = trend && trend.downloads_pct !== null && trend.downloads_pct !== undefined;
+            trendStat.hidden = !hasTrend;
+            trendStat.classList.toggle('up', hasTrend && trend.downloads_pct >= 0);
+            trendStat.classList.toggle('down', hasTrend && trend.downloads_pct < 0);
+            if (hasTrend) {
+                document.getElementById('modal-trend').textContent =
+                    `${trend.downloads_pct > 0 ? '+' : ''}${trend.downloads_pct}%`;
+                document.getElementById('modal-trend-label').textContent =
+                    `近 ${allData.trending.window_days} 天下載量`;
+            }
             document.getElementById('modal-downloads').textContent = dataset.downloads?.toLocaleString() || 'N/A';
             document.getElementById('modal-likes').textContent = dataset.likes?.toLocaleString() || 'N/A';
             document.getElementById('modal-createdAt').textContent = dataset.createdAt ? new Date(dataset.createdAt).toLocaleString() : 'N/A';
             document.getElementById('modal-lastModified').textContent = dataset.lastModified ? new Date(dataset.lastModified).toLocaleString() : 'N/A';
             
-            document.getElementById('modal-description').textContent = dataset.description || 'No full description.';
+            document.getElementById('modal-description').textContent =
+                cleanDescription(dataset.description) || '沒有描述';
 
-            document.getElementById('modal-modalities-list').innerHTML = (dataset.modalities || []).map(m => `<span class="modal-modality-badge">${escapeHTML(m)}</span>`).join('');
+            const tagGroups = groupTags(dataset.tags);
+            renderBadgeList('modal-license', tagGroups.license, '未標示');
+            renderBadgeList('modal-tasks', tagGroups.task_categories, '未標示');
+            renderBadgeList('modal-size', tagGroups.size_categories, '未標示');
+            const languages = tagGroups.language;
+            document.getElementById('modal-languages').textContent =
+                languages.length === 0 ? '未標示'
+                : languages.length <= 6 ? languages.join('、')
+                : `${languages.length.toLocaleString()} 種`;
+
+            document.getElementById('modal-modalities-list').innerHTML =
+                renderModalityBadges(dataset.modalities, 'modal-modality-badge') || '<span>未標示</span>';
             
-            document.getElementById('modal-tags').innerHTML = (dataset.tags && dataset.tags.length > 0)
-                ? dataset.tags.map(tag => `<span class="tag-badge">${escapeHTML(tag)}</span>`).join('')
-                : '<span>No tags.</span>';
+            renderTagList(tagGroups.other);
 
             const samplesContainer = document.getElementById('modal-viewer-samples');
             samplesContainer.innerHTML = '';
             if (dataset.viewer_sample_rows && dataset.viewer_sample_rows.length > 0) {
-                dataset.viewer_sample_rows.slice(0, 5).forEach(sample => {
-                    if (sample.row.image && sample.row.image.src) {
-                        const img = document.createElement('img');
-                        img.src = sample.row.image.src;
-                        img.alt = `Sample ${sample.row_idx}`;
-                        samplesContainer.appendChild(img);
-                    } else {
-                        const pre = document.createElement('pre');
-                        pre.textContent = JSON.stringify(sample.row, null, 2);
-                        samplesContainer.appendChild(pre);
-                    }
-                });
+                dataset.viewer_sample_rows.forEach(sample => renderSampleRow(sample, samplesContainer));
+                const note = document.createElement('p');
+                note.className = 'sample-note';
+                const link = document.createElement('a');
+                link.href = `${hfDatasetUrl(dataset.id)}/viewer`;
+                link.target = '_blank';
+                link.rel = 'noopener';
+                link.textContent = '在 Hugging Face 上檢視完整樣本';
+                note.appendChild(link);
+                samplesContainer.appendChild(note);
             } else {
-                samplesContainer.innerHTML = '<span>No viewer samples.</span>';
+                samplesContainer.innerHTML = '<span>沒有樣本資料</span>';
             }
-            datasetModal.style.display = "block";
+            if (!datasetModal.open) datasetModal.showModal();
         }
 
         // --- AI Chat Functionality ---
+        function buildPrompt(dataset) {
+            return '以下是 Hugging Face 上一個資料集的資訊，請根據這些內容回答我接下來的問題。\n\n'
+                + '<資料集>\n' + formatDatasetForPrompt(dataset) + '\n</資料集>';
+        }
+
+
+        async function copyPromptToClipboard() {
+            if (!currentDataset) return;
+            let ok = true;
+            try {
+                await navigator.clipboard.writeText(buildPrompt(currentDataset));
+            } catch (e) {
+                console.error('複製失敗:', e);
+                ok = false;
+            }
+            const original = '複製提示詞';
+            copyPromptButton.textContent = ok ? '已複製' : '複製失敗';
+            copyPromptButton.classList.toggle('copied', ok);
+            setTimeout(() => {
+                copyPromptButton.textContent = original;
+                copyPromptButton.classList.remove('copied');
+            }, 2500);
+        }
+
         function formatDatasetForPrompt(dataset) {
-            if (!dataset) return "No dataset information available.";
-            const relevantInfo = {
+            if (!dataset) return '沒有可用的資料集資訊。';
+            const groups = groupTags(dataset.tags);
+            const info = {
                 id: dataset.id,
+                url: hfDatasetUrl(dataset.id),
                 author: dataset.author,
-                description: dataset.description,
-                tags: dataset.tags,
+                description: cleanDescription(dataset.description),
+                modalities: dataset.modalities || [],
+                license: groups.license,
+                tasks: groups.task_categories,
+                size: groups.size_categories,
+                languages: groups.language.length > 6
+                    ? `${groups.language.length} 種語言`
+                    : groups.language,
+                otherTags: groups.other.slice(0, MAX_TAGS_SHOWN),
                 downloads: dataset.downloads,
                 likes: dataset.likes,
                 createdAt: dataset.createdAt,
                 lastModified: dataset.lastModified
             };
-            return JSON.stringify(relevantInfo, null, 2);
-        }
-
-        function openAiChatModal() {
-            if (!currentDatasetForChat) {
-                alert("尚未選擇聊天用的資料集。");
-                return;
-            }
-            if (!geminiApiKey) {
-                alert("請先輸入你的 Gemini API 金鑰。");
-                apiKeyInput.focus();
-                return;
-            }
-
-            document.getElementById('chat-modal-title').textContent = `AI Assistant (${GEMINI_MODEL})`;
-
-            chatHistoryContainer.innerHTML = ''; // 清除之前的對話
-            chatMessages = [
-                {
-                    role: "user",
-                    parts: [{
-                        text: `你是一位樂於助人的 AI 助手。使用者正在詢問以下 HuggingFace 資料集的相關問題，請根據這些資訊來回答他們的問題。資料集資訊如下：\n\n${formatDatasetForPrompt(currentDatasetForChat)}`
-                    }]
-                },
-                { // 初始模型回應，讓使用者能開始提問
-                    role: "model",
-                    parts: [{ text: "好的，我已經取得資料集資訊。請問你需要什麼協助？" }]
-                }
-            ];
-
-            // 顯示初始的模型訊息
-            appendMessageToChatUI("好的，我已經取得資料集資訊。請問你需要什麼協助？", "model");
-
-            aiChatModal.style.display = "block";
-            chatMessageInput.focus();
-        }
-
-        function appendMessageToChatUI(message, role) {
-            const messageDiv = document.createElement('div');
-            const roleClasses = typeof role === 'string' ? role.split(' ') : [];
-            messageDiv.classList.add('chat-message', ...roleClasses);
-            if (role === 'model') {
-                messageDiv.innerHTML = renderMarkdown(message);
-            } else {
-                messageDiv.textContent = message; // 使用者輸入不進 innerHTML
-            }
-            chatHistoryContainer.appendChild(messageDiv);
-            chatHistoryContainer.scrollTop = chatHistoryContainer.scrollHeight; // Scroll to bottom
-        }
-
-        async function sendChatMessage() {
-            const userMessage = chatMessageInput.value.trim();
-            if (!userMessage) return;
-
-            appendMessageToChatUI(userMessage, "user");
-            chatMessages.push({ role: "user", parts: [{ text: userMessage }] });
-            chatMessageInput.value = '';
-            sendChatMessageButton.disabled = true; // Disable button while waiting
-            appendMessageToChatUI("Thinking...", "model system"); // Typing indicator
-
-
-            const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
-
-            try {
-                const response = await fetch(GEMINI_API_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'x-goog-api-key': geminiApiKey,
-                    },
-                    body: JSON.stringify({
-                        contents: chatMessages,
-                        generationConfig: {
-                            temperature: 0.7,
-                            topK: 1,
-                            topP: 1,
-                            maxOutputTokens: 2048,
-                        },
-                        safetySettings: [ // Recommended safety settings
-                            { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-                            { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-                            { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-                            { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_MEDIUM_AND_ABOVE" },
-                        ]
-                    })
-                });
-
-                // Remove "Thinking..." indicator
-                const thinkingIndicator = chatHistoryContainer.querySelector('.chat-message.model.system');
-                if (thinkingIndicator) thinkingIndicator.remove();
-
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    console.error("Gemini API Error:", errorData);
-                    throw new Error(`API Error: ${errorData.error?.message || response.statusText}`);
-                }
-
-                const data = await response.json();
-                
-                if (data.candidates && data.candidates.length > 0 && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts.length > 0) {
-                    const modelResponse = data.candidates[0].content.parts[0].text;
-                    appendMessageToChatUI(modelResponse, "model");
-                    chatMessages.push({ role: "model", parts: [{ text: modelResponse }] });
-                } else if (data.promptFeedback && data.promptFeedback.blockReason) {
-                     const blockMessage = `Your prompt was blocked. Reason: ${data.promptFeedback.blockReason}.`;
-                     appendMessageToChatUI(blockMessage, "model system"); // Show as a system message
-                     chatMessages.push({ role: "model", parts: [{ text: blockMessage }] }); // Log it
-                } else {
-                    appendMessageToChatUI("Received an empty or unexpected response from AI.", "model system");
-                }
-
-            } catch (error) {
-                console.error('Error sending message to Gemini:', error);
-                // Remove "Thinking..." indicator if it's still there on error
-                const thinkingIndicator = chatHistoryContainer.querySelector('.chat-message.model.system');
-                if (thinkingIndicator) thinkingIndicator.remove();
-                appendMessageToChatUI(`Error: ${error.message}`, "model system");
-            } finally {
-                 sendChatMessageButton.disabled = false; // Re-enable button
-                 chatMessageInput.focus();
-            }
+            return JSON.stringify(info, null, 2);
         }
     </script>
 </body>
