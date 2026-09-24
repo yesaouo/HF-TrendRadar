@@ -1199,12 +1199,6 @@
                     <div class="trend-stat"><span class="value">${fmtPct(totals.downloads_pct)}</span><span class="label">整體下載量變化</span></div>
                     <div class="trend-stat"><span class="value">${trending.entered.length}</span><span class="label">新進榜</span></div>
                 </div>
-                <p class="trend-note">
-                    以 ${new Date(trending.baseline_date).toLocaleDateString()} 的快照為基準，
-                    對比 ${new Date(trending.current_date).toLocaleDateString()} 的數字。
-                    HF 的 downloads 是「近 30 天」滾動計數，所以這裡的變化代表下載「速率」的升降。
-                    排行只列近 30 天下載量 ≥ ${(trending.min_downloads || 0).toLocaleString()} 且仍在成長的資料集。
-                </p>
                 <div class="trend-lists">
                     <div><h4>新進榜（${trending.entered.length}）</h4>${renderIdList(trending.entered)}</div>
                     <div><h4>掉出榜外（${trending.exited.length}）</h4>${renderIdList(trending.exited)}</div>
