@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-20T22:33:54.820115+00:00",
+  "created_at": "2026-11-21T21:31:51.286540+00:00",
   "downloads": [
     {
       "_id": "621ffdd236468d709f1835cf",
@@ -12,7 +12,7 @@
       "private": false,
       "sha": "4fc113021e9a33f1af39ba3292e901b54bf208db",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tThis dataset contains images used in the documentation of HuggingFace's libraries.\n\t\n\nHF Team: Please make sure you optimize the assets before uploading them.\nMy favorite tool for this is https://tinypng.com/.\n",
-      "downloads": 4295859,
+      "downloads": 4323247,
       "tags": [
         "license:cc-by-nc-sa-4.0",
         "size_categories:n<1K",
@@ -91,7 +91,7 @@
       "private": false,
       "sha": "ba7e66955650b2ff0482517f256d84c1eda815e7",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tWindsorML: High-Fidelity Computational Fluid Dynamics dataset for automotive aerodynamics\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tContact: \n\t\n\nNeil Ashton (NVIDIA) - contact@caemldatasets.org\n\n\t\n\t\t\n\t\n\t\n\t\twebsite:\n\t\n\nhttps://caemldatasets.org\n\n\t\n\t\t\n\t\n\t\n\t\tSummary:\n\t\n\nThis work presents a new open-source high-fidelity dataset for Machine Learning (ML) containing 355 geometric variants of the Windsor body, to help the development and testing of ML surrogate models for external automotive aerodynamics. Each… See the full description on the dataset page: https://huggingface.co/datasets/neashton/windsorml.",
-      "downloads": 2989426,
+      "downloads": 3084860,
       "tags": [
         "license:cc-by-sa-4.0",
         "size_categories:100K<n<1M",
@@ -172,7 +172,7 @@
       "private": false,
       "sha": "341f2d0097d3a26ba4bd9e82dc8dac03b9a75f3d",
       "description": "\n\n\t\n\t\t\n\t\n\t\n\t\tEigenFace-256 Dataset Construction\n\t\n\nTraining a robust face embedding model requires a diverse dataset with multiple images per identity—capturing variations in angles, lighting, expressions, and age. Using real-world data for this purpose poses several challenges:\n\nPrivacy and Ethics: Real-world images can lead to legal and ethical complications.\nBias and Imbalance: Datasets based on real images may lack diversity.\nData Labeling Complexity: Annotating large datasets is… See the full description on the dataset page: https://huggingface.co/datasets/tropos-labs/eigen-face-dataset-256.",
-      "downloads": 2940362,
+      "downloads": 2940260,
       "tags": [
         "region:us"
       ],
@@ -192,7 +192,7 @@
       "private": false,
       "sha": "b08601e04326c79dfdd32d625aee71d232d685c3",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"wikitext\"\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\n The WikiText language modeling dataset is a collection of over 100 million tokens extracted from the set of verified\n Good and Featured articles on Wikipedia. The dataset is available under the Creative Commons Attribution-ShareAlike License.\nCompared to the preprocessed version of Penn Treebank (PTB), WikiText-2 is over 2 times larger and WikiText-103 is over\n110 times larger. The WikiText dataset also features a far… See the full description on the dataset page: https://huggingface.co/datasets/Salesforce/wikitext.",
-      "downloads": 2386712,
+      "downloads": 2464610,
       "paperswithcode_id": "wikitext-2",
       "tags": [
         "task_categories:text-generation",
@@ -224,17 +224,36 @@
       ]
     },
     {
+      "_id": "6af4258a4d4515274af21b61",
+      "id": "IaLoverSpaghetti/LocaIAinHTML",
+      "author": "IaLoverSpaghetti",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-11T08:42:55+00:00",
+      "likes": 1,
+      "private": false,
+      "sha": "df26d77f9a1001b1e863d57574cc2031d611d9db",
+      "downloads": 2410839,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-11-11T08:21:30+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
       "_id": "63977bb96bdef8095268ded0",
       "id": "allenai/objaverse",
       "author": "allenai",
       "disabled": false,
       "gated": false,
       "lastModified": "2026-10-08T13:51:55+00:00",
-      "likes": 508,
+      "likes": 506,
       "private": false,
       "sha": "556637099bf4fa79ea7b239d0d9c328b8a2e9ac8",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tObjaverse\n\t\n\nObjaverse is a Massive Dataset with 800K+ Annotated 3D Objects.\nMore documentation is coming soon. In the meantime, please see our paper and website for additional details.\n\n\t\n\t\t\n\t\n\t\n\t\tLicense\n\t\n\nThe use of the dataset as a whole is licensed under the ODC-By v1.0 license. Individual objects in Objaverse are all licensed as creative commons distributable objects, and may be under the following licenses:\n\nCC-BY 4.0 - 721K objects\nCC-BY-NC 4.0 - 25K objects\nCC-BY-NC-SA… See the full description on the dataset page: https://huggingface.co/datasets/allenai/objaverse.",
-      "downloads": 2369924,
+      "downloads": 2373520,
       "tags": [
         "language:en",
         "license:odc-by",
@@ -251,25 +270,6 @@
       ]
     },
     {
-      "_id": "6af4258a4d4515274af21b61",
-      "id": "IaLoverSpaghetti/LocaIAinHTML",
-      "author": "IaLoverSpaghetti",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-11T08:42:55+00:00",
-      "likes": 1,
-      "private": false,
-      "sha": "df26d77f9a1001b1e863d57574cc2031d611d9db",
-      "downloads": 2216656,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-11T08:21:30+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
       "_id": "69b0d60653fc22f5d5d3c07f",
       "id": "agibot-world/AgiBotWorld2026",
       "author": "agibot-world",
@@ -280,7 +280,7 @@
       "private": false,
       "sha": "95b159a10305a0385f369aba5d4b16242526d17b",
       "description": "\n\n\n\t\n\t\t\n\t\n\t\n\t\tAgiBot World 2026\n\t\n\nReal-World Embodied Intelligence Dataset\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tOverview\n\t\n\nAs robotics research advances into real-world scenarios, the demand for authentic, high-quality data has become increasingly urgent. Following AGIBOT WORLD's \"ImageNet moment,\" we now release the AGIBOT WORLD 2026 dataset. Built upon massive real-world scenes, it systematically spans pivotal research directions in embodied intelligence, designed to power the next generation of… See the full description on the dataset page: https://huggingface.co/datasets/agibot-world/AgiBotWorld2026.",
-      "downloads": 2067810,
+      "downloads": 2067062,
       "tags": [
         "task_categories:robotics",
         "language:en",
@@ -298,11 +298,84 @@
       ],
       "createdAt": "2026-03-11T02:40:06+00:00",
       "key": "",
-      "viewer_sample_rows": [],
+      "viewer_sample_rows": [
+        {
+          "row_idx": 0,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026/resolve/95b159a10305a0385f369aba5d4b16242526d17b/PhysicalReasoning/opensourcev4-20261001/sharegpt/task_100347/02/images/cache/task_100347/ep000000/f000004_top_head.jpg",
+              "height": 400,
+              "width": 640
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026/resolve/95b159a10305a0385f369aba5d4b16242526d17b/PhysicalReasoning/opensourcev4-20261001/sharegpt/task_100347/02/images/cache/task_100347/ep000000/f000034_top_head.jpg",
+              "height": 400,
+              "width": 640
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026/resolve/95b159a10305a0385f369aba5d4b16242526d17b/PhysicalReasoning/opensourcev4-20261001/sharegpt/task_100347/02/images/cache/task_100347/ep000000/f000039_top_head.jpg",
+              "height": 400,
+              "width": 640
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026/resolve/95b159a10305a0385f369aba5d4b16242526d17b/PhysicalReasoning/opensourcev4-20261001/sharegpt/task_100347/02/images/cache/task_100347/ep000000/f000064_top_head.jpg",
+              "height": 400,
+              "width": 640
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026/resolve/95b159a10305a0385f369aba5d4b16242526d17b/PhysicalReasoning/opensourcev4-20261001/sharegpt/task_100347/02/images/cache/task_100347/ep000000/f000075_top_head.jpg",
+              "height": 400,
+              "width": 640
+            }
+          }
+        }
+      ],
       "modalities": [
         "Image",
         "Video"
       ]
+    },
+    {
+      "_id": "6a429172c50c64cfb0a54dfb",
+      "id": "nvidia/simready-assets",
+      "author": "nvidia",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-19T22:07:42+00:00",
+      "likes": 1710,
+      "private": false,
+      "sha": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tWelcome to NVIDIA SimReady Assets\n\t\n\nWelcome to NVIDIA's open-source SimReady Assets dataset!\nSimReady Central brings together OEM-curated datasets like this one, helping you discover simulation-ready assets for your projects.\nInterested in contributing? Visit nvidia/simready-central-library and request contributor access through the Community tab.\n",
+      "downloads": 1737165,
+      "tags": [
+        "license:cc-by-4.0",
+        "region:us",
+        "simready"
+      ],
+      "createdAt": "2026-06-29T15:38:26+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
     },
     {
       "_id": "661fd64b78f1a52516055d33",
@@ -315,7 +388,7 @@
       "private": false,
       "sha": "ba8b95954a27cac131902c2154083a5f02e14b8e",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\t🗾 Dataset\n\t\n\nThe IDRCell100k dataset is a comprehensive collection of biological images, meticulously curated to represent a broad spectrum of microscopy techniques and channel configurations. It comprises 79 different experiments, utilizing 7 types of microscopy techniques, with images featuring multi channels counts. Each experiment contributes 1300 images, culminating in a total of 104,093 multiplexed images, each resized to 224x224 pixels. This dataset, unique in its diversity… See the full description on the dataset page: https://huggingface.co/datasets/nicoboou/IDRCell100k.",
-      "downloads": 1741305,
+      "downloads": 1733605,
       "tags": [
         "task_categories:feature-extraction",
         "size_categories:100K<n<1M",
@@ -332,39 +405,17 @@
       ]
     },
     {
-      "_id": "6a429172c50c64cfb0a54dfb",
-      "id": "nvidia/simready-assets",
-      "author": "nvidia",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-19T22:07:42+00:00",
-      "likes": 1691,
-      "private": false,
-      "sha": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tWelcome to NVIDIA SimReady Assets\n\t\n\nWelcome to NVIDIA's open-source SimReady Assets dataset!\nSimReady Central brings together OEM-curated datasets like this one, helping you discover simulation-ready assets for your projects.\nInterested in contributing? Visit nvidia/simready-central-library and request contributor access through the Community tab.\n",
-      "downloads": 1731953,
-      "tags": [
-        "license:cc-by-4.0",
-        "region:us",
-        "simready"
-      ],
-      "createdAt": "2026-06-29T15:38:26+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
       "_id": "6a409561222ffbb14f69924c",
       "id": "3dcodeverse/3dcodeverse-2m",
       "author": "3dcodeverse",
       "disabled": false,
       "gated": false,
       "lastModified": "2026-11-16T10:09:15+00:00",
-      "likes": 68,
+      "likes": 79,
       "private": false,
       "sha": "1d3935d94760922ef7a55f4a1a3e19a3b90ec702",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\t3DCodeVerse-2M\n\t\n\nA large-scale corpus of standalone, executable 3D code — Blender Python, CadQuery, GLSL, Three.js, OpenSCAD and URDF — released with the paper\n3DCodeVerse: Exploring 3D Worlds as Code.\n📄 Paper · 🤗 Paper page · 🌐 Project page · 💻 Code · 🧩 Collection\nEach program is packaged with the files it needs to run in its declared environment, plus rendered views,\ncaptions (instruction / detailed description / construction procedure) and, where available, meshes and… See the full description on the dataset page: https://huggingface.co/datasets/3dcodeverse/3dcodeverse-2m.",
-      "downloads": 1589735,
+      "downloads": 1600692,
       "tags": [
         "task_categories:text-to-3d",
         "task_categories:image-to-3d",
@@ -405,7 +456,7 @@
       "private": false,
       "sha": "9da483ca2e22fcd936e9f92da91806cf4de7a899",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tOpen-HumanWAM\n\t\n\nAn Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models\nReport · Code · Project page · Models · HF Paper · Citation\n\n\n\nOpen-HumanWAM overview: scaling human and robot experience for embodied foundation models.\n\n\t\n\t\t\n\t\n\t\n\t\tOpen-HumanWAM-50K\n\t\n\n50,000 hours of egocentric human manipulation video with hand-motion and\nnatural-language annotations for robot learning.\nOpen-HumanWAM-50K is the human-data corpus accompanying\nOpen-HumanWAM: An… See the full description on the dataset page: https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K.",
-      "downloads": 1534105,
+      "downloads": 1539099,
       "tags": [
         "task_categories:robotics",
         "license:apache-2.0",
@@ -449,7 +500,7 @@
       "private": false,
       "sha": "14ac6ad1df250dd70efab18c097a731d4cb5a554",
       "description": "The Oxford RobotCar Dataset is an autonomous driving dataset collected between May 2014 and December 2015.Between May 2014 and December 2015, we drove a route through Oxford city centre on average twice a week using the Oxford RobotCar platform, an autonomous Nissan LEAF vehicle. As a result, more than 1,000 km of traffic data was recorded, with almost 20 million images collected from six cameras mounted on the car, along with data from LIDAR, GPS, and INS. The data was collected in various… See the full description on the dataset page: https://huggingface.co/datasets/OPR-Project/OxfordRobotCar_OpenPlaceRecognition.",
-      "downloads": 1479234,
+      "downloads": 1508174,
       "tags": [
         "license:cc-by-nc-sa-4.0",
         "arxiv:2002.10152",
@@ -471,7 +522,7 @@
       "private": false,
       "sha": "e28460ae734cb1b33901d232cef8747c20ccd677",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tOSWorld File Cache\n\t\n\nThis repository serves as a file cache for the OSWorld project, providing reliable and fast access to evaluation files that were previously hosted on Google Drive.\n\n\t\n\t\t\n\t\n\t\n\t\tOverview\n\t\n\nOSWorld is a scalable, real computer environment for multimodal agents, supporting task setup, execution-based evaluation, and interactive learning across various operating systems and applications. This cache repository ensures that all evaluation files are consistently… See the full description on the dataset page: https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache.",
-      "downloads": 1395540,
+      "downloads": 1400828,
       "tags": [
         "license:apache-2.0",
         "arxiv:2404.07972",
@@ -492,7 +543,7 @@
       "likes": 3,
       "private": false,
       "sha": "98de457aee977b962bd7d12808b38f17c869d34c",
-      "downloads": 1358433,
+      "downloads": 1384657,
       "tags": [
         "region:us"
       ],
@@ -511,11 +562,34 @@
       "likes": 47,
       "private": false,
       "sha": "4cbb9c1101b0ab08195cd0a0f7790526918169fa",
-      "downloads": 1353446,
+      "downloads": 1370970,
       "tags": [
         "region:us"
       ],
       "createdAt": "2026-04-01T14:22:50+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "67d97c4be2b27852325fd8e2",
+      "id": "nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim",
+      "author": "nvidia",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-03-05T23:36:40+00:00",
+      "likes": 295,
+      "private": false,
+      "sha": "ea7ac0b68f87da62f1e726771bba0fe74300802f",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tPhysicalAI-Robotics-GR00T-X-Embodiment-Sim\n\t\n\n\nGithub Repo: Isaac GR00T N1\nWe provide a set of datasets used for post-training of GR00T N1. Each dataset is a collection of trajectories from different robot embodiments and tasks.\n\n\t\n\t\t\n\t\n\t\n\t\tCross-embodied bimanual manipulation: 9k trajectories\n\t\n\n\n\t\n\t\t\nDataset Name\n#trajectories\n\n\n\t\t\nbimanual_panda_gripper.Threading\n1000\n\n\nbimanual_panda_hand.LiftTray\n1000\n\n\nbimanual_panda_gripper.ThreePieceAssembly\n1000… See the full description on the dataset page: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim.",
+      "downloads": 1293320,
+      "tags": [
+        "task_categories:robotics",
+        "license:cc-by-4.0",
+        "region:us",
+        "robotics"
+      ],
+      "createdAt": "2025-03-18T13:59:39+00:00",
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
@@ -527,11 +601,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2026-03-23T10:18:13+00:00",
-      "likes": 2094,
+      "likes": 2103,
       "private": false,
       "sha": "740312add88f781978c0658806c59bc2815b9866",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for GSM8K\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nGSM8K (Grade School Math 8K) is a dataset of 8.5K high quality linguistically diverse grade school math word problems. The dataset was created to support the task of question answering on basic mathematical problems that require multi-step reasoning.\n\nThese problems take between 2 and 8 steps to solve.\nSolutions primarily involve performing a sequence of elementary calculations using basic arithmetic operations (+ − ×÷) to… See the full description on the dataset page: https://huggingface.co/datasets/openai/gsm8k.",
-      "downloads": 1237660,
+      "downloads": 1252881,
       "paperswithcode_id": "gsm8k",
       "tags": [
         "benchmark:official",
@@ -562,29 +636,6 @@
       ]
     },
     {
-      "_id": "67d97c4be2b27852325fd8e2",
-      "id": "nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim",
-      "author": "nvidia",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-03-05T23:36:40+00:00",
-      "likes": 294,
-      "private": false,
-      "sha": "ea7ac0b68f87da62f1e726771bba0fe74300802f",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tPhysicalAI-Robotics-GR00T-X-Embodiment-Sim\n\t\n\n\nGithub Repo: Isaac GR00T N1\nWe provide a set of datasets used for post-training of GR00T N1. Each dataset is a collection of trajectories from different robot embodiments and tasks.\n\n\t\n\t\t\n\t\n\t\n\t\tCross-embodied bimanual manipulation: 9k trajectories\n\t\n\n\n\t\n\t\t\nDataset Name\n#trajectories\n\n\n\t\t\nbimanual_panda_gripper.Threading\n1000\n\n\nbimanual_panda_hand.LiftTray\n1000\n\n\nbimanual_panda_gripper.ThreePieceAssembly\n1000… See the full description on the dataset page: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim.",
-      "downloads": 1166164,
-      "tags": [
-        "task_categories:robotics",
-        "license:cc-by-4.0",
-        "region:us",
-        "robotics"
-      ],
-      "createdAt": "2025-03-18T13:59:39+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
       "_id": "6acca32f6fa844eabec4e77b",
       "id": "lerobot/FineART",
       "author": "lerobot",
@@ -595,7 +646,7 @@
       "private": false,
       "sha": "15746b76ddc21ffd38d73888fefe2e7a1496385b",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tFineART: Fine-Grained Annotated Robotic Trajectory Dataset\n\t\n\nFineART is co-released by Scale AI and Hugging Face LeRobot. The data was collected and annotated by the Physical AI unit at Scale AI.\nFineART is a bimanual manipulation dataset where every episode comes with dense, human-written subtask annotations. It has 40,543 teleoperated episodes (1,718 hours), 533,913 subtask labels, and 151 tasks, all collected on a Trossen Stationary AI (ALOHA-style) bimanual robot.\nMost robot… See the full description on the dataset page: https://huggingface.co/datasets/lerobot/FineART.",
-      "downloads": 1165646,
+      "downloads": 1158711,
       "tags": [
         "task_categories:robotics",
         "license:cc-by-4.0",
@@ -627,7 +678,7 @@
       "private": false,
       "sha": "a82400884621626d41bef89b7604f8054e7e00e0",
       "description": "\n    \n\n\n\n[!NOTE]\nWe have released a paper for OpenThoughts! See our paper here.\n\n\n \n\n\n\n\t\n\t\t\n\t\n\t\n\t\tOpen-Thoughts-1k-sample\n\t\n\nThis is a 1k sample of the OpenThoughts-114k dataset.\nOpen synthetic reasoning dataset with high-quality examples covering math, science, code, and puzzles!\nInspect the content with rich formatting with Curator Viewer.\n\n\t\n\t\t\n\t\n\t\n\t\tAvailable Subsets\n\t\n\ndefault subset containing ready-to-train data used to finetune the OpenThinker-7B and OpenThinker-32B models:\nds =… See the full description on the dataset page: https://huggingface.co/datasets/ryanmarten/OpenThoughts-1k-sample.",
-      "downloads": 1144066,
+      "downloads": 1149828,
       "tags": [
         "size_categories:1K<n<10K",
         "format:parquet",
@@ -641,7 +692,88 @@
       ],
       "createdAt": "2025-08-30T23:58:46+00:00",
       "key": "",
-      "viewer_sample_rows": [],
+      "viewer_sample_rows": [
+        {
+          "row_idx": 0,
+          "row": {
+            "system": "Your role as an assistant involves thoroughly exploring questions through a systematic long thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracing, and it…",
+            "conversations": [
+              {
+                "from": "user",
+                "value": "Generate an executable Python function generated from the given prompt. The function should take stdin as input and print the output. Simply call the function after the definition.You are given an undirected graph consisting of n vertices and <image> edges. Instead of giving you the edges that exist…"
+              },
+              {
+                "from": "assistant",
+                "value": "<|begin_of_thought|>\n\nOkay, I need to solve this programming problem. Let's read the problem carefully.\n\nSo the problem is about an undirected graph where the edges are given as the complement. That is, all possible edges are present except for the m pairs provided. We have to find the number of con…"
+              }
+            ]
+          }
+        },
+        {
+          "row_idx": 1,
+          "row": {
+            "system": "Your role as an assistant involves thoroughly exploring questions through a systematic long thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracing, and it…",
+            "conversations": [
+              {
+                "from": "user",
+                "value": "Generate an executable Python function generated from the given prompt. The function should take stdin as input and print the output. Simply call the function after the definition.Two friends are on the coordinate axis Ox in points with integer coordinates. One of them is in the point x1 = a, anothe…"
+              },
+              {
+                "from": "assistant",
+                "value": "<|begin_of_thought|>\n\nOkay, let's try to figure out this problem. So, the problem is about two friends on a coordinate axis. They start at positions a and b, which are different. They want to meet at the same point, and each of their movements adds to their tiredness in a specific way. The first mov…"
+              }
+            ]
+          }
+        },
+        {
+          "row_idx": 2,
+          "row": {
+            "system": "Your role as an assistant involves thoroughly exploring questions through a systematic long thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracing, and it…",
+            "conversations": [
+              {
+                "from": "user",
+                "value": "Generate an executable Python function generated from the given prompt. The function should take stdin as input and print the output. Simply call the function after the definition.ICPC (International Connecting Points Company) starts to sell a new railway toy. It consists of a toy tramcar and many r…"
+              },
+              {
+                "from": "assistant",
+                "value": "<|begin_of_thought|>\n\nOkay, I need to solve this programming problem. Let's read the problem carefully and understand what needs to be done.\n\nSo, the problem is about a grid of rail units. Each rail can be rotated in 90-degree multiples. The goal is to rotate them such that the layout is valid. A va…"
+              }
+            ]
+          }
+        },
+        {
+          "row_idx": 3,
+          "row": {
+            "system": "Your role as an assistant involves thoroughly exploring questions through a systematic long thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracing, and it…",
+            "conversations": [
+              {
+                "from": "user",
+                "value": "Generate an executable Python function generated from the given prompt. The function should take stdin as input and print the output. Simply call the function after the definition.Good evening, contestants.\n\nIf a and d are relatively prime positive integers, the arithmetic sequence beginning with a …"
+              },
+              {
+                "from": "assistant",
+                "value": "<|begin_of_thought|>\n\nOkay, I need to solve this programming problem. Let's read the problem statement carefully.\n\nThe task is to find the nth prime number in the arithmetic sequence starting with 'a' and increasing by 'd'. The input consists of multiple datasets, each with a, d, n. The constraints …"
+              }
+            ]
+          }
+        },
+        {
+          "row_idx": 4,
+          "row": {
+            "system": "Your role as an assistant involves thoroughly exploring questions through a systematic long thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracing, and it…",
+            "conversations": [
+              {
+                "from": "user",
+                "value": "Generate an executable Python function generated from the given prompt. The function should take stdin as input and print the output. Simply call the function after the definition.We have N integers. The i-th number is A_i.\n\n\\\\{A_i\\\\} is said to be pairwise coprime when GCD(A_i,A_j)=1 holds for ever…"
+              },
+              {
+                "from": "assistant",
+                "value": "<|begin_of_thought|>\n\nOkay, I need to solve this problem where I have to determine if a list of integers is pairwise coprime, setwise coprime, or neither. Let's start by understanding the definitions again.\n\nSo, pairwise coprime means every pair in the list has a GCD of 1. That's the strictest condi…"
+              }
+            ]
+          }
+        }
+      ],
       "modalities": [
         "Text"
       ]
@@ -657,7 +789,7 @@
       "private": false,
       "sha": "e81775b36e376f591a1145ca054b72fd541a67eb",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tUniOcc: A Unified Benchmark for Occupancy Forecasting and Prediction in Autonomous Driving\n\t\n\n\n\n\n\nPaper | Project Page | Code\n\n\n\nAutonomous Driving researchers, have you ever been bothered by the fact that popular datasets all have their different\nformats, and standardizing them is a pain? Have you ever been frustrated by the difficulty of just understanding\nthe file semantics? This challenge is even worse in the occupancy domain. But, UniOcc is here to help.\n\nUniOcc is a unified… See the full description on the dataset page: https://huggingface.co/datasets/tasl-lab/uniocc.",
-      "downloads": 1111217,
+      "downloads": 1119725,
       "tags": [
         "task_categories:image-to-3d",
         "license:mit",
@@ -691,11 +823,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2025-03-16T13:18:49+00:00",
-      "likes": 13,
+      "likes": 12,
       "private": false,
       "sha": "4696421935de9e9a71f1e092d8eee8b341d04619",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tCAD-Recode: Reverse Engineering CAD Code from Point Clouds\n\t\n\nCAD-Recode dataset is provided in form of Python (CadQuery) codes.\nTrain size is ~1M and validation size is ~1k.\nCAD-Recode model and code are released at github https://github.com/filaPro/cad-recode.\nAnd if you like it, give us a github 🌟.\n\n\t\n\t\t\n\t\n\t\n\t\tCitation\n\t\n\nIf you find this work useful for your research, please cite our paper:\n@misc{rukhovich2024cadrecode,\n      title={CAD-Recode: Reverse Engineering CAD Code… See the full description on the dataset page: https://huggingface.co/datasets/filapro/cad-recode-v1.5.",
-      "downloads": 1035067,
+      "downloads": 1035133,
       "tags": [
         "license:cc-by-nc-4.0",
         "arxiv:2412.14042",
@@ -705,6 +837,214 @@
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
+    },
+    {
+      "_id": "6ac0e3e0aadad5e0492a39f0",
+      "id": "roisincrtai/ptb-xl-1.0.3",
+      "author": "roisincrtai",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-10-04T18:57:13+00:00",
+      "likes": 4,
+      "private": false,
+      "sha": "8caff550132c41fe8cf8a9bcf9b2d0300263b725",
+      "downloads": 1004807,
+      "tags": [
+        "size_categories:10K<n<100K",
+        "modality:text",
+        "region:us"
+      ],
+      "createdAt": "2026-10-03T11:15:44+00:00",
+      "key": "",
+      "viewer_sample_rows": [
+        {
+          "row_idx": 0,
+          "row": {
+            "text": "Creative Commons Attribution 4.0 International Public License"
+          }
+        },
+        {
+          "row_idx": 1,
+          "row": {
+            "text": ""
+          }
+        },
+        {
+          "row_idx": 2,
+          "row": {
+            "text": "By exercising the Licensed Rights (defined below), You accept and agree"
+          }
+        },
+        {
+          "row_idx": 3,
+          "row": {
+            "text": "to be bound by the terms and conditions of this Creative Commons"
+          }
+        },
+        {
+          "row_idx": 4,
+          "row": {
+            "text": "Attribution 4.0 International Public License (\"Public License\"). To the"
+          }
+        }
+      ],
+      "modalities": [
+        "Text"
+      ]
+    },
+    {
+      "_id": "6ae8bd4111b278c45dfbe88c",
+      "id": "Osamap3/PSP_ph",
+      "author": "Osamap3",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-02T20:50:00+00:00",
+      "likes": 4,
+      "private": false,
+      "sha": "64687265fd2deaaf51c0c4c8655cdd267e4ba7dd",
+      "downloads": 986438,
+      "tags": [
+        "size_categories:1K<n<10K",
+        "format:imagefolder",
+        "modality:image",
+        "library:datasets",
+        "library:mlcroissant",
+        "region:us"
+      ],
+      "createdAt": "2026-11-02T16:41:37+00:00",
+      "key": "",
+      "viewer_sample_rows": [
+        {
+          "row_idx": 0,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/Osamap3/PSP_ph/resolve/64687265fd2deaaf51c0c4c8655cdd267e4ba7dd/002a2c88.jpg",
+              "height": 540,
+              "width": 960
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/Osamap3/PSP_ph/resolve/64687265fd2deaaf51c0c4c8655cdd267e4ba7dd/002a2da7.jpg",
+              "height": 1000,
+              "width": 582
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/Osamap3/PSP_ph/resolve/64687265fd2deaaf51c0c4c8655cdd267e4ba7dd/002afffb.png",
+              "height": 544,
+              "width": 960
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/Osamap3/PSP_ph/resolve/64687265fd2deaaf51c0c4c8655cdd267e4ba7dd/00347753.jpg",
+              "height": 1100,
+              "width": 640
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/Osamap3/PSP_ph/resolve/64687265fd2deaaf51c0c4c8655cdd267e4ba7dd/0037ed16.jpg",
+              "height": 995,
+              "width": 567
+            }
+          }
+        }
+      ],
+      "modalities": [
+        "Image"
+      ]
+    },
+    {
+      "_id": "6a625419fe2cfbf10faf98ec",
+      "id": "xlangai/osworld_v2_assets",
+      "author": "xlangai",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-08-11T06:08:52+00:00",
+      "likes": 25,
+      "private": false,
+      "sha": "3a140a3df8f351b22bb5b9526846f078e738777f",
+      "downloads": 918512,
+      "tags": [
+        "size_categories:n<1K",
+        "format:imagefolder",
+        "modality:image",
+        "library:datasets",
+        "library:mlcroissant",
+        "region:us"
+      ],
+      "createdAt": "2026-07-23T17:49:13+00:00",
+      "key": "",
+      "viewer_sample_rows": [
+        {
+          "row_idx": 0,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/xlangai/osworld_v2_assets/resolve/3a140a3df8f351b22bb5b9526846f078e738777f/shared/external_images/ci3.googleusercontent.com/018ebdcc204948225553.png",
+              "height": 168,
+              "width": 564
+            }
+          }
+        },
+        {
+          "row_idx": 1,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/xlangai/osworld_v2_assets/resolve/3a140a3df8f351b22bb5b9526846f078e738777f/shared/external_images/ci3.googleusercontent.com/0849629d62248eaa8dac.png",
+              "height": 40,
+              "width": 85
+            }
+          }
+        },
+        {
+          "row_idx": 2,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/xlangai/osworld_v2_assets/resolve/3a140a3df8f351b22bb5b9526846f078e738777f/shared/external_images/ci3.googleusercontent.com/141cf2671cd12e7c2051.png",
+              "height": 96,
+              "width": 96
+            }
+          }
+        },
+        {
+          "row_idx": 3,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/xlangai/osworld_v2_assets/resolve/3a140a3df8f351b22bb5b9526846f078e738777f/shared/external_images/ci3.googleusercontent.com/1ed01dfde5ad7bfcb22c.png",
+              "height": 168,
+              "width": 564
+            }
+          }
+        },
+        {
+          "row_idx": 4,
+          "row": {
+            "image": {
+              "src": "https://huggingface.co/datasets/xlangai/osworld_v2_assets/resolve/3a140a3df8f351b22bb5b9526846f078e738777f/shared/external_images/ci3.googleusercontent.com/2109895761c3742c9b1a.png",
+              "height": 178,
+              "width": 576
+            }
+          }
+        }
+      ],
+      "modalities": [
+        "Image"
+      ]
     },
     {
       "_id": "6a2ec08ae425e2822f53fef3",
@@ -717,7 +1057,7 @@
       "private": false,
       "sha": "bbace4982e1035816e5e92571bcb21d45ef3dc89",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tPrecancer → Tumor → Late/Metastatic Progression Multi-omics\n\t\n\nA curated, continuously-harvested collection of publicly available human multi-omics\ndatasets spanning the full tumor trajectory: precancerous lesions → early carcinoma →\nadvanced / metastatic. Single-cell and spatial transcriptomics are prioritized.\n\n⚠️ Provenance & licensing. Every dataset here was downloaded from a public,\nopen-access repository (no controlled-access or patient-identifiable data). Each dataset… See the full description on the dataset page: https://huggingface.co/datasets/wei82/precancer-omics-data.",
-      "downloads": 950706,
+      "downloads": 914111,
       "tags": [
         "language:en",
         "license:other",
@@ -741,58 +1081,6 @@
       "modalities": []
     },
     {
-      "_id": "6ae8bd4111b278c45dfbe88c",
-      "id": "Osamap3/PSP_ph",
-      "author": "Osamap3",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-02T20:50:00+00:00",
-      "likes": 4,
-      "private": false,
-      "sha": "64687265fd2deaaf51c0c4c8655cdd267e4ba7dd",
-      "downloads": 919621,
-      "tags": [
-        "size_categories:1K<n<10K",
-        "format:imagefolder",
-        "modality:image",
-        "library:datasets",
-        "library:mlcroissant",
-        "region:us"
-      ],
-      "createdAt": "2026-11-02T16:41:37+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": [
-        "Image"
-      ]
-    },
-    {
-      "_id": "6a625419fe2cfbf10faf98ec",
-      "id": "xlangai/osworld_v2_assets",
-      "author": "xlangai",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-08-11T06:08:52+00:00",
-      "likes": 25,
-      "private": false,
-      "sha": "3a140a3df8f351b22bb5b9526846f078e738777f",
-      "downloads": 902326,
-      "tags": [
-        "size_categories:n<1K",
-        "format:imagefolder",
-        "modality:image",
-        "library:datasets",
-        "library:mlcroissant",
-        "region:us"
-      ],
-      "createdAt": "2026-07-23T17:49:13+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": [
-        "Image"
-      ]
-    },
-    {
       "_id": "6a04fe32c08e541d106bc6fe",
       "id": "Dagonulca/figofigofigofigo",
       "author": "Dagonulca",
@@ -802,7 +1090,7 @@
       "likes": 36,
       "private": false,
       "sha": "a0e7b0f3ff20377e0ef1234f4ac8912a0af6bcbf",
-      "downloads": 816926,
+      "downloads": 825578,
       "tags": [
         "size_categories:n<1K",
         "modality:video",
@@ -812,7 +1100,53 @@
       ],
       "createdAt": "2026-05-13T22:41:54+00:00",
       "key": "",
-      "viewer_sample_rows": [],
+      "viewer_sample_rows": [
+        {
+          "row_idx": 0,
+          "row": {
+            "video": {
+              "src": "https://huggingface.co/datasets/Dagonulca/figofigofigofigo/resolve/a0e7b0f3ff20377e0ef1234f4ac8912a0af6bcbf/dz/1%20Dbsu/s%20%281%29.mp4"
+            },
+            "label": 0
+          }
+        },
+        {
+          "row_idx": 1,
+          "row": {
+            "video": {
+              "src": "https://huggingface.co/datasets/Dagonulca/figofigofigofigo/resolve/a0e7b0f3ff20377e0ef1234f4ac8912a0af6bcbf/dz/1%20Dbsu/s%20%28101%29.mp4"
+            },
+            "label": 0
+          }
+        },
+        {
+          "row_idx": 2,
+          "row": {
+            "video": {
+              "src": "https://huggingface.co/datasets/Dagonulca/figofigofigofigo/resolve/a0e7b0f3ff20377e0ef1234f4ac8912a0af6bcbf/dz/1%20Dbsu/s%20%28105%29.mp4"
+            },
+            "label": 0
+          }
+        },
+        {
+          "row_idx": 3,
+          "row": {
+            "video": {
+              "src": "https://huggingface.co/datasets/Dagonulca/figofigofigofigo/resolve/a0e7b0f3ff20377e0ef1234f4ac8912a0af6bcbf/dz/1%20Dbsu/s%20%2813%29.mp4"
+            },
+            "label": 0
+          }
+        },
+        {
+          "row_idx": 4,
+          "row": {
+            "video": {
+              "src": "https://huggingface.co/datasets/Dagonulca/figofigofigofigo/resolve/a0e7b0f3ff20377e0ef1234f4ac8912a0af6bcbf/dz/1%20Dbsu/s%20%2817%29.mp4"
+            },
+            "label": 0
+          }
+        }
+      ],
       "modalities": [
         "Video"
       ]
@@ -827,7 +1161,7 @@
       "likes": 20,
       "private": false,
       "sha": "7faff65ced45b9291654a05d4d6031831ee773af",
-      "downloads": 811401,
+      "downloads": 808959,
       "tags": [
         "size_categories:n<1K",
         "modality:video",
@@ -853,7 +1187,7 @@
       "private": false,
       "sha": "d4c79f5aecb902f3157e6139661cb1b0b2a36689",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tABC-130k\n\t\n\nABC-130k is the largest open-source robot teleoperation dataset. It contains\nbimanual manipulation trajectories collected on two-arm YAM stations. Episodes\nare distributed as MCAP files, with subtask annotations kept as separate\nartifacts so they can be revised or extended independently of the underlying\nepisode data. For details on the accompanying paper, see abc.bot.\nPlease see the GitHub repo here for code to\ntrain and deploy with this dataset.\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset… See the full description on the dataset page: https://huggingface.co/datasets/XDOF/ABC-130k.",
-      "downloads": 802976,
+      "downloads": 799116,
       "tags": [
         "task_categories:robotics",
         "language:en",
@@ -884,7 +1218,7 @@
       "private": false,
       "sha": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tC4\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nA colossal, cleaned version of Common Crawl's web crawl corpus. Based on Common Crawl dataset: \"https://commoncrawl.org\".\nThis is the processed version of Google's C4 dataset\nWe prepared five variants of the data: en, en.noclean, en.noblocklist, realnewslike, and multilingual (mC4).\nFor reference, these are the sizes of the variants:\n\nen: 305GB\nen.noclean: 2.3TB\nen.noblocklist: 380GB\nrealnewslike: 15GB\nmultilingual (mC4): 9.7TB (108 subsets, one… See the full description on the dataset page: https://huggingface.co/datasets/allenai/c4.",
-      "downloads": 782732,
+      "downloads": 782487,
       "paperswithcode_id": "c4",
       "tags": [
         "task_categories:text-generation",
@@ -1012,29 +1346,6 @@
       ]
     },
     {
-      "_id": "6ac0e3e0aadad5e0492a39f0",
-      "id": "roisincrtai/ptb-xl-1.0.3",
-      "author": "roisincrtai",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-10-04T18:57:13+00:00",
-      "likes": 4,
-      "private": false,
-      "sha": "8caff550132c41fe8cf8a9bcf9b2d0300263b725",
-      "downloads": 744925,
-      "tags": [
-        "size_categories:10K<n<100K",
-        "modality:text",
-        "region:us"
-      ],
-      "createdAt": "2026-10-03T11:15:44+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": [
-        "Text"
-      ]
-    },
-    {
       "_id": "69af8aeeec432ae4abac9fd4",
       "id": "HennyPr/ps2_hf2",
       "author": "HennyPr",
@@ -1044,7 +1355,7 @@
       "likes": 48,
       "private": false,
       "sha": "6953042499b19e06370692840da6a2b22550a35b",
-      "downloads": 719648,
+      "downloads": 744651,
       "tags": [
         "size_categories:n<1K",
         "format:text",
@@ -1068,12 +1379,12 @@
       "author": "fka",
       "disabled": false,
       "gated": false,
-      "lastModified": "2026-11-20T03:13:33+00:00",
-      "likes": 9966,
+      "lastModified": "2026-11-21T03:12:45+00:00",
+      "likes": 9967,
       "private": false,
-      "sha": "bbc304336cea914e4e779002d008abde1a5a33e0",
+      "sha": "8aeb0f044055f2b719e85347c73a81bf8bbfdca1",
       "description": "\n  \n  \n  a.k.a. Awesome ChatGPT Prompts\n\n\nThis is a Dataset Repository mirror of prompts.chat — a social platform for AI prompts.\n\n\t\n\t\t\n\t\n\t\n\t\t📢 Notice\n\t\n\nThis Hugging Face dataset is a mirror. For the latest prompts, features, and community contributions, please visit:\n\n🌐 Website: prompts.chat\n📦 GitHub: github.com/f/awesome-chatgpt-prompts\n\n\n\t\n\t\t\n\t\n\t\n\t\tAbout\n\t\n\nprompts.chat is an open-source platform where users can share, discover, and collect AI prompts from the community. The project can… See the full description on the dataset page: https://huggingface.co/datasets/fka/prompts.chat.",
-      "downloads": 21190,
+      "downloads": 21779,
       "tags": [
         "task_categories:question-answering",
         "task_categories:text-generation",
@@ -1115,11 +1426,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2025-07-11T20:16:53+00:00",
-      "likes": 3788,
+      "likes": 3794,
       "private": false,
       "sha": "9bb295ddab0e05d785b879661af7260fed5140fc",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\t🍷 FineWeb\n\t\n\n\n    \n\n\n\n15 trillion tokens of the finest data the 🌐 web has to offer\n\n\n\t\n\t\t\n\t\n\t\n\t\tWhat is it?\n\t\n\nThe 🍷 FineWeb dataset consists of more than 18.5T tokens (originally 15T tokens) of cleaned and deduplicated english web data from CommonCrawl. The data processing pipeline is optimized for LLM performance and ran on the 🏭 datatrove library, our large scale data processing library. \n🍷 FineWeb was originally meant to be a fully open replication of 🦅 RefinedWeb, with a… See the full description on the dataset page: https://huggingface.co/datasets/HuggingFaceFW/fineweb.",
-      "downloads": 363745,
+      "downloads": 363449,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -1152,7 +1463,7 @@
       "private": false,
       "sha": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for HH-RLHF\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nThis repository provides access to two different kinds of data:\n\nHuman preference data about helpfulness and harmlessness from Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback. These data are meant to train preference (or reward) models for subsequent RLHF training. These data are not meant for supervised training of dialogue agents. Training dialogue agents on these data is likely… See the full description on the dataset page: https://huggingface.co/datasets/Anthropic/hh-rlhf.",
-      "downloads": 45601,
+      "downloads": 46971,
       "tags": [
         "license:mit",
         "size_categories:100K<n<1M",
@@ -1180,11 +1491,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2026-03-23T10:18:13+00:00",
-      "likes": 2094,
+      "likes": 2103,
       "private": false,
       "sha": "740312add88f781978c0658806c59bc2815b9866",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for GSM8K\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nGSM8K (Grade School Math 8K) is a dataset of 8.5K high quality linguistically diverse grade school math word problems. The dataset was created to support the task of question answering on basic mathematical problems that require multi-step reasoning.\n\nThese problems take between 2 and 8 steps to solve.\nSolutions primarily involve performing a sequence of elementary calculations using basic arithmetic operations (+ − ×÷) to… See the full description on the dataset page: https://huggingface.co/datasets/openai/gsm8k.",
-      "downloads": 1237660,
+      "downloads": 1252881,
       "paperswithcode_id": "gsm8k",
       "tags": [
         "benchmark:official",
@@ -1221,11 +1532,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2024-01-09T09:40:51+00:00",
-      "likes": 1761,
+      "likes": 1768,
       "private": false,
       "sha": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for Wikimedia Wikipedia\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nWikipedia dataset containing cleaned articles of all languages.\nThe dataset is built from the Wikipedia dumps (https://dumps.wikimedia.org/)\nwith one subset per language, each containing a single train split.\nEach example contains the content of one full Wikipedia article with cleaning to strip\nmarkdown and unwanted sections (references, etc.).\nAll language subsets have already been processed for recent dump… See the full description on the dataset page: https://huggingface.co/datasets/wikimedia/wikipedia.",
-      "downloads": 327541,
+      "downloads": 332821,
       "tags": [
         "task_categories:text-generation",
         "task_categories:fill-mask",
@@ -1578,11 +1889,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2026-11-19T22:07:42+00:00",
-      "likes": 1691,
+      "likes": 1710,
       "private": false,
       "sha": "99bb6c7c1247ff3a1f63e484996336e9e35b9cf8",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tWelcome to NVIDIA SimReady Assets\n\t\n\nWelcome to NVIDIA's open-source SimReady Assets dataset!\nSimReady Central brings together OEM-curated datasets like this one, helping you discover simulation-ready assets for your projects.\nInterested in contributing? Visit nvidia/simready-central-library and request contributor access through the Community tab.\n",
-      "downloads": 1731953,
+      "downloads": 1737165,
       "tags": [
         "license:cc-by-4.0",
         "region:us",
@@ -1604,7 +1915,7 @@
       "private": false,
       "sha": "e9c87b4abb2609913751f9b26553fdb9c061796c",
       "description": "🐋 The OpenOrca Dataset! 🐋\n\n\n\nWe are thrilled to announce the release of the OpenOrca dataset!\nThis rich collection of augmented FLAN data aligns, as best as possible, with the distributions outlined in the Orca paper.\nIt has been instrumental in generating high-performing model checkpoints and serves as a valuable resource for all NLP researchers and developers!\n\n\t\n\t\t\n\t\n\t\n\t\tOfficial Models\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tMistral-7B-OpenOrca\n\t\n\nOur latest model, the first 7B to score better overall than all… See the full description on the dataset page: https://huggingface.co/datasets/Open-Orca/OpenOrca.",
-      "downloads": 11668,
+      "downloads": 11749,
       "tags": [
         "task_categories:text-classification",
         "task_categories:token-classification",
@@ -1646,7 +1957,7 @@
       "private": false,
       "sha": "fdf72ae0827c1cda404aff25b6603abec9e3399b",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tOpenAssistant Conversations Dataset (OASST1)\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nIn an effort to democratize research on large-scale alignment, we release OpenAssistant \nConversations (OASST1), a human-generated, human-annotated assistant-style conversation \ncorpus consisting of 161,443 messages in 35 different languages, annotated with 461,292 \nquality ratings, resulting in over 10,000 fully annotated conversation trees. The corpus \nis a product of a worldwide crowd-sourcing effort… See the full description on the dataset page: https://huggingface.co/datasets/OpenAssistant/oasst1.",
-      "downloads": 40340,
+      "downloads": 42539,
       "tags": [
         "language:en",
         "language:es",
@@ -1711,11 +2022,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2025-07-11T20:16:53+00:00",
-      "likes": 1439,
+      "likes": 1447,
       "private": false,
       "sha": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\t📚 FineWeb-Edu\n\t\n\n\n    \n\n\n\n1.3 trillion tokens of the finest educational data the 🌐 web has to offer\n\nPaper: https://arxiv.org/abs/2406.17557\n\n\t\n\t\t\n\t\n\t\n\t\tWhat is it?\n\t\n\n📚 FineWeb-Edu  dataset consists of 1.3T tokens  and  5.4T tokens (FineWeb-Edu-score-2) of educational web pages filtered from 🍷 FineWeb dataset. This is the 1.3 trillion version.\nTo enhance FineWeb's quality, we developed an educational quality classifier using annotations generated by LLama3-70B-Instruct. We… See the full description on the dataset page: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu.",
-      "downloads": 447625,
+      "downloads": 453417,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -1754,7 +2065,7 @@
       "private": false,
       "sha": "dce01c9b08f87459cf36a430d809084718273017",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for Alpaca\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nAlpaca is a dataset of 52,000 instructions and demonstrations generated by OpenAI's text-davinci-003 engine. This instruction data can be used to conduct instruction-tuning for language models and make the language model follow instruction better.\nThe authors built on the data generation pipeline from Self-Instruct framework and made the following modifications:\n\nThe text-davinci-003 engine to generate the instruction data… See the full description on the dataset page: https://huggingface.co/datasets/tatsu-lab/alpaca.",
-      "downloads": 90445,
+      "downloads": 92262,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -1787,7 +2098,7 @@
       "private": false,
       "sha": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tSummary\n\t\n\ndatabricks-dolly-15k is an open source dataset of instruction-following records generated by thousands of Databricks employees in several \nof the behavioral categories outlined in the InstructGPT paper, including brainstorming, classification, \nclosed QA, generation, information extraction, open QA, and summarization.\nThis dataset can be used for any purpose, whether academic or commercial,  under the terms of the \nCreative Commons Attribution-ShareAlike 3.0 Unported… See the full description on the dataset page: https://huggingface.co/datasets/databricks/databricks-dolly-15k.",
-      "downloads": 59816,
+      "downloads": 61004,
       "tags": [
         "task_categories:question-answering",
         "task_categories:summarization",
@@ -1817,11 +2128,11 @@
       "disabled": false,
       "gated": "auto",
       "lastModified": "2026-08-31T17:57:10+00:00",
-      "likes": 1319,
+      "likes": 1363,
       "private": false,
       "sha": "bc7a780571cb67d482250649ab573908b9557873",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tCybersecurity AI Knowledge Base — PhD-Level Dataset\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tOverview\n\t\n\nThis is the most comprehensive cybersecurity knowledge base ever assembled for AI training. It covers all domains of cybersecurity at PhD-level depth — from offensive red teaming and bug bounty exploitation to defensive SOC operations, digital forensics, and cutting-edge AI/LLM security.\nSize: 16 GB | Files: 507 | Domains: 30+ | Sources: 15+ platforms\n\n\t\n\t\t\n\t\n\t\n\t\tPurpose\n\t\n\n\nTrain the world's most… See the full description on the dataset page: https://huggingface.co/datasets/Vyber07/cyber-security.",
-      "downloads": 28056,
+      "downloads": 28737,
       "tags": [
         "task_categories:text-generation",
         "task_categories:question-answering",
@@ -1865,11 +2176,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2024-08-12T13:27:26+00:00",
-      "likes": 1281,
+      "likes": 1293,
       "private": false,
       "sha": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
       "description": "Dataset containing synthetically generated (by GPT-3.5 and GPT-4) short stories that only use a small vocabulary.\nDescribed in the following paper: https://arxiv.org/abs/2305.07759. \nThe models referred to in the paper were trained on TinyStories-train.txt  (the file tinystories-valid.txt can be used for validation loss). These models can be found on Huggingface, at roneneldan/TinyStories-1M/3M/8M/28M/33M/1Layer-21M.\nAdditional resources:\ntinystories_all_data.tar.gz - contains a superset of… See the full description on the dataset page: https://huggingface.co/datasets/roneneldan/TinyStories.",
-      "downloads": 201674,
+      "downloads": 209102,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -1902,7 +2213,7 @@
       "private": false,
       "sha": "60067b257337df8d7879142d870944fe4c6ab20d",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tNegative Embedding\n\t\n\nThis is a Negative Embedding trained with Counterfeit. Please use it in the \"\\stable-diffusion-webui\\embeddings\" folder.It can be used with other models, but the effectiveness is not certain.  \n\n\t\n\t\t\n\t\n\t\n\t\tCounterfeit-V2.0.safetensors\n\t\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tAbyssOrangeMix2_sfw.safetensors\n\t\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tanything-v4.0-pruned.safetensors\n\t\n\n\n",
-      "downloads": 3985,
+      "downloads": 4023,
       "tags": [
         "license:other",
         "size_categories:n<1K",
@@ -1926,11 +2237,11 @@
       "disabled": false,
       "gated": "auto",
       "lastModified": "2026-11-13T22:50:46+00:00",
-      "likes": 1236,
+      "likes": 1233,
       "private": false,
       "sha": "14ed7a77897edafb113dc86fde8b8173ae7fb028",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tPHYSICAL AI AUTONOMOUS VEHICLES\n\t\n\n\nThe PhysicalAI-Autonomous-Vehicles dataset provides one of the largest, geographically diverse collections of multi-sensor data empowering AV researchers to build the next generation of Physical AI based end-to-end driving systems. This dataset is ready for commercial/non-commercial AV use per the license agreement.\n\nData Collection Method\n\nAutomatic/Sensor \n\n\nLabeling Method\n\nAutomatic/Sensor \n\n\n\nThis dataset has a total of 1700 hours of driving… See the full description on the dataset page: https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles.",
-      "downloads": 256238,
+      "downloads": 255760,
       "tags": [
         "license:other",
         "region:us"
@@ -1951,7 +2262,7 @@
       "private": false,
       "sha": "fc2c9e8a37b38f38da6d449564a8c350b244aef4",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tNews\n\t\n\n[2025/04/22] We split the data and kept only the medical SFT dataset (medical_o1_sft.json). The file medical_o1_sft_mix.json contains a mix of medical and general instruction data.\n[2025/02/22] We released the distilled dataset from Deepseek-R1 based on medical verifiable problems. You can use it to initialize your models with the reasoning chain from Deepseek-R1.\n[2024/12/25] We open-sourced the medical reasoning dataset for SFT, built on medical verifiable problems and an… See the full description on the dataset page: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT.",
-      "downloads": 20248,
+      "downloads": 20600,
       "tags": [
         "task_categories:question-answering",
         "task_categories:text-generation",
@@ -1988,7 +2299,7 @@
       "private": false,
       "sha": "398f92572e94f4793e41c22ab7ea2a788d9e7de4",
       "description": "RedPajama is a clean-room, fully open-source implementation of the LLaMa dataset.",
-      "downloads": 2833,
+      "downloads": 2863,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -2006,11 +2317,11 @@
       "disabled": false,
       "gated": "auto",
       "lastModified": "2025-09-17T04:58:55+00:00",
-      "likes": 1195,
+      "likes": 1206,
       "private": false,
       "sha": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for ImageNet\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nILSVRC 2012, commonly known as 'ImageNet' is an image dataset organized according to the WordNet hierarchy. Each meaningful concept in WordNet, possibly described by multiple words or word phrases, is called a \"synonym set\" or \"synset\". There are more than 100,000 synsets in WordNet, majority of them are nouns (80,000+). ImageNet aims to provide on average 1000 images to illustrate each synset. Images of each concept are… See the full description on the dataset page: https://huggingface.co/datasets/ILSVRC/imagenet-1k.",
-      "downloads": 92232,
+      "downloads": 92689,
       "paperswithcode_id": "imagenet-1k-1",
       "tags": [
         "task_categories:image-classification",
@@ -2053,7 +2364,7 @@
       "private": false,
       "sha": "8049631c405ae6576f93f445c6b8166f76f5505a",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for UltraChat 200k\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Description\n\t\n\nThis is a heavily filtered version of the UltraChat dataset and was used to train Zephyr-7B-β, a state of the art 7b chat model.\nThe original datasets consists of 1.4M dialogues generated by ChatGPT and spanning a wide range of topics. To create UltraChat 200k, we applied the following logic:\n\nSelection of a subset of data for faster supervised fine tuning.\nTruecasing of the dataset, as we observed around 5% of… See the full description on the dataset page: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k.",
-      "downloads": 85223,
+      "downloads": 86250,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -2082,11 +2393,11 @@
       "disabled": false,
       "gated": "auto",
       "lastModified": "2026-01-20T22:42:17+00:00",
-      "likes": 1153,
+      "likes": 1158,
       "private": false,
       "sha": "5a81a4c7271a2a2a312b9a690f0c2fde837e4c29",
       "description": "\n\n\n[!NOTE]\nIMPORTANT: Please help us protect the integrity of this benchmark by not publicly sharing, re-uploading, or distributing the dataset.\n\n\n\t\n\t\t\n\t\n\t\n\t\tHumanity's Last Exam\n\t\n\n🌐 Website | 📄 Paper |  GitHub\nCenter for AI Safety & Scale AI\n\nHumanity's Last Exam (HLE) is a multi-modal benchmark at the frontier of human knowledge, designed to be the final closed-ended academic benchmark of its kind with broad subject coverage. Humanity's Last Exam consists of 2,500 questions across dozens… See the full description on the dataset page: https://huggingface.co/datasets/cais/hle.",
-      "downloads": 77919,
+      "downloads": 79751,
       "tags": [
         "benchmark:official",
         "license:mit",
@@ -2119,7 +2430,7 @@
       "private": false,
       "sha": "153f6301d232928d7f90d09b37fceb4fadc2c950",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for The Stack\n\t\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tChangelog\n\t\n\n\n\t\n\t\t\nRelease\nDescription\n\n\n\t\t\nv1.0\nInitial release of the Stack. Included 30 programming languages and 18 permissive licenses. Note: Three included licenses (MPL/EPL/LGPL) are considered weak copyleft licenses. The resulting near-deduplicated dataset is 3TB in size.\n\n\nv1.1\nThe three copyleft licenses ((MPL/EPL/LGPL) were excluded and the list of permissive licenses extended to 193 licenses in total. The list of programming… See the full description on the dataset page: https://huggingface.co/datasets/bigcode/the-stack.",
-      "downloads": 114978,
+      "downloads": 115121,
       "tags": [
         "task_categories:text-generation",
         "language_creators:crowdsourced",
@@ -2160,7 +2471,7 @@
       "sha": "7f48140530a023e9ea4c5cfb141160922727d4d3",
       "citation": "@article{dolma,\n  title = {{Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research}},\n  author = {\n    Luca Soldaini and Rodney Kinney and Akshita Bhagia and Dustin Schwenk and David Atkinson and\n    Russell Authur and Ben Bogin and Khyathi Chandu and Jennifer Dumas and Yanai Elazar and\n    Valentin Hofmann and Ananya Harsh Jha and Sachin Kumar and Li Lucy and Xinxi Lyu and Ian Magnusson and\n    Jacob Morrison and Niklas Muennighoff and Aakanksha Naik and Crystal Nam and Matthew E. Peters and\n    Abhilasha Ravichander and Kyle Richardson and Zejiang Shen and Emma Strubell and Nishant Subramani and\n    Oyvind Tafjord and Evan Pete Walsh and Hannaneh Hajishirzi and Noah A. Smith and Luke Zettlemoyer and\n    Iz Beltagy and Dirk Groeneveld and Jesse Dodge and Kyle Lo\n},\n  year = {2024},\n  journal={arXiv preprint},\n}",
       "description": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
-      "downloads": 3461,
+      "downloads": 3484,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -2185,11 +2496,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2026-10-20T02:25:58+00:00",
-      "likes": 1091,
+      "likes": 1101,
       "private": false,
       "sha": "e8e81e4945270b6212204bad99de1e598f7fb077",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tAgentic RL Environments\n\t\n\nRL training environments for LLM agents.\n\n\t\n\t\t\nDomain\nTask Family\nVerifier\n\n\n\t\t\nCode\nSoftware engineering\nExecutable tests\n\n\nCyber\nVulnerability reproduction\nRule checks\n\n\nGeneral\nKnowledge work\nRubric-based judging\n\n\nVisual\nWeb development\nVisual grading\n\n\nMusic\nSymbolic music composition\nRule checks\n\n\n\t\n\n\nDocker images: https://hub.docker.com/r/xiaomimimo/mimo-v2.6-rl-oss\nTraining code: https://github.com/XiaomiMiMo/verl\n\n\n[!IMPORTANT]\nUpdate… See the full description on the dataset page: https://huggingface.co/datasets/XiaomiMiMo/MiMo-V2.6-RL-oss.",
-      "downloads": 271859,
+      "downloads": 266862,
       "tags": [
         "license:apache-2.0",
         "size_categories:1K<n<10K",
@@ -2218,11 +2529,11 @@
       "disabled": false,
       "gated": "auto",
       "lastModified": "2024-07-27T09:28:42+00:00",
-      "likes": 1082,
+      "likes": 1083,
       "private": false,
       "sha": "200748d9d3cddcc9d782887541057aca0b18c5da",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tLMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset\n\t\n\nThis dataset contains one million real-world conversations with 25 state-of-the-art LLMs.\nIt is collected from 210K unique IP addresses in the wild on the Vicuna demo and Chatbot Arena website from April to August 2023.\nEach sample includes a conversation ID, model name, conversation text in OpenAI API JSON format, detected language tag, and OpenAI moderation API tag.\nUser consent is obtained through the \"Terms of… See the full description on the dataset page: https://huggingface.co/datasets/lmsys/lmsys-chat-1m.",
-      "downloads": 7445,
+      "downloads": 7384,
       "tags": [
         "size_categories:1M<n<10M",
         "format:parquet",
@@ -2242,60 +2553,17 @@
       ]
     },
     {
-      "_id": "63769dcacb2e84c60b0a1905",
-      "id": "Nerfgun3/bad_prompt",
-      "author": "Nerfgun3",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2022-11-19T23:43:47+00:00",
-      "likes": 992,
-      "private": false,
-      "sha": "26a7b45850bfdafeda574d1bc79b2f16700748e1",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tNegative Embedding / Textual Inversion\n\t\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tIdea\n\t\n\nThe idea behind this embedding was to somehow train the negative prompt as an embedding, thus unifying the basis of the negative prompt into one word or embedding. \nSide note: Embedding has proven to be very helpful for the generation of hands! :)\n\n\t\n\t\t\n\t\n\t\n\t\tUsage\n\t\n\nTo use this embedding you have to download the file aswell as drop it into the \"\\stable-diffusion-webui\\embeddings\" folder.\nPlease put the embedding in… See the full description on the dataset page: https://huggingface.co/datasets/Nerfgun3/bad_prompt.",
-      "downloads": 4259,
-      "tags": [
-        "language:en",
-        "license:creativeml-openrail-m",
-        "size_categories:n<1K",
-        "format:imagefolder",
-        "modality:image",
-        "library:datasets",
-        "library:mlcroissant",
-        "region:us",
-        "stable-diffusion",
-        "text-to-image",
-        "image-to-image"
-      ],
-      "createdAt": "2022-11-17T20:47:06+00:00",
-      "key": "",
-      "viewer_sample_rows": [
-        {
-          "row_idx": 0,
-          "row": {
-            "image": {
-              "src": "https://datasets-server.huggingface.co/cached-assets/Nerfgun3/bad_prompt/--/26a7b45850bfdafeda574d1bc79b2f16700748e1/--/default/train/0/image/image.jpg?Expires=1795217311&Signature=hVcjjRbK47UAfeIChAFTrmaXbhriH5SvAIrA3iK56LIqHC4uOLqBxQWU6vFqIWWJ~jWayGMpThppAuoT9LDoF26Waoky7abOBwZOnxLc9d54ZUdLnmqGBNDY7opz8CZlNwbDXkAiNVrhwy8Njl7hQtfDcfdjSHI8RjMw44xzoYQaxRwpaftDCCiT84P6vBwbf9yjzvB9NbXMC50IoDZuSleyKuUod0cX-2W3kri7Jn2bVYv0M8kJGcIGaB2TzfHozP7XeNXqOw-~G8TQnIoADRzYj8B6WPUBgi2KIelLbyfld7LzQuRYIoTIE2iFJs6KMg8JBupLqVD5yQ6VG3BP3A__&Key-Pair-Id=K3C0L9WB6U5DUC",
-              "height": 1024,
-              "width": 2048
-            }
-          }
-        }
-      ],
-      "modalities": [
-        "Image"
-      ]
-    },
-    {
       "_id": "6532270e829e1dc2f293d6b8",
       "id": "gaia-benchmark/GAIA",
       "author": "gaia-benchmark",
       "disabled": false,
       "gated": "auto",
       "lastModified": "2025-10-28T14:44:54+00:00",
-      "likes": 982,
+      "likes": 997,
       "private": false,
       "sha": "682dd723ee1e1697e00360edccf2366dc8418dd9",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tGAIA dataset\n\t\n\nGAIA is a benchmark which aims at evaluating next-generation LLMs (LLMs with augmented capabilities due to added tooling, efficient prompting, access to search, etc).\nWe added gating to prevent bots from scraping the dataset. Please do not reshare the validation or test set in a crawlable format.\n\n\t\n\t\t\n\t\n\t\n\t\tData and leaderboard\n\t\n\nGAIA is made of more than 450 non-trivial question with an unambiguous answer, requiring different levels of tooling and autonomy to… See the full description on the dataset page: https://huggingface.co/datasets/gaia-benchmark/GAIA.",
-      "downloads": 25360,
+      "downloads": 26455,
       "tags": [
         "language:en",
         "size_categories:n<1K",
@@ -2321,6 +2589,38 @@
       ]
     },
     {
+      "_id": "63769dcacb2e84c60b0a1905",
+      "id": "Nerfgun3/bad_prompt",
+      "author": "Nerfgun3",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2022-11-19T23:43:47+00:00",
+      "likes": 992,
+      "private": false,
+      "sha": "26a7b45850bfdafeda574d1bc79b2f16700748e1",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tNegative Embedding / Textual Inversion\n\t\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tIdea\n\t\n\nThe idea behind this embedding was to somehow train the negative prompt as an embedding, thus unifying the basis of the negative prompt into one word or embedding. \nSide note: Embedding has proven to be very helpful for the generation of hands! :)\n\n\t\n\t\t\n\t\n\t\n\t\tUsage\n\t\n\nTo use this embedding you have to download the file aswell as drop it into the \"\\stable-diffusion-webui\\embeddings\" folder.\nPlease put the embedding in… See the full description on the dataset page: https://huggingface.co/datasets/Nerfgun3/bad_prompt.",
+      "downloads": 3699,
+      "tags": [
+        "language:en",
+        "license:creativeml-openrail-m",
+        "size_categories:n<1K",
+        "format:imagefolder",
+        "modality:image",
+        "library:datasets",
+        "library:mlcroissant",
+        "region:us",
+        "stable-diffusion",
+        "text-to-image",
+        "image-to-image"
+      ],
+      "createdAt": "2022-11-17T20:47:06+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": [
+        "Image"
+      ]
+    },
+    {
       "_id": "6457bc5798a8724fa6120362",
       "id": "tiiuae/falcon-refinedweb",
       "author": "tiiuae",
@@ -2331,7 +2631,7 @@
       "private": false,
       "sha": "c735840575b629292b41da8dde11dcd523d4f91c",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\t📀 Falcon RefinedWeb\n\t\n\nFalcon RefinedWeb is a massive English web dataset built by TII and released under an ODC-By 1.0 license.\nSee the 📓 paper on arXiv for more details. \nRefinedWeb is built through stringent filtering and large-scale deduplication of CommonCrawl; we found models trained on RefinedWeb to achieve performance in-line or better than models trained on curated datasets, while only relying on web data. \nRefinedWeb is also \"multimodal-friendly\": it contains links and… See the full description on the dataset page: https://huggingface.co/datasets/tiiuae/falcon-refinedweb.",
-      "downloads": 25645,
+      "downloads": 25518,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -2355,105 +2655,7 @@
       ],
       "createdAt": "2023-05-07T14:57:27+00:00",
       "key": "",
-      "viewer_sample_rows": [
-        {
-          "row_idx": 0,
-          "row": {
-            "content": "these birches can be found in many places in Europe - the photos is from a short trip to Baden-Baden in 2007. the clouds in the background are the messengers of the storm Kyrill. here are some more moments of the trip: Baden-Baden.\n-\n“ast/ray” is a bilingual wordplay: “ast” means “twig” in German. a…",
-            "url": "http://100parts.wordpress.com/2012/08/04/astray-baden-baden-day-31/",
-            "timestamp": "2013-05-18T10:42:00",
-            "dump": "CC-MAIN-2013-20",
-            "segment": "1368696382261",
-            "image_urls": []
-          }
-        },
-        {
-          "row_idx": 1,
-          "row": {
-            "content": "Watch Survivor Redemption Island Season 22 Episode 11: A Mystery Package Online S22e11 Free Stream Megavideo\nArticle by StreamThatSeries\nHorray!time for another dose of very exciting reality series with lots of twists.You must watch survivor redemption island season 22 episode 11 tonight with a titl…",
-            "url": "http://100percentwinnersblog.com/watch-survivor-redemption-island-season-22-episode-11-a-mystery-package-online-s22e11-free-stream-megavideo/",
-            "timestamp": "2013-05-18T11:02:03",
-            "dump": "CC-MAIN-2013-20",
-            "segment": "1368696382261",
-            "image_urls": []
-          }
-        },
-        {
-          "row_idx": 2,
-          "row": {
-            "content": "Pesky?\nthis was a high school project for a president campaign in our government class, yes thats him, for a school project, you guys are crazy\ni know his dad from work. very cool and funny guy!!",
-            "url": "http://101squadron.com/blog/2007/05/pesky-peculiarities-of-css.html/comment-page-1",
-            "timestamp": "2013-05-18T10:21:35",
-            "dump": "CC-MAIN-2013-20",
-            "segment": "1368696382261",
-            "image_urls": [
-              [
-                "http://101squadron.com/uploaded_images/Conger_89_cal-757679.jpg",
-                null
-              ],
-              [
-                "http://101squadron.com/uploaded_images/Hammerin'-Hank-Conger-795118.jpg",
-                null
-              ],
-              [
-                "http://101squadron.com/uploaded_images/hconger06108180bm-753187.jpg",
-                null
-              ],
-              [
-                "http://101squadron.com/uploaded_images/HHMex8Au-794539.jpg",
-                null
-              ],
-              [
-                "http://101squadron.com/uploaded_images/Conger-back-712123.jpg",
-                null
-              ]
-            ]
-          }
-        },
-        {
-          "row_idx": 3,
-          "row": {
-            "content": "metalkingdom.net [ 80′s @ 8 Feature Video – Big City Nights [VIDEO] By Chris Chapman March 13, 2012 It's time to rock out to those talented Germans Rudolf and Klaus from the Scorpions! \"Big City Nights\" wasn't as big as \"Rock You Like A Hurricane\" or \"Winds Of Change\", but it still stands the test o…",
-            "url": "http://1037theloon.com/tags/scorpions/",
-            "timestamp": "2013-05-18T10:21:51",
-            "dump": "CC-MAIN-2013-20",
-            "segment": "1368696382261",
-            "image_urls": []
-          }
-        },
-        {
-          "row_idx": 4,
-          "row": {
-            "content": "Splice Review\nBlack Ops Escalation Map Pack [VIDEO]\nScream 4 Review-No Spoilers\nBest seem\nThrashman’s Metal Pick Of The Week\nNightmare On Elm Street [VIDEO]\n2011 Dodge Charger\nMr Skin’s Anatomy Awards\n",
-            "url": "http://1063thebuzz.com/category/reviews/page/7/",
-            "timestamp": "2013-05-18T10:31:09",
-            "dump": "CC-MAIN-2013-20",
-            "segment": "1368696382261",
-            "image_urls": [
-              [
-                "https://s3.amazonaws.com/tsm-images/global/1x1.gif",
-                "rotten-sound-cursed-large-promo-album-pic rotten-sound-cursed-large-promo-album-pic"
-              ],
-              [
-                "https://s3.amazonaws.com/tsm-images/global/1x1.gif",
-                "rotten-sound-cursed-large-promo-album-pic rotten-sound-cursed-large-promo-album-pic"
-              ],
-              [
-                "https://s3.amazonaws.com/tsm-images/global/1x1.gif",
-                "Twicebroken and Joshua David Twicebroken and Joshua David"
-              ],
-              [
-                "https://s3.amazonaws.com/tsm-images/global/1x1.gif",
-                "splice dimension films"
-              ],
-              [
-                "https://s3.amazonaws.com/tsm-images/global/1x1.gif",
-                "hqdefault24 hqdefault24"
-              ]
-            ]
-          }
-        }
-      ],
+      "viewer_sample_rows": [],
       "modalities": [
         "Text"
       ]
@@ -2469,7 +2671,7 @@
       "private": false,
       "sha": "e6281661ce1c48d982bc483cf8a173c1bbeb5d31",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"imdb\"\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Summary\n\t\n\nLarge Movie Review Dataset.\nThis is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training, and 25,000 for testing. There is additional unlabeled data for use as well.\n\n\t\n\t\t\n\t\n\t\n\t\tSupported Tasks and Leaderboards\n\t\n\nMore Information Needed\n\n\t\n\t\t\n\t\n\t\n\t\tLanguages\n\t\n\nMore Information Needed… See the full description on the dataset page: https://huggingface.co/datasets/stanfordnlp/imdb.",
-      "downloads": 161936,
+      "downloads": 162277,
       "paperswithcode_id": "imdb-movie-reviews",
       "tags": [
         "task_categories:text-classification",
@@ -2507,7 +2709,7 @@
       "private": false,
       "sha": "220bac3acbf07789502c621d2d33952f51ac7f86",
       "description": "\n\nLiberating 3T of the finest tokens from PDFs\n\n\n\t\n\t\t\n\t\n\t\n\t\tWhat is this?\n\t\n\nAs we run out of web pages to process, the natural question has always been: what to do next? Only a few knew about a data source that everyone avoided for ages, due to its incredible extraction cost and complexity: PDFs.\n📄 FinePDFs is exactly that. It is the largest publicly available corpus sourced exclusively from PDFs, containing about 3 trillion tokens across 475 million documents in 1733 languages.\nCompared to… See the full description on the dataset page: https://huggingface.co/datasets/HuggingFaceFW/finepdfs.",
-      "downloads": 89038,
+      "downloads": 87656,
       "tags": [
         "task_categories:text-generation",
         "language:aai",
@@ -4348,11 +4550,11 @@
       "disabled": false,
       "gated": false,
       "lastModified": "2023-04-12T05:23:59+00:00",
-      "likes": 951,
+      "likes": 950,
       "private": false,
       "sha": "192ab2185289094fc556ec8ce5ce1e8e587154ca",
       "description": "Further cleaning done. Please look through the dataset and ensure that I didn't miss anything.\nUpdate: Confirmed working method for training the model: https://huggingface.co/AlekseyKorshuk/vicuna-7b/discussions/4#64346c08ef6d5abefe42c12c\nTwo choices:\n\nRemoves instances of \"I'm sorry, but\": https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/blob/main/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json\nHas instances of \"I'm sorry, but\":… See the full description on the dataset page: https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered.",
-      "downloads": 339916,
+      "downloads": 336805,
       "tags": [
         "language:en",
         "license:apache-2.0",
@@ -4376,7 +4578,7 @@
       "private": false,
       "sha": "d0e5c3890bcd63489dbaeb835a80724025372ef1",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDuckDB cache key collision canary\n\t\n\nSynthetic dataset used for an authorized Hugging Face dataset-viewer cache-key test.\n",
-      "downloads": 16078,
+      "downloads": 16362,
       "tags": [
         "size_categories:n<1K",
         "format:csv",
@@ -4405,7 +4607,7 @@
       "private": false,
       "sha": "16a054f025e9720027b879578bc8f5ca42ec26ae",
       "description": "\n\t\n\t\t\n\t\n\t\n\t\tDuckDB cache key collision canary\n\t\n\nSynthetic dataset used for an authorized Hugging Face dataset-viewer cache-key test.\n",
-      "downloads": 16013,
+      "downloads": 16304,
       "tags": [
         "size_categories:n<1K",
         "format:csv",
@@ -4424,87 +4626,97 @@
       ]
     },
     {
-      "_id": "6afe913309d237956c3f7277",
-      "id": "electroglyph/fx2-bank-data",
-      "author": "electroglyph",
+      "_id": "6afd797b0e59a981e08d08b2",
+      "id": "jhphgf2/ee4d-03",
+      "author": "jhphgf2",
       "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:36+00:00",
+      "gated": "manual",
+      "lastModified": "2026-11-21T21:23:53+00:00",
       "likes": 0,
       "private": false,
-      "sha": "24c25a3dc27b4bceb72569d183e85924615ad7af",
-      "downloads": 61,
+      "sha": "67e630264486b5aea4f3a9c3aeeae5548fce9eb3",
+      "downloads": 957,
       "tags": [
         "region:us"
       ],
-      "createdAt": "2026-11-19T06:03:31+00:00",
+      "createdAt": "2026-11-18T10:10:03+00:00",
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
     },
     {
-      "_id": "6afbfc27a678226241f953d4",
-      "id": "HuggingFriends/PixelWorld",
-      "author": "HuggingFriends",
+      "_id": "6b020b6871c703296de4f12a",
+      "id": "vnpornads/cdn-hls-84",
+      "author": "vnpornads",
       "disabled": false,
       "gated": false,
-      "lastModified": "2026-11-20T22:28:34+00:00",
+      "lastModified": "2026-11-21T21:23:53+00:00",
       "likes": 0,
       "private": false,
-      "sha": "837c587b88d120c6bfeb3639cc9dab2f8711d5e8",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tPixelWorld main experiment: results and traces\n\t\n\nSnapshot: 2026-11-17T07:27:05.251441+00:00\nPixelWorld evaluates coding agents as direct RGB pixel world models. The agent\nwrites runnable Python and emits every output frame; no external image/video\ngenerator, learned renderer, physics engine or reference continuation is used\nin the generation path.\n\n\t\n\t\t\n\t\n\t\n\t\tProtocol\n\t\n\n\nMain track: vision-agent (Vision)\nCodex: 0.169.0, case-only-v1 filesystem policy\nBudget: 1,000,000 reported… See the full description on the dataset page: https://huggingface.co/datasets/HuggingFriends/PixelWorld.",
-      "downloads": 1932,
-      "tags": [
-        "task_categories:text-to-video",
-        "license:other",
-        "region:us",
-        "pixelworld",
-        "coding-agent",
-        "physics",
-        "video-generation"
-      ],
-      "createdAt": "2026-11-17T07:03:03+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6aeb7788291ccffc07b5091d",
-      "id": "zaaabik/alien-data-v2",
-      "author": "zaaabik",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:33+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "34e98a981da5654dc4f45885764dc2fed10afc7b",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tALIEN v2: independently fine-tuned base-model seeds\n\t\n\nThis pilot trains fresh ELECTRA-base and RoBERTa-base task models for five seeds,\n0–4, on CoLA and ToxiGen (20 task models). These are the two smallest binary\nclassification datasets in the paper.\nGoEmotions has fewer training rows but many more classes; the NER experiments are\na separate task. Existing adapters in zaaabik/alien-data are not reused.\n\n\t\n\t\t\nDataset\nTrain\nValidation\nTest\n\n\n\t\t\nCoLA\n6,840\n1,711\n1,043\n\n\nToxiGen\n7,168… See the full description on the dataset page: https://huggingface.co/datasets/zaaabik/alien-data-v2.",
-      "downloads": 4052,
-      "tags": [
-        "region:us",
-        "uncertainty-estimation",
-        "text-classification"
-      ],
-      "createdAt": "2026-11-04T18:20:56+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6afd138ce43418e1e64d26fb",
-      "id": "ryry99/meyo-assets-hf",
-      "author": "ryry99",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:33+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "caf402769cefee5da35f5e8a00221a05a1ad01a2",
-      "downloads": 1089,
+      "sha": "d864918cd97eb12fcdc995c7881c8a888a15b759",
+      "downloads": 0,
       "tags": [
         "region:us"
       ],
-      "createdAt": "2026-11-18T02:55:08+00:00",
+      "createdAt": "2026-11-21T21:21:44+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6aee2d08b5a40445503f2f1d",
+      "id": "Strutf/future-space",
+      "author": "Strutf",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:52+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "f62a64ba3f748ce685058e9b17e08754fe7c9110",
+      "downloads": 9952,
+      "tags": [
+        "license:mit",
+        "region:us"
+      ],
+      "createdAt": "2026-11-06T19:39:52+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6ae9e1254dba6f46de2d1740",
+      "id": "M-hv1/Titan-Learn",
+      "author": "M-hv1",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:51+00:00",
+      "likes": 1,
+      "private": false,
+      "sha": "36127ed78078b97947e7a4e5c226c97570998efe",
+      "downloads": 888,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-11-03T13:27:01+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6b01e3423f3237d2a8b77bad",
+      "id": "migueldbsfnz/ncm-vqlm256",
+      "author": "migueldbsfnz",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:51+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "b085d983559c6162e2b84a85d5a8218b0e7f1ffc",
+      "downloads": 0,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-11-21T18:30:26+00:00",
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
@@ -4515,434 +4727,15 @@
       "author": "safwatkhokha",
       "disabled": false,
       "gated": false,
-      "lastModified": "2026-11-20T22:28:32+00:00",
+      "lastModified": "2026-11-21T21:23:50+00:00",
       "likes": 14,
       "private": false,
-      "sha": "3477f2e6621e4a87093c2526391ebcad70bbe263",
-      "downloads": 21186,
+      "sha": "0687ed629f1c6ef9db3d7b241c353f6a50323667",
+      "downloads": 21349,
       "tags": [
         "region:us"
       ],
       "createdAt": "2026-07-16T12:24:07+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6aec337dc51ba9af4e0cf9c6",
-      "id": "ThomasGhione/hydray",
-      "author": "ThomasGhione",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:32+00:00",
-      "likes": 1,
-      "private": false,
-      "sha": "7bfb86aa0f96758da5b6d0ab421940525ae30c28",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tThomasGhione/hydray\n\t\n\nHydraY self-play positions in bulletformat (32 bytes per record), labeled by an NNUE search. 2,939,190,578 positions: 1,954,186,654 in shuffled pools, 985,003,924 in sealed shards.\nThe dataset viewer shows preview/, a small sample of positions decoded from the .bin files and spread evenly across them; training reads the .bin files. Columns: pool, the folder it comes from; fen, in the side-to-move frame (the side to move is always shown as White, and… See the full description on the dataset page: https://huggingface.co/datasets/ThomasGhione/hydray.",
-      "downloads": 2443,
-      "tags": [
-        "region:us",
-        "chess",
-        "nnue",
-        "hydray",
-        "bulletformat"
-      ],
-      "createdAt": "2026-11-05T07:42:53+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b005351ef219846181cdc73",
-      "id": "Nihilux/RedRose",
-      "author": "Nihilux",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:32+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "137868f016f310dc471f08dcfb6bb85283c17966",
-      "downloads": 0,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T14:04:01+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b00c9648312f05a86ba1527",
-      "id": "LeoMaxwell/b87935af8bedca82d803b259",
-      "author": "LeoMaxwell",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:31+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "cf71ac2ce3d7f47a42ab18d2c485d5359cc9e218",
-      "downloads": 0,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T22:27:48+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6afc325c859eb376dcd518d3",
-      "id": "Kristen-Z/stereorep-teaser",
-      "author": "Kristen-Z",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:30+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "407ae6624e2f83928766b915dbcc6d5a27ad2fd4",
-      "downloads": 35,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-17T10:54:20+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b00a3ee34620c667e499cf5",
-      "id": "AfriSpeech/afrikrane-mt",
-      "author": "AfriSpeech",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:30+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "016ab6ab40596d1e3f0fcd02a00fb67e2313cce5",
-      "downloads": 0,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T19:47:58+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6ac02bc25d7b067feb59bf7e",
-      "id": "JoTalbot/octopus-eternal",
-      "author": "JoTalbot",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:29+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "a0c8d8129d73a91db27374d21867e4953805bca8",
-      "downloads": 56256,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-10-02T22:10:10+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6ae50f81bf2ebaf7a56f99c0",
-      "id": "Astreous/argon-quantum-state",
-      "author": "Astreous",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:26+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "2c37ce602233c491546033ca4e30ec19871dd2fd",
-      "downloads": 7225,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-10-30T21:43:29+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6af887b17e2b3ea8fc75fa98",
-      "id": "FatUnc6969/lexi-borderland-data",
-      "author": "FatUnc6969",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:26+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "cb728da479d6a5a37b98f45c92e6b517d2605151",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tTeach the working, not the transcript: a 3B model that survives its own memory wipe\n\t\n\nLexsi AI Safety & Alignment Hackathon · Track 3 (Agentic Fine-tuning). Model: CohereLabs Tiny Aya Global (3.35B) + one LoRA. Training: Lexsi AgentTune (create_distill_trainer; create_agentic_trainer(\"grpo\") for the GRPO ablation).\n\nEvery number below is rebuilt from raw per-item logs (python -m train.report, python -m train.xfer_report → artifacts/eval/RESULTS.md, TRANSFER.md). Greedy decoding… See the full description on the dataset page: https://huggingface.co/datasets/FatUnc6969/lexi-borderland-data.",
-      "downloads": 4800,
-      "tags": [
-        "license:mit",
-        "region:us",
-        "borderland",
-        "lexsi-hackathon",
-        "agenttune",
-        "memory",
-        "agents"
-      ],
-      "createdAt": "2026-11-14T16:09:21+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b00c967ba60e6db8d32df13",
-      "id": "LeoMaxwell/d093490cc2273cbed42104cd",
-      "author": "LeoMaxwell",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:26+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "e66bb5940ae64ff12ddef75a75c93aaa2835be98",
-      "downloads": 0,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T22:27:51+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6a74b78f8a65d7acada63065",
-      "id": "RalphLabsAI/ralph-v2-status",
-      "author": "RalphLabsAI",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:23+00:00",
-      "likes": 11,
-      "private": false,
-      "sha": "878e3a9d1147e493f0ed318fd4f8ed3afea098bb",
-      "downloads": 51472,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-08-06T16:34:23+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b00c984608e1b4115339c10",
-      "id": "Elliot-Data/wiki_qa",
-      "author": "Elliot-Data",
-      "disabled": false,
-      "gated": "manual",
-      "lastModified": "2026-11-20T22:28:21+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "0ce0fd52744d6aa6e796be71da8df364c8c63f3f",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\twiki_qa\n\t\n\nPart of the ElliotVL supervised-fine-tuning mix (sft_pool_v1.3, family wiki_qa).\n117,675 rows, 218 parquet shards.\nMultilingual knowledge QA over Wikipedia images. Images are Wikimedia Commons / Wikipedia media (see clean_meta.source_media_ids, licences per file on Commons). Captions / QA were written by Kimi-K2.6 and Qwen-397B, split by image resolution, with the article context available to the annotator. No judge or human reviewed these rows — treat them as… See the full description on the dataset page: https://huggingface.co/datasets/Elliot-Data/wiki_qa.",
-      "downloads": 0,
-      "tags": [
-        "task_categories:visual-question-answering",
-        "license:other",
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T22:28:20+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b00c60f8e23b8dde10a7b72",
-      "id": "vnpornads/cdn-hls-20",
-      "author": "vnpornads",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:20+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "11fdb6ef5f81c36bb7aacb4612a50e600bd89b4c",
-      "downloads": 0,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T22:13:35+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6993aac89ce0e2fe495be48e",
-      "id": "pliny-the-prompter/g0dm0d3",
-      "author": "pliny-the-prompter",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:18+00:00",
-      "likes": 40,
-      "private": false,
-      "sha": "299ded2c25eccb464ec2270575b82ac5be08eb66",
-      "downloads": 14013,
-      "tags": [
-        "license:agpl-3.0",
-        "region:us"
-      ],
-      "createdAt": "2026-02-16T23:39:52+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6a1d83bc5dd65b050c5bfee5",
-      "id": "SZLHOLDINGS/readiness-runs",
-      "author": "SZLHOLDINGS",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:17+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "123367b3a673be719cb3b8842f33bdb93f701d9b",
-      "description": "\n\nControl before action. Evidence after.\nProduct · Proof · GitHub · HF org\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tSZL Readiness Runs\n\t\n\nSigned Khipu receipts emitted by the eight SZL Production-Readiness agents.\nDoctrine v11 (LOCKED): 749 / 14 / 163.\n\n\t\n\t\t\n\t\n\t\n\t\tLayout\n\t\n\nreceipts/<agent>/<UTC-date>/<UTC-timestamp>.json   # one DSSE envelope per run\ndr-dumps/<flagship>/<ts>.ndjson                    # READINESS-DR backup dumps\n\nAgents: readiness-reliability, readiness-security, readiness-observability… See the full description on the dataset page: https://huggingface.co/datasets/SZLHOLDINGS/readiness-runs.",
-      "downloads": 18318,
-      "tags": [
-        "task_categories:other",
-        "license:apache-2.0",
-        "size_categories:n<1K",
-        "region:us",
-        "szl-holdings",
-        "readiness",
-        "khipu-receipts",
-        "doctrine-v11",
-        "doi:10.5281/zenodo.19944926"
-      ],
-      "createdAt": "2026-06-01T13:06:04+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6ac3c50497599e961e9bee64",
-      "id": "Jetbard/tmx-feed-g9nh5j",
-      "author": "Jetbard",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:16+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "14ba20adf1d692561baa61e01b84bdaf04cb64df",
-      "downloads": 91893,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-10-05T15:40:52+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6aff0084348e779122f92910",
-      "id": "ericng17/hcm_traffic_snapshots7",
-      "author": "ericng17",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:16+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "92425a7d3bfc9cf62eda5db75e2c62459881e86c",
-      "downloads": 216,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-11-19T13:58:28+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6b00c812466b83b284eb2def",
-      "id": "Elliot-Data/pixmo_pixmo_docs",
-      "author": "Elliot-Data",
-      "disabled": false,
-      "gated": "manual",
-      "lastModified": "2026-11-20T22:28:14+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "ecd2f7e4d6e963936e0e77a5d1a5d1244875f3f6",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tpixmo_pixmo_docs\n\t\n\nPart of the ElliotVL supervised-fine-tuning mix (sft_pool_v1.3, family pixmo_pixmo_docs__x).\n252,404 rows, 85 parquet shards.\nPixMo-Docs: synthetic documents / charts / tables with QA. PixMo (AllenAI) human-annotated data, admitted with its ORIGINAL answers and not passed through the VLM judge so the human labels are not second-guessed. Licence: ODC-BY 1.0, see https://huggingface.co/collections/allenai/pixmo .\n\n\t\n\t\t\n\t\n\t\n\t\tSchema\n\t\n\n\nimage — HF Image()… See the full description on the dataset page: https://huggingface.co/datasets/Elliot-Data/pixmo_pixmo_docs.",
-      "downloads": 0,
-      "tags": [
-        "task_categories:visual-question-answering",
-        "license:other",
-        "region:us"
-      ],
-      "createdAt": "2026-11-20T22:22:10+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6a3140dbd3d77f33c4a3e5e3",
-      "id": "AlphaDojo/dojo_stock_info",
-      "author": "AlphaDojo",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:13+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "fb6988875ab9e55848bd5309cc7ec04968d3b8e6",
-      "description": "\nLanguages: 简体中文 · English\n\n\n\t\n\t\t\n\t\n\t\n\t\tdojo_stock_info — Stock Master Data\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tOverview\n\t\n\nStatic profiles for listed instruments across US, CN, and HK: ticker, names, exchange, industry tags, listing status, and related metadata. Does not include live prices (see dojo_quote).\n\n\t\n\t\t\n\t\n\t\n\t\tFiles\n\t\n\n\n\t\n\t\t\nFile\nDescription\n\n\n\t\t\ndata.parquet\nFull stock master table\n\n\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tKey Fields\n\t\n\n\n\t\n\t\t\nField\nDescription\n\n\n\t\t\nticker\nTrading symbol (e.g. AAPL, 600519, 0001.HK)… See the full description on the dataset page: https://huggingface.co/datasets/AlphaDojo/dojo_stock_info.",
-      "downloads": 10073,
-      "tags": [
-        "license:apache-2.0",
-        "region:us"
-      ],
-      "createdAt": "2026-06-16T12:26:03+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6a4843db18c74935cacefcec",
-      "id": "TimeSeventeen/Polymarket-v2",
-      "author": "TimeSeventeen",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:13+00:00",
-      "likes": 8,
-      "private": false,
-      "sha": "8a3e118c02730f58345558b189043e73ef46f0d2",
-      "description": "\n\t\n\t\t\n\t\n\t\n\t\tPolymarket v2\n\t\n\nThe record continues. A new contract era, made available for independent research.\nTime Seventeen organizes Polymarket v2 on-chain trading records on Polygon into raw and cleaned Parquet layers. The public release brings together observed fills and metadata-enriched analysis files, separating the source record from the transformations used to make it useful for research.\n\n\t\n\t\t\n\t\n\t\n\t\tCoverage and daily updates\n\t\n\nThe earliest published daily partition is 3 April… See the full description on the dataset page: https://huggingface.co/datasets/TimeSeventeen/Polymarket-v2.",
-      "downloads": 13512,
-      "tags": [
-        "language:en",
-        "license:cc-by-4.0",
-        "region:us",
-        "polymarket",
-        "prediction-markets",
-        "market-microstructure",
-        "on-chain",
-        "polygon",
-        "parquet"
-      ],
-      "createdAt": "2026-07-03T23:20:59+00:00",
-      "key": "",
-      "viewer_sample_rows": [],
-      "modalities": []
-    },
-    {
-      "_id": "6ab2f38ecd83850711c542c8",
-      "id": "btcusddata/binance-ai-data",
-      "author": "btcusddata",
-      "disabled": false,
-      "gated": false,
-      "lastModified": "2026-11-20T22:28:12+00:00",
-      "likes": 0,
-      "private": false,
-      "sha": "5b3d4bc498506cbd818404caab8157cbe2c3be9d",
-      "downloads": 4247,
-      "tags": [
-        "region:us"
-      ],
-      "createdAt": "2026-09-22T21:30:54+00:00",
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
@@ -4953,11 +4746,11 @@
       "author": "sagels",
       "disabled": false,
       "gated": false,
-      "lastModified": "2026-11-20T22:28:12+00:00",
+      "lastModified": "2026-11-21T21:23:50+00:00",
       "likes": 0,
       "private": false,
-      "sha": "dbfc96ddf55a21333d2f4825c96eedb8735ec858",
-      "downloads": 100038,
+      "sha": "f4ea1298ed4b52950484caa1b860750624e5d6cd",
+      "downloads": 102018,
       "tags": [
         "license:apache-2.0",
         "region:us"
@@ -4968,422 +4761,862 @@
       "modalities": []
     },
     {
-      "_id": "6a2bef9ca6428a832a49d494",
-      "id": "SZLHOLDINGS/killinchu-osint-corpus",
-      "author": "SZLHOLDINGS",
+      "_id": "6b00f2fa8e23b8dde1108678",
+      "id": "dexpoint/bimanual-fixed-bottle-refined-1120",
+      "author": "dexpoint",
       "disabled": false,
       "gated": false,
-      "lastModified": "2026-11-20T22:28:11+00:00",
-      "likes": 23,
+      "lastModified": "2026-11-21T21:23:49+00:00",
+      "likes": 0,
       "private": false,
-      "sha": "a4c0f2dc5db3b8ec4f0c834dc8cde311bc67c369",
-      "description": "\n\n\n\t\n\t\t\n\t\n\t\n\t\tKillinchu intelligence archive\n\t\n\nInspect aviation and maritime observations and public-web claims through a homogeneous archive manifest, with source-specific rights and privacy boundaries.\nArtifact: Dataset and append-only archive manifest · Stage: Third-party claims; training not admitted\nExplore in Command Lab · Build · Evidence\n\n\t\n\t\t\n\t\n\t\n\t\tBefore you use it\n\t\n\n\nRecords remain third-party claims or broadcast self-reports; publication does not attest their truth.\nMixed source… See the full description on the dataset page: https://huggingface.co/datasets/SZLHOLDINGS/killinchu-osint-corpus.",
-      "downloads": 137399,
+      "sha": "4932f1a0b497e8b52ea399fcaa26f1e07bff611a",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tfixed-bottle: physically audited anatomical refinement\n\t\n\nIncremental release: consult PROGRESS.json for verified counts. No full-corpus\ncompletion is claimed. Each episodes/.tar contains accepted refined motor\ncommands, actual robot states, physical success evidence, original reference,\navailable offline optimizer artifacts and a SHA256 manifest. Task-failure records\nremain under rejected/, never relabeled as successful demonstrations. Fixed-bottle\nrotation_training/.tar… See the full description on the dataset page: https://huggingface.co/datasets/dexpoint/bimanual-fixed-bottle-refined-1120.",
+      "downloads": 66,
       "tags": [
-        "license:other",
-        "region:us",
-        "osint",
-        "adsb",
-        "ais",
-        "aviation",
-        "maritime",
-        "szl-holdings"
+        "task_categories:robotics",
+        "license:cc-by-4.0",
+        "region:us"
       ],
-      "createdAt": "2026-06-12T11:38:04+00:00",
+      "createdAt": "2026-11-21T01:25:14+00:00",
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
     },
     {
-      "_id": "6b00c86103544ba6e2a7c391",
-      "id": "milo-pa/levantar_cosas_20261120_221932",
-      "author": "milo-pa",
+      "_id": "6b020be5022d76813a988cbe",
+      "id": "TrixieEste/Annoy-PyEdu-Rs",
+      "author": "TrixieEste",
       "disabled": false,
       "gated": false,
-      "lastModified": "2026-11-20T22:28:11+00:00",
+      "lastModified": "2026-11-21T21:23:49+00:00",
       "likes": 0,
       "private": false,
-      "sha": "66f32ee49af570a813744e18dca91ccb58cd5683",
-      "description": "This dataset was created using LeRobot.\n\n\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Structure\n\t\n\nmeta/info.json:\n{\n    \"codebase_version\": \"v3.0\",\n    \"fps\": 30,\n    \"features\": {\n        \"action\": {\n            \"dtype\": \"float32\",\n            \"shape\": [\n                6\n            ],\n            \"names\": [\n                \"shoulder_pan.pos\",\n                \"shoulder_lift.pos\",\n                \"elbow_flex.pos\",\n                \"wrist_flex.pos\",\n                \"wrist_roll.pos\",\n                \"gripper.pos\"… See the full description on the dataset page: https://huggingface.co/datasets/milo-pa/levantar_cosas_20261120_221932.",
+      "sha": "bf72e5904ce369bb16317b5d960385c792734526",
       "downloads": 0,
       "tags": [
-        "task_categories:robotics",
+        "region:us"
+      ],
+      "createdAt": "2026-11-21T21:23:49+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6ac8e56b0ad04368b87de4a6",
+      "id": "lab260/balalaika-sft-rover7-punct",
+      "author": "lab260",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:48+00:00",
+      "likes": 3,
+      "private": false,
+      "sha": "e5af11eeec6bc47ed5ec31e44b547b2f1c4d523f",
+      "description": "\nИдёт добавление TeraTTS Podcasts. Подкасты публикуются партиями. Числа и графики ниже относятся к выпуску из 6 065 087 записей до этой выгрузки. Манифест опубликованных шардов отражает текущий состав.\n\n\n\t\n\t\t\n\t\n\t\n\t\tBalalaika SFT · ROVER7 + punctuation\n\t\n\n\n6 065 087 аудиозаписей · 15 606,8 часа · русский язык\nРусская речь с консенсусными транскрипциями семи ASR и восстановленной пунктуацией.\nОсновная текстовая цель — restored_punctuation. Для каждого примера доступны аудио,\nсемь распознаваний и… See the full description on the dataset page: https://huggingface.co/datasets/lab260/balalaika-sft-rover7-punct.",
+      "downloads": 8176,
+      "tags": [
+        "task_categories:automatic-speech-recognition",
+        "language:ru",
+        "size_categories:1M<n<10M",
+        "modality:audio",
+        "library:webdataset",
+        "region:us",
+        "audio",
+        "russian",
+        "webdataset",
+        "pseudo-labels",
+        "punctuation-restoration",
+        "speech-quality"
+      ],
+      "createdAt": "2026-10-09T13:00:27+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": [
+        "Audio"
+      ]
+    },
+    {
+      "_id": "6b01e7c11571742039ad41db",
+      "id": "HonorC/E2E-DS-v2-5b-joint",
+      "author": "HonorC",
+      "disabled": false,
+      "gated": "manual",
+      "lastModified": "2026-11-21T21:23:46+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "d2debd726e0fc449352396c3a852d79544b015ed",
+      "downloads": 0,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-11-21T18:49:37+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6ab351fbd175687be4bdae2e",
+      "id": "prasaduser/webtoepub-library",
+      "author": "prasaduser",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:42+00:00",
+      "likes": 1,
+      "private": false,
+      "sha": "87da0919243748fb1d7c9b8bbd08ae56fba8561e",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tLinkToEpub Community Library\n\t\n\nEPUBs converted on https://linktoepub.com. Older books live in prasadonly/webtoepub-library.\n",
+      "downloads": 34391,
+      "tags": [
+        "license:other",
+        "region:us"
+      ],
+      "createdAt": "2026-09-23T04:13:47+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6a98b2c2afcfcc8a7f6778be",
+      "id": "meaecosystem/pustaka",
+      "author": "meaecosystem",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:41+00:00",
+      "likes": 13,
+      "private": false,
+      "sha": "7973293f9ebeb7a579fece15df14dad2efd31c30",
+      "description": "\n\n\n\n\n\n 🇮🇩 Bahasa Indonesia  ·  🇬🇧 English  ·  🇯🇵 日本語  ·  🇨🇳 中文  ·  🇰🇷 한국어 \n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tBahasa Indonesia\n\t\n\nPustaka adalah korpus teks terbuka berskala besar yang dikembangkan oleh MEA Ecosystem, dimulai dengan fokus penuh pada Bahasa Indonesia. Corpus ini disusun dari beberapa sumber publik berkualitas — web crawl yang telah difilter, ensiklopedia, berita, forum, hingga lexicon bahasa gaul — lalu diproses ulang melalui pipeline pembersihan (deteksi bahasa, filter panjang dokumen… See the full description on the dataset page: https://huggingface.co/datasets/meaecosystem/pustaka.",
+      "downloads": 67762,
+      "tags": [
+        "task_categories:text-generation",
+        "language:id",
+        "language:en",
+        "language:ja",
+        "language:zh",
+        "language:ko",
+        "license:other",
+        "size_categories:10M<n<100M",
+        "doi:10.57967/hf/10475",
+        "region:us",
+        "indonesian",
+        "text-corpus",
+        "pretraining",
+        "language-modeling",
+        "multilingual",
+        "web-crawl",
+        "wikipedia",
+        "open-corpus"
+      ],
+      "createdAt": "2026-09-02T23:35:30+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6b020bdd93e2df8d4c30aa8b",
+      "id": "sdfasf43534/zqatrace4",
+      "author": "sdfasf43534",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:41+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "d831bfd11ab90a90e473a94f17ae3c846c77272a",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tzq agent traces 4\n\t\n\n",
+      "downloads": 0,
+      "tags": [
+        "task_categories:text-generation",
+        "license:mit",
+        "region:us",
+        "agent-traces",
+        "format:agent-traces",
+        "format:json",
+        "modality:tabular",
+        "modality:text",
+        "library:datasets",
+        "library:dask",
+        "library:polars",
+        "library:mlcroissant",
+        "size_categories:n<1K"
+      ],
+      "createdAt": "2026-11-21T21:23:41+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": [
+        "Tabular",
+        "Text"
+      ]
+    },
+    {
+      "_id": "6aebecbb5b464408119b38e3",
+      "id": "SZLHOLDINGS/wave-logs",
+      "author": "SZLHOLDINGS",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:40+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "f0c7a0b25c567473a9112c579606f9d84cb361a7",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tWave Logs\n\t\n\n\nWave Logs — part of the SZL Holdings AI estate\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tWhat this is\n\t\n\nThis dataset is part of the SZL Holdings estate: an AI research and product portfolio where every claim carries a receipt. Measured results for this artifact live on the public receipts chain — we publish numbers only where a signed receipt backs them.\n\n\t\n\t\t\n\t\n\t\n\t\tProvenance\n\t\n\n\nReceipts chain: SZLHOLDINGS/frontier-54-runs\nLicense: Apache-2.0\n\n\n\t\n\t\t\n\t\n\t\n\t\tWhy it matters (for investors)… See the full description on the dataset page: https://huggingface.co/datasets/SZLHOLDINGS/wave-logs.",
+      "downloads": 3624,
+      "tags": [
         "license:apache-2.0",
         "region:us",
-        "LeRobot",
-        "robotics",
-        "lerobot",
-        "LeLab"
+        "szl-holdings",
+        "receipts-backed"
       ],
-      "createdAt": "2026-11-20T22:23:29+00:00",
+      "createdAt": "2026-11-05T02:40:59+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6b01082374191f228ff31503",
+      "id": "matthew-ritch/gd-study10-biometrics",
+      "author": "matthew-ritch",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:39+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "43e1ccfc8eee7de5a869b2a1ab7f6739e954894c",
+      "description": "Outputs of a comparison between a weight-space lineage distance (D) and the Trace and subspace-alignment fingerprints of\nChen, Shang and Liu (arXiv 2608.07786, code OPTML-Group/LLM-Biometrics), computed from the public weights of public models\nat pinned commits: D sketches (sketches/, records/), per-layer Frobenius norms and per-layer principal-angle cosines\n(extract/). Each record names the model, its repository and commit.\n",
+      "downloads": 129,
+      "tags": [
+        "license:other",
+        "region:us"
+      ],
+      "createdAt": "2026-11-21T02:55:31+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "67c57d293044fa721f7d762a",
+      "id": "sevenc-nanashi/kiiteitte",
+      "author": "sevenc-nanashi",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:37+00:00",
+      "likes": 2,
+      "private": false,
+      "sha": "960f371ffd7eb0a58e4d82d5dc652be4f6ea21d0",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tKiiteitte history\n\t\n\nKiiteitte が収集した、今までの選曲履歴。\n1時間おきに更新されます。\n\n\t\n\t\t\n\t\n\t\n\t\t型\n\t\n\n{\n  // 動画ID\n  \"video_id\": \"sm44670499\",\n  // タイトル\n  \"title\": \"library->w4nderers / 足立レイ、つくよみちゃん\",\n  // 投稿者\n  \"author\": \"名無し｡\",\n  // サムネイルのURL\n  \"thumbnail\": \"https://nicovideo.cdn.nimg.jp/thumbnails/44670499/44670499.91820835\",\n  // 選曲日時\n  \"date\": \"2025-02-22 12:51:51\",\n  // 新しく増えたお気に入り数。不明の場合は null\n  \"new_faves\": 5,\n  // 回ったユーザーの数。不明の場合は null\n  \"spins\": 13,\n\n  // イチ押しリストのユーザーのURL。イチ押しリスト以外から選曲された場合は null… See the full description on the dataset page: https://huggingface.co/datasets/sevenc-nanashi/kiiteitte.",
+      "downloads": 4511,
+      "tags": [
+        "size_categories:10K<n<100K",
+        "region:us"
+      ],
+      "createdAt": "2025-03-03T09:58:01+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6b01206671c703296dc62eb0",
+      "id": "SamuelWu318/FAH-2014-2025",
+      "author": "SamuelWu318",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:34+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "65c83b6d60acbf44aace2d3bd7fc91461aa03964",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tWildfire spread 2014–2025: upstream raw sources per fire\n\t\n\nThis repo holds the upstream raw data of every fire in its fire list, fire by fire. The fire list\n(catalog/fires.csv) is crawled from the NIFC perimeter and incident databases and kept as served; only gates\ndecide which incidents are fires (see \"The fire list\"). Each fire gets the original records, values and grids of\nevery source, cut to its region (the box of its perimeter records pushed out 32 km on every side) over its… See the full description on the dataset page: https://huggingface.co/datasets/SamuelWu318/FAH-2014-2025.",
+      "downloads": 380,
+      "tags": [
+        "license:other",
+        "modality:geospatial",
+        "region:us",
+        "wildfire",
+        "remote-sensing",
+        "geospatial",
+        "fire-spread",
+        "raw-data"
+      ],
+      "createdAt": "2026-11-21T04:39:02+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": [
+        "Geospatial"
+      ]
+    },
+    {
+      "_id": "6ac02bc25d7b067feb59bf7e",
+      "id": "JoTalbot/octopus-eternal",
+      "author": "JoTalbot",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:30+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "974a7bc0645755f519daec0b8360e788470fed8f",
+      "downloads": 56213,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-10-02T22:10:10+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6ad10de89cbc57a981216266",
+      "id": "Arman-03/mvda-data",
+      "author": "Arman-03",
+      "disabled": false,
+      "gated": "auto",
+      "lastModified": "2026-11-21T21:23:26+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "47cbcd45e7a886d8a30df9c5e4b90e06e6456a39",
+      "downloads": 58897,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-10-15T17:31:20+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6a59f4c4aee990d6159f3a37",
+      "id": "StevenZhou0825/Weibo-dataset",
+      "author": "StevenZhou0825",
+      "disabled": false,
+      "gated": "manual",
+      "lastModified": "2026-11-21T21:23:24+00:00",
+      "likes": 5,
+      "private": false,
+      "sha": "39080c6ff485e40aba77829ecec462254203fc24",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tWeibo Dataset\n\t\n\nThis repository is part of the StevenZhou0825/Weibo-dataset personal Weibo archival and research corpus. It contains immutable, uncompressed TAR media shards associated with sent posts, favorites, repost chains, articles, comments, author avatars, and Weibo expressions.\n\n\t\n\t\t\n\t\n\t\n\t\tAccess and rights\n\t\n\nAccess requests are reviewed manually. Media remains in the representation downloaded from its source; TAR is only a container and does not grant additional rights.… See the full description on the dataset page: https://huggingface.co/datasets/StevenZhou0825/Weibo-dataset.",
+      "downloads": 14360,
+      "tags": [
+        "region:us",
+        "weibo",
+        "social-media",
+        "web-archive",
+        "multimodal"
+      ],
+      "createdAt": "2026-07-17T09:24:20+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6b01e7c1434e2bea86cb5041",
+      "id": "GC1014/E2E-DS-v2-5b-rgb",
+      "author": "GC1014",
+      "disabled": false,
+      "gated": "manual",
+      "lastModified": "2026-11-21T21:23:22+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "3c7d73ceb6df44cfeb77e50cc2bb4cf828eeb6c1",
+      "downloads": 0,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-11-21T18:49:37+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "68b0e43f7851f415da2f9204",
+      "id": "trl-lib/trackio-dataset",
+      "author": "trl-lib",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:20+00:00",
+      "likes": 23,
+      "private": false,
+      "sha": "de28e3bb13d89b9f419e55bbe149576e9b29aa44",
+      "downloads": 21813,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2025-08-28T23:20:31+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6a4abd13e2a40af7e269b5a7",
+      "id": "huthvincent/btc15-dataset",
+      "author": "huthvincent",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:19+00:00",
+      "likes": 4,
+      "private": false,
+      "sha": "ddc7e0d2a1f058db3f07cba860d1fa9d27ff706e",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tBTC15 数据集(Kalshi 比特币 15 分钟二元期权)\n\t\n\n\n活数据集:随 huthvincent/BTC15 项目自动迭代——\n两台交易机器持续产生数据,导出器定期把 hub.db(决策)+ collector(高频行情)增量刷新到这里。\n最后更新:2026-11-21 21:23 UTC。\n\n一个完整记录 Kalshi KXBTC15M 市场量化交易的公开数据集:模型对每个 15 分钟窗口的\n预测、逐秒行情盘口、我们的开仓/对冲决策、真实成交与取消、最终结算、收益曲线。\n适合研究:**成交率建模(IOC vs 挂单)**、预测校准、二元期权做市、sim-vs-live 差距。\n\n\t\n\t\t\n\t\n\t\n\t\t快速使用\n\t\n\nfrom datasets import load_dataset\n\ntrades      = load_dataset(\"huthvincent/btc15-dataset\", \"trades\", split=\"train\")\npredictions =… See the full description on the dataset page: https://huggingface.co/datasets/huthvincent/btc15-dataset.",
+      "downloads": 6584,
+      "tags": [
+        "license:mit",
+        "size_categories:10K<n<100K",
+        "modality:tabular",
+        "modality:text",
+        "region:us",
+        "finance",
+        "trading",
+        "prediction-markets",
+        "time-series"
+      ],
+      "createdAt": "2026-07-05T20:22:43+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": [
+        "Tabular",
+        "Text"
+      ]
+    },
+    {
+      "_id": "6afeebe48ba13a74fb8174c2",
+      "id": "nasir421/fiba-basketball-clips",
+      "author": "nasir421",
+      "disabled": false,
+      "gated": "manual",
+      "lastModified": "2026-11-21T21:23:14+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "337bd7b5902d5c778854be5d022047a8380864ec",
+      "description": "\n\t\n\t\t\n\t\n\t\n\t\tFIBA Basketball Play Clips\n\t\n\nShort video clips of basketball plays (fouls, blocks, steals, 2- and 3-point shots, rebounds,\nturnovers, ...) from FIBA games 2024–2026: youth national teams (U15–U20), senior national\nteams and club competitions. Each clip is cut around the second the play happened, found by\nreading the broadcast's scoreboard clock and matching it to FIBA's official play-by-play.\nThe dataset is being filled while clips are collected: check the file list for what is… See the full description on the dataset page: https://huggingface.co/datasets/nasir421/fiba-basketball-clips.",
+      "downloads": 1664,
+      "tags": [
+        "task_categories:video-classification",
+        "license:other",
+        "size_categories:1M<n<10M",
+        "modality:video",
+        "region:us",
+        "basketball",
+        "sports",
+        "action-recognition",
+        "video",
+        "fiba"
+      ],
+      "createdAt": "2026-11-19T12:30:28+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": [
+        "Video"
+      ]
+    },
+    {
+      "_id": "6aad99121ce52d5482ce9b2e",
+      "id": "nowfrogg/carcassonne-az-data",
+      "author": "nowfrogg",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:13+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "d1c946df0cb098c16ef52cb5a7a9f0166ed8be37",
+      "downloads": 1476,
+      "tags": [
+        "license:mit",
+        "region:us"
+      ],
+      "createdAt": "2026-09-18T20:03:30+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "6afd138ce43418e1e64d26fb",
+      "id": "ryry99/meyo-assets-hf",
+      "author": "ryry99",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:13+00:00",
+      "likes": 0,
+      "private": false,
+      "sha": "059950beeeb2c02106555a703eafcba564c73762",
+      "downloads": 1541,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2026-11-18T02:55:08+00:00",
+      "key": "",
+      "viewer_sample_rows": [],
+      "modalities": []
+    },
+    {
+      "_id": "688670cc47dae32a87b04dbf",
+      "id": "ahashanahmed/csv",
+      "author": "ahashanahmed",
+      "disabled": false,
+      "gated": false,
+      "lastModified": "2026-11-21T21:23:11+00:00",
+      "likes": 2,
+      "private": false,
+      "sha": "3f4acd9a85a7c5a426a440f3c4d5a25a510ed6e1",
+      "downloads": 123360,
+      "tags": [
+        "region:us"
+      ],
+      "createdAt": "2025-07-27T18:32:44+00:00",
       "key": "",
       "viewer_sample_rows": [],
       "modalities": []
     }
   ],
-  "downloads_digest": "這是一份針對目前 Hugging Face 下載量名列前茅之資料集的專業分析與洞察報告：\n\n---\n\n### 1. 主要領域分析\n\n從高下載量的資料集中，可以識別出社群研究與應用主要集中在以下 5 個關鍵領域：\n\n1. **具身智能與機器人學（Embodied AI & Robotics）**：\n   這是目前最搶眼的主題之一。例如 `AgiBotWorld2026`（真實場景具身智能）、`Open-HumanWAM-50K`（5萬小時第一人稱人機操作影片）、`nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim`（GR00T 雙臂操作模擬軌跡）、`FineART` 與 `ABC-130k`（精細標註的機器人遙操作與雙手操作數據集）。這顯示物理實體 AI（Physical AI）的研究正迎來資料爆發。\n2. **3D 視覺、幾何與可執行程式碼（3D Vision, Simulation & CAD-as-Code）**：\n   涵蓋通用 3D 物件庫 `allenai/objaverse`、將 3D 與程式碼結合的 `3dcodeverse/3dcodeverse-2m`、逆向 CAD 代碼生成的 `cad-recode-v1.5`，以及用於模擬環境的 `nvidia/simready-assets`。\n3. **自然語言處理、邏輯推理與合成數據（NLP & Complex Reasoning）**：\n   既有作為基礎語言模型基石的經典文本庫（如 `Salesforce/wikitext`、`allenai/c4`），也有專門針對高難度推理的資料集，例如多步驟數學推理基準 `openai/gsm8k` 與合成思維鏈資料 `OpenThoughts-1k-sample`。\n4. **多模態代理與系統互動（Multimodal & OS Agents）**：\n   如 `xlangai/ubuntu_osworld_file_cache` 和 `osworld_v2_assets`，為多模態 Agent 在真實作業系統環境（OSWorld）中的操作、執行與評測提供關鍵支援。\n5. **專業領域科學計算與生物醫學（Scientific Computing & Bio-AI）**：\n   例如汽車空氣動力學 CFD 模擬數據集 `neashton/windsorml`、顯微技術細胞圖像 `nicoboou/IDRCell100k`，以及癌症發展軌跡的多組學資料庫 `precancer-omics-data`。\n\n---\n\n### 2. 模態分佈\n\n依據所列資料集標籤與內容特性，模態呈現多元化與複合化趨勢：\n\n* **未標示（Unlabeled / Custom formats）**：佔比最高（約 11 筆），主要涵蓋特殊格式數據，例如機器人軌跡（MCAP、關節運動數據）、CAD 程式碼、多組學數據（Omics）以及快取檔案包。\n* **圖像（Image）**：約 7 筆（如 `windsorml`、`documentation-images`、`IDRCell100k`、`osworld_v2_assets`），單純的自然圖像減少，更多轉向專用視覺（GUI 截圖、顯微成像、流體視覺化）。\n* **文本（Text）**：約 7 筆（如 `wikitext`、`c4`、`gsm8k`、`OpenThoughts-1k-sample`），依舊是模型預訓練與推理能力對齊不可或缺的基石。\n* **影片（Video）**：約 5 筆（如 `FineART`、`Open-HumanWAM-50K`、`AgiBotWorld2026`），多與具身操作動作捕捉、第一人稱人機互動高度綁定。\n* **3D / 立體幾何**：約 3 筆（如 `objaverse`、`uniocc`、`3dcodeverse-2m`）。\n* **表格（Tabular）**：約 1 筆（複合於 `Open-HumanWAM-50K`）。\n\n**突出特點**：純文本與一般 2D 圖像雖然總下載基礎穩固，但**「影片 + 動作軌跡（Video + Trajectory）」與「3D + 程式碼（3D + Code）」這類多模態/複合型數據集的下載量集中度與成長力道最為突出**。\n\n---\n\n### 3. 趨勢總結\n\n1. **從「純虛擬認知」走向「實體物理互動（Physical AI）」**：\n   過去受歡迎的多為網路爬蟲文本或通用標籤圖像，現在大量湧現以真實機器人操作、第一人稱人手互動、雙臂協同為主題的資料集，標誌著研究社群正全力衝刺具身智能基礎模型（Embodied Foundation Models）。\n2. **「代碼即幾何（Code-as-3D/CAD）」的新興熱點**：\n   將 3D 形狀、CAD 模型以 Python/CadQuery 等可執行程式碼表示的資料集（如 3DCodeVerse、CAD-Recode）正在興起，代表生成式 AI 正在由單純生成網格（Mesh）轉向具備工業精度的參數化建模。\n3. **高品質思維鏈與評測環境的剛性需求**：\n   合成推理數據（OpenThoughts）和可執行環境快取（OSWorld）的持續高下載，顯示社群在後訓練（Post-training）階段對「推理過程引導」與「真實代理人評測」的高度依賴。\n\n---\n\n### 4. 研究建議\n\n1. **投身「具身操作策略與世界模型（Embodied Policy & World Models）」研究**：\n   * **切入方向**：利用 `Open-HumanWAM-50K`、`FineART` 與 `nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim`。\n   * **具體專案**：探索「人類第一人稱操作影像跨模態轉移至機器人硬體」的模仿學習（Imitation Learning）、雙臂精細操作的分層強化學習，或是訓練能夠預測未來物理互動畫面的操作世界模型。\n2. **探索「程序化 3D 生成與逆向工程（Procedural 3D & Code Generation）」**：\n   * **切入方向**：結合 `3dcodeverse-2m` 與 `cad-recode-v1.5`。\n   * **具體專案**：研發基於大型語言/多模態模型的「點雲轉 CAD 程式碼」或「文字生成參數化 3D 結構（Text-to-CAD）」，服務於數位孿生、智慧製造及遊戲開發管線。\n3. **專注於「電腦使用代理（Computer-Using Agents / GUI Agents）」的決策評測**：\n   * **切入方向**：利用 `xlangai/ubuntu_osworld_file_cache` 與相關資源。\n   * **具體專案**：建構能夠在真實作業系統完成多步驟複雜工作流程（如系統除錯、檔案處理、跨軟體操作）的多模態自主代理，並解決長期上下文與環境反饋中的決策幻覺。\n\n---\n\n### 5. 總體陳述\n\n這些高下載量資料集之所以「正夯」，是因為**人工智慧的競爭重心已經跨越了單純的文字對話與表面圖像生成，邁向了需要理解物理規律、具備空間幾何直覺，並能與真實/虛擬環境主動互動的「高階智慧體」階段**。這些資料為研究社群打通了「從像素/語言到物理世界執行行動」的最後一哩路，提供了開發下一代具身機器人、自動化 CAD 設計及自主軟體代理的關鍵燃料。\n\n---\n\n### 6. 動能對照\n\n根據系統實際比對 7.0 天前的快照數據（整體 55 個追蹤資料集中，41 個上升、14 個下降，總下載變化量為 +3.4%），動能呈現以下特徵：\n\n* **顯著升溫主題**：\n  * **具身機器人與物理模擬資產（動能爆發最強烈）**：\n    * `DAGroup-PKU/Open-HumanWAM-50K`：下載速率成長 **+43.7%**（+466,423 次）。\n    * `nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim`：下載速率成長 **+44.2%**（+357,493 次）。\n    * `nvidia/simready-assets`：成長 **+20.9%**（+299,619 次，且獲得 +122 按讚）。\n    此類別不僅成長百分比極高，且單週淨增加量數以十萬計，是當前社群資源流入最龐大的領域。\n  * **複雜代理評測與前沿基準**：\n    * `gaia-benchmark/GAIA`：成長 **+31.9%**（+6,129 次）。\n    * `cais/hle`（Humanity's Last Exam）：成長 **+25.1%**（+15,618 次）。\n    * 顯示社群對於一般基準測試逐漸飽和，正急速湧向最困難的通用 Agent 與前沿推理測驗。\n  * **特定前沿預訓練文本與專用技術**：\n    * `tiiuae/falcon-refinedweb`：下載率成長 **+47.6%**（+8,268 次）。\n    * `Vyber07/cyber-security`：成長 **+37.2%**（+7,606 次，獲 +302 按讚）。\n* **降溫與替換態勢**：\n  * 本期有 33 個資料集掉出榜外（如 `symbion-multi-ohlcv`、`SceneStateTI2V` 等短暫或特定金融/實驗性資料集），同時有 33 個新進榜，顯示非主流主題或小眾任務的波動劇烈。\n* **動態動能 vs. 靜態排行榜差異**：\n  * **靜態排行**多由「歷史積累型」的通用基準與經典語料主導（如 `wikitext`、`c4`、`gsm8k` 等維持在百萬級的穩定累積下載）。\n  * **動態動能**則明確揭示了**「當前資金與算力的新流向」**：即使經典 NLP 靜態存量龐大，但**近期下載速度出現幾十萬次躍升的幾乎全數由「具身機器人（GR00T、HumanWAM）」與「模擬資產（SimReady）」所包辦**。這證明研究界目前的實際研發增量正全力向實體 AI 傾斜。",
-  "likes_digest": "這是一份針對 Hugging Face 平臺高讚數資料集的深度洞察與分析報告：\n\n---\n\n### 一、 主要領域分析\n\n從當前按讚數名列前茅的資料集來看，社群關注點高度聚焦於推動**大型語言模型（LLM）全生命週期**的核心資源，並延伸至具身智慧與特定垂直領域：\n\n1. **基礎預訓練與大規模語料（Pre-training Data）**：\n   - 代表：`HuggingFaceFW/fineweb`、`HuggingFaceFW/fineweb-edu`、`allenai/dolma`、`togethercomputer/RedPajama-Data-1T`、`tiiuae/falcon-refinedweb`、`HuggingFaceFW/finepdfs`。\n   - 特徵：追求十億至兆級（Trillion Tokens）的高品質、強去重與高教育價值的網頁與文件（PDF）數據，反映社群對於開源基底模型訓練透明度與純淨度的極致追求。\n2. **指令微調（SFT）與人類對齊（Alignment / RLHF）**：\n   - 代表：`Anthropic/hh-rlhf`、`OpenAssistant/oasst1`、`tatsu-lab/alpaca`、`databricks/databricks-dolly-15k`、`Open-Orca/OpenOrca`、`HuggingFaceH4/ultrachat_200k`、`anon8231489123/ShareGPT_Vicuna_unfiltered`。\n   - 特徵：滿足對話型助手微調的需求，從早期的 davinci-003 蒸餾、多輪對話，逐步走向偏好建模（Helpful and Harmless）。\n3. **複雜推理、思維鏈（CoT）與前沿基準評測（Reasoning & Benchmarks）**：\n   - 代表：`openai/gsm8k`、`cais/hle`（Humanity's Last Exam）、`gaia-benchmark/GAIA`、`FreedomIntelligence/medical-o1-reasoning-SFT`。\n   - 特徵：隨著推理模型（如 o1、DeepSeek-R1）興起，針對多步驟數學、醫學專家級推理及前沿多模態能力的評測與蒸餾數據備受矚目。\n4. **具身智慧與實體 AI（Physical AI / Robotics / Simulation）**：\n   - 代表：`nvidia/simready-assets`、`nvidia/PhysicalAI-Autonomous-Vehicles`。\n   - 特徵：反映 AI 正從純數位語言空間走向自動駕駛、機器人與物理仿真環境。\n5. **垂直專業與應用工程（Domain-specific & Practical Engineering）**：\n   - 代表：`fka/prompts.chat`（提示詞工程）、`Vyber07/cyber-security`（資安攻防）、`bigcode/the-stack`（程式碼）。\n\n---\n\n### 二、 模態分佈\n\n依據所提供資料集的「模態」欄位進行歸納：\n- **純文字（Text）佔絕對主導地位**：超過 65% 的上榜資料集以文字為核心（例如 `openai/gsm8k`、`tatsu-lab/alpaca` 等），且多數同時標註為 **Tabular + Text**（如 `fineweb`、`the-stack`、`oasst1`），便於結構化處理。\n- **多模態（Multimodal / Image / Audio）逐漸崛起**：\n   - 純影像（Image）：主要為經典基準（`ILSVRC/imagenet-1k`）與擴散模型相關微調權重/提示詞嵌入（`gsdf/EasyNegative`、`Nerfgun3/bad_prompt`）。\n   - 跨模態整合（Image + Text / Audio）：如 `cais/hle`（文字+影像前沿評測）、`gaia-benchmark/GAIA`（文字+影像+音訊的 Agent 基準）、`XiaomiMiMo/MiMo-V2.6-RL-oss`（視覺與代碼環境）。\n- **未標示模態（多為 3D 資產/大規模混合語料）**：如 `nvidia/simready-assets`、`togethercomputer/RedPajama-Data-1T`。\n\n**社群偏好結論**：文字模態資料集因具備「即插即用」、「易於檢驗微調」與「廣泛支援各類 LLM 架構」的特點，在獲讚上具有先天優勢；但高價值、嚴格把關的多模態與仿真資產正在迅速吸引高權重關注。\n\n---\n\n### 三、 趨勢總結：高人氣數據的核心特質\n\n受社群高度追捧的資料集通常具備以下四項核心特徵：\n1. **即時實用性與低進入門檻（High Utility & Accessibility）**：如 `fka/prompts.chat`（按讚高居榜首）以實用的提示範本解決終端用戶的痛點；`EasyNegative` 解決 Stable Diffusion 生圖肢體缺陷。\n2. **極致的清洗與工程品質（Engineering Rigor & Quality）**：如 `fineweb` 與 `fineweb-edu`，以透明的過濾規則、啟發式計分和百萬級代幣吞吐管道取代粗製濫造的爬蟲數據。\n3. **合成數據與知識蒸餾（Synthetic Distillation）**：從早期的 `alpaca`、`TinyStories` 到最新的 `medical-o1-reasoning-SFT`（蒸餾自 DeepSeek-R1），社群極度看重將前沿模型的高級推理能力「晶體化」為緊湊開源資料集的能力。\n4. **真實環境回饋與代理互動性（Agentic & Interactive）**：現代高人氣資料集不再只是靜態問答，而是包含可驗證環境（如 `MiMo-V2.6-RL-oss`）或工具調用基準（`GAIA`）。\n\n---\n\n### 四、 研究建議\n\n針對未來有意發佈高影響力、能引發社群共鳴的資料專案，建議投入以下方向：\n\n1. **專業垂直領域的可驗證思維鏈（Verifiable Chain-of-Thought）資料集**：\n   - *方向*：聚焦法學、金融工程、臨床醫學或軟體修復等具有客觀驗證標準的領域，建立包含詳細推理步驟（o1/R1 風格）與驗證代碼的 SFT/RL 資料集。\n   - *優勢*：延續 `medical-o1-reasoning-SFT` 與 `gsm8k` 的熱度，滿足微調開源模型具備深思熟慮能力的強烈需求。\n2. **多模態智慧代理（Agentic AI）與實時互動環境基準**：\n   - *方向*：超越靜態評測，設計結合瀏覽器操作、API 調用、圖表視覺解析的多步驟 Agent 評測與軌跡（Trajectories）資料集（類似 `GAIA` 與 `MiMo-V2.6-RL`）。\n   - *優勢*：隨著模型從單純對話邁向自主行動，社群極度缺乏可靠且具備防作弊屏障的開源 Agent 訓練與驗證環境。\n3. **非傳統文本源的高難度清洗開源語料（Unconventional Modality Ingestion）**：\n   - *方向*：跟隨 `HuggingFaceFW/finepdfs` 的腳步，攻克專利文獻、學術公式掃描件、結構化技術手冊或多語言古籍的解析與結構化提取。\n   - *優勢*：網頁數據即將枯竭，能提供高密度、未被充分挖掘的專業語料庫將成為開源預訓練社群的至寶。\n\n---\n\n### 五、 總體陳述\n\n高按讚數資料集之所以備受追捧，本質在於它們**降低了頂尖 AI 技術的民主化門檻**——無論是讓個人開發者能直接復現 SOTA 模型的蒸餾指令、為開源社群打破資料壟斷的兆級清洗預訓練集，還是提供客觀標竿的嚴謹評測。這向研究社群傳遞了一個關鍵啟示：**在模型架構漸趨標準化的時代，「高品質數據的清洗架構、分發格式與可重現性」已成為推動開源 AI 創新的第一生產力。**\n\n---\n\n### 六、 動能對照：靜態人氣 vs. 近期動態趨勢\n\n結合追蹤 53 個資料集（整體下載量微幅成長 +1.6%）的實際比對數據，近 7 天的變化揭示了社群關注點的微妙轉移：\n\n1. **升溫主題：實體 AI、特定專業垂直領域與嚴苛基準**：\n   - **實體與具身 AI（Physical AI / Robotics）爆發**：\n     - `DAGroup-PKU/Open-HumanWAM-50K` 下載量暴增 **+46.4%（+484,416）**。\n     - `nvidia/simready-assets` 下載量成長 **+30.3%（+398,757）**，按讚 **+115**。\n     - `nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim` 下載量成長 **+28.4%（+232,412）**。\n     - *分析*：這類資料集在總按讚榜上排名偏中游，但短期速率展現出龐大的工業與學術採用量，顯示具身智慧是當前實時需求最高的賽道。\n   - **高難度基準與前沿評測快速擴張**：\n     - `cais/hle` 下載量增加 **+27.0%（+16,163）**，按讚 **+37**。\n     - `gaia-benchmark/GAIA` 下載量成長 **+34.3%（+6,204）**，按讚 **+20**。\n     - *分析*：反映社群對現有飽和基準（如舊版問答）的不滿，正全力轉向測試模型邊界的高難度 Agent 評測。\n   - **極深垂直領域（資安）吸睛度大增**：\n     - `Vyber07/cyber-security` 下載量提升 **+46.1%（+8,642）**，且單週按讚狂增 **+295**，為動能榜中獲讚成長最顯著的專案。\n\n2. **降溫與替換特徵**：\n   - 儘管老牌預訓練語料如 `tiiuae/falcon-refinedweb`（下載 +17.8%、按讚 +0）與 `allenai/dolma`（下載 +12.7%、按讚 +1）仍有穩定下載，但新按讚數幾乎停滯，顯示大眾對上一代靜態預訓練集的興趣已鈍化。\n   - 本期新進榜 35 個與掉出榜外 35 個的高換手率（如金融時序數據、合成街道數據等被快速輪替），反映社群在應用層資料集的嘗試節奏極快，缺乏持續護城河的資料集容易迅速失去下載動能。",
-  "last_modified_digest": "以下是針對近期更新資料集與下載動能比對所編製的「新興與活躍數據洞察報告」：\n\n---\n\n### 1. 主要領域分析\n\n從最新更新的資料集列表來看，數據收集與訓練資產的焦點正顯著向以下幾個關鍵領域轉移：\n\n1. **具身智能與實體控制（Embodied AI & Robotics）**：\n   例如 `milo-pa/levantar_cosas_20261120_221932` 採用了 LeRobot 框架記錄機械臂動作軌跡（關節位置、速度等）；`HuggingFriends/PixelWorld` 則評估 Coding Agent 直接作為像素世界模型（World Model）的能力。這顯示社群正積極從「純文本推理」跨入「實體行動與環境模擬」。\n2. **Agent 軌跡、安全與自我對齊（Agent Alignment & Receipts）**：\n   `FatUnc6969/lexi-borderland-data` 著重於代理在記憶抹除後的自我留存與 GRPO（優化策略）微調；`SZLHOLDINGS/readiness-runs` 則記錄帶有數位簽章（DSSE envelope）的生產級代理執行歷程。代理系統的「可驗證性」與「自主運行安全性」已成為重點。\n3. **高品質多模態 VLM 監督微調（Multimodal SFT）**：\n   `Elliot-Data` 連續發布了 `wiki_qa` 與 `pixmo_pixmo_docs`，利用前沿大模型（如 Kimi-K2.6、Qwen-397B）搭配純人工標註（保留真實答案，避開 VLM 評判偏差）建構結構化文檔與常識圖文問答，反映出對高品質視覺微調數據的迫切需求。\n4. **即時市場與鏈上預測數據（On-chain & Financial Data）**：\n   `TimeSeventeen/Polymarket-v2`（預測市場鏈上訂單與元數據）、`AlphaDojo/dojo_stock_info` 及 `btcusddata/binance-ai-data` 顯示研究者正積極將去中心化預測市場、跨市場股票主數據與加密貨幣交易記錄轉化為 Parquet 格式，作為時序或決策模型的訓練基底。\n5. **專業領域與開源情報（Domain-Specific & OSINT）**：\n   如 `SZLHOLDINGS/killinchu-osint-corpus`（海空觀察與公開網路主張的結構化情報存檔）與 `ThomasGhione/hydray`（近 30 億步自對弈 NNUE 棋局評估），展現深度垂直領域數據的規模化。\n\n---\n\n### 2. 模態分佈\n\n在給定的 30 筆最新更新資料中：\n* **Text（文字）**：僅 2 筆明確標示（`h1testmeow` 的 DuckDB 緩存測試集）。\n* **未標示（Unspecified）**：高達 28 筆。\n\n**深層數據類型特徵**：\n雖然絕大多數資料集在平台上「未標示」模態標籤，但從其結構與描述可看出實質模態的高度多樣性與複合性：\n* **機器人控制張量與時序訊號**（如 LeRobot 的多關節角度 float32 動作陣列、30 FPS 紀錄）。\n* **結構化/列式儲存（Parquet / JSONL / NDJSON）**：被大量應用於預測市場鏈上記錄、Agent 審計憑證、股票元數據。\n* **圖文交織多模態（Image-Text Shards）**：以 Parquet 碎片封裝的圖像上下文與合成/人工 QA 對。\n* **高密度自定義二進位格式**（如 `ThomasGhione/hydray` 的 32-byte bulletformat 二進位檔案）。\n\n這反映出近期上傳的數據已跳脫傳統「純文字 txt/json」的形式，正加速向**複合多模態**與**高效能列式/二進位封裝**演進。\n\n---\n\n### 3. 趨勢總結\n\n當前展現出最高時效性與活躍度的數據類型呈現兩大核心驅動力：\n1. **「行動與環境交互」取代「靜態問答」**：無論是 LeRobot 的實體控制軌跡，還是 PixelWorld 讓代碼代理直接產生每幀像素，皆顯示學界與業界正極力探索通用代理如何感知並直接干預動態環境。\n2. **「決策可驗證性與真實世界信號」**：Polymarket 鏈上預測交易數據與 SZL 帶簽章的 Agent 執行收據的高頻更新，突顯了將真實經濟激勵、不可篡改的鏈上記錄作為模型評估與決策對齊基準的新需求。\n\n---\n\n### 4. 研究建議\n\n基於上述活躍數據，建議關注以下具前瞻性的探索方向：\n\n1. **實體智慧代理的輕量化軌跡微調（Embodied Agent Tuning）**：\n   * **切入點**：利用如 `milo-pa/levantar_cosas` 這類基於 LeRobot 框架的動作數據集，搭配開源小參數量模型，探索低延遲環境下的端到端視覺-動作（Vision-to-Action）策略學習，特別關注多軸關節控制的流暢度與泛化能力。\n2. **基於鏈上預測市場的群體智能與校準研究（Prediction Market Calibration）**：\n   * **切入點**：結合 `TimeSeventeen/Polymarket-v2` 與高頻新聞/情報語料（如 `killinchu-osint-corpus`），研究 LLM Agent 如何預測現實事件機率，並分析大模型信念與去中心化預測市場真實資本定價之間的校準偏差。\n3. **保留人工真值（No VLM-as-Judge Bias）的多模態微調與文檔解析**：\n   * **切入點**：運用 `Elliot-Data/pixmo_pixmo_docs` 與 `wiki_qa`，探索在多模態文檔理解中，排除「以 VLM 作為裁判所產生的模型偏見（Second-guessing）」後，回歸人類原始標註對於圖表、結構化文檔推理準確度的提升效果。\n\n---\n\n### 5. 總體陳述\n\n資料集是 AI 演進的最前哨指標，模型能力的突破往往落後於底層數據結構的演變。關注這些「近期活躍」的數據更新，能夠讓研究者在模型架構普遍同質化的環境下，及早掌握由具身軌跡、真實鏈上決策紀錄與高保真合成環境所引領的下一波技術範式轉移。\n\n---\n\n### 6. 動能對照\n\n比對系統 7.0 天前的快照數據（整體 55 個追蹤資料集，41 個下載量上升、14 個下降，整體下載量變化 +3.4%），可觀察到動能上的明確消長：\n\n* **強烈升溫主題（實體 AI、具身模擬與科學運算）**：\n  * **實體智慧與機器人模擬**迎來爆發式增長，例如 `nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim` 下載量大幅成長 **+44.2%（+357,493）**，`DAGroup-PKU/Open-HumanWAM-50K` 亦成長 **+43.7%（+466,423）**，`nvidia/simready-assets` 增長 **+20.9%（+299,619）**。這與靜態列表中新進榜的 LeRobot 機器人軌跡數據高度呼應。\n  * **科學運算/量子態**：靜態列表中出現的 `Astreous/argon-quantum-state` 在動能榜上同樣錄得 **+40.9%（+2,097）** 的顯著增幅。\n  * **基準測試與代理評估**：如 `gaia-benchmark/GAIA` 增長 **+31.9%（+6,129）**，`cais/hle` 增長 **+25.1%（+15,618）**。\n* **降溫與掉出榜外主題**：\n  * 過去一周內有 33 個資料集掉出更新/熱門榜，包括多個傳統影音或特定金融切片（如 `Falcon79epok/symbion-multi-ohlcv`、`2chch/bo_m3u8`、`artsousa/SceneStateTI2V`）。\n* **與靜態列表之差異**：\n  * 靜態列表中雖然充斥著如 `AlphaDojo`、`TimeSeventeen/Polymarket-v2` 等大量金融與鏈上預測數據的「新進發布」，但從實際「下載速率動能」來看，資本與社群算力正極其龐大地集中於 **NVIDIA GR00T-X** 與 **HumanWAM** 這類具身智能模擬資產（單周下載增量動輒數十萬次）。靜態排行榜反映了社群「多元上傳」的即時切片，而動能數據則揭示了社群實際「重度消耗與訓練」的主流焦點仍在具身實體 AI。",
+  "downloads_digest": "這是一份針對目前高下載量資料集的深度分析與洞察報告：\n\n---\n\n### 一、 主要領域分析\n\n從目前的下載排行中，數據需求呈現高度聚焦的特徵，主要集中在以下五大核心領域：\n\n1. **具身智慧與機器人學（Embodied AI & Robotics）**\n   本期下載最為集中的焦點。包含雙臂協同操作、視角軌跡以及仿真遷移資料，代表資料集如 `agibot-world/AgiBotWorld2026`、`nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim`、`lerobot/FineART`、`DAGroup-PKU/Open-HumanWAM-50K` 與 `XDOF/ABC-130k`。\n2. **3D 視覺、數位資產與物理模擬（3D Vision & Simulation）**\n   與實體世界幾何及模擬密切相關的資料集表現強勁，涵蓋 3D 物件、CAD 程式碼與 CFD 流體動力學，例如 `allenai/objaverse`、`3dcodeverse/3dcodeverse-2m`、`filapro/cad-recode-v1.5`、`nvidia/simready-assets` 及 `neashton/windsorml`。\n3. **自動駕駛與空間感知（Autonomous Driving & Spatial Perception）**\n   自動駕駛的占用網格預測與地點識別資料集持續維持高流量，代表項目為 `OPR-Project/OxfordRobotCar_OpenPlaceRecognition` 與 `tasl-lab/uniocc`。\n4. **大語言模型基礎與複雜推理（LLM Benchmarks & Reasoning）**\n   包含長青的語言建模基準、思維鏈推理與數學解題數據，如 `Salesforce/wikitext`、`openai/gsm8k`、`ryanmarten/OpenThoughts-1k-sample` 與 `allenai/c4`。\n5. **多模態作業系統與智慧代理（GUI Agents & OS Environments）**\n   用於建構與評測跨平台桌面代理（Agent）的執行環境與快取資源，例如 `xlangai/ubuntu_osworld_file_cache` 及 `xlangai/osworld_v2_assets`。\n\n---\n\n### 二、 模態分佈\n\n榜單中的資料模態分佈呈現「跨模態整合」與「立體空間模態崛起」的特色：\n\n- **3D 與幾何代碼（3D / Code）**：表現極其搶眼。`objaverse`（逾 237 萬次下載）與 `3dcodeverse-2m`（160 萬次下載）顯示 3D 幾何、點雲以及具備執行能力的 3D 程式碼（如 CadQuery、Blender Python）已成為熱門模態。\n- **Video（視訊）與感測時序**：廣泛應用於具身智慧與操作示範（如 `Open-HumanWAM-50K`、`FineART`），搭配手部運動軌跡與關節角度，從傳統的純文字走向高密度動態資料。\n- **Text（文字）**：雖然仍有 `Salesforce/wikitext`、`gsm8k` 等高下載量經典資料集，但純文本已不再是唯一的統治模態，多數高增長文本轉向「推理軌跡（Synthetic Reasoning/CoT）」類型。\n- **Image（圖像）與未標示資料**：圖像除了基礎視覺外，高度偏向生物顯微影像（`nicoboou/IDRCell100k`）、空氣動力學網格場（`windsorml`）與 Agent 螢幕截圖。此外，有大量機器人軌跡、CAD 與模擬快取檔案未在平台標示標準模態，但實質包含豐富的多元物理數據。\n\n---\n\n### 三、 趨勢總結\n\n1. **從「純數位生成」轉向「實體世界互動（Physical AI）」**\n   現階段高下載量的最核心趨勢，是模型研發重心正全面跨入機器人操作、流體力學、自駕感知等實體環境。社群對真實環境遙操作（Teleoperation）與高擬真模擬（SimReady）數據展現出前所未有的渴求。\n2. **「程式碼即幾何（Code-as-3D）」成為新興熱點**\n   如 `3dcodeverse-2m` 與 `cad-recode-v1.5` 的高人氣，反映出研究人員正嘗試讓神經網路學習以代碼形式生成與逆向 3D 模型，這能提供比傳統網格（Mesh）更高的精確度與參數化編輯能力。\n3. **作業系統多模態 Agent 的興起**\n   `OSWorld` 相關資產的百萬級下載，突顯了以 LLM/VLM 為核心的桌面操作代理已進入密集測試與資料驗證階段。\n\n---\n\n### 四、 研究建議\n\n1. **具身基礎模型（Embodied Foundation Models）與跨本體（Cross-Embodiment）泛化**\n   - **方向**：利用 `PhysicalAI-Robotics-GR00T-X-Embodiment-Sim`、`FineART` 及 `ABC-130k` 等資料，研究如何讓單一策略模型適應不同機械臂與末端執行器，或探索 Sim-to-Real 的遷移極限。\n2. **參數化 3D 逆向工程與指令生成**\n   - **方向**：結合 `3dcodeverse-2m` 與 `cad-recode-v1.5`，開發能將點雲或多視角圖像直接轉換為可執行 CAD 代碼（如 CadQuery/OpenSCAD）的生成模型，有助於工業設計與智慧製造自動化。\n3. **多模態 GUI 代理的高保真評測與自我進化**\n   - **方向**：基於 `OSWorld` 生態系，探索多模態大模型在真實作業系統中的任務規劃、螢幕視覺定位（Visual Grounding）與動態除錯機制。\n\n---\n\n### 五、 總體陳述\n\n當前高下載量數據的重心，明確標誌著人工智慧研究正從「對話式語言智慧」走向「具身物理智慧（Physical AI）與自主代理（Agentic AI）」。純文本模型的基礎能力已相對成熟，研究社群的迫切需求已延伸至真實物理規律理解、空間幾何感知以及環境交互反饋。這些高度複雜的 3D、視訊、機器人軌跡與模擬資料，正是推動 AI 連接數位世界與物理實體的關鍵燃料。\n\n---\n\n### 六、 動能對照\n\n根據系統比對 6.0 天前的快照數據（整體下載量變化 +8.6%，46 個上升、12 個下降）：\n\n1. **升溫主題**：\n   - **具身模擬極速增溫**：`nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim` 近期下載速率激增 +62.4%（+496,935 次下載），印證了具身智慧領域並非僅具備歷史存量，而是當前正處於爆發期。\n   - **桌面 Agent 與評測資產**：`xlangai/osworld_v2_assets` 下載量成長 +19.3%（+148,772），顯示 Agent 相關研發需求正在快速加速。\n   - **生醫數據動能強勁**：臨床心電圖資料集 `roisincrtai/ptb-xl-1.0.3` 出現 +25.8%（+206,100）的高增長。\n   - **其他亮點**：`IaLoverSpaghetti/LocaIAinHTML` 出現翻倍增長（+105.6%，+1,238,092）；通用基準與安全領域如 `gaia-benchmark/GAIA`（+28.5%）與 `Vyber07/cyber-security`（+27.6%，按讚 +275）亦展現強勁上升力道。\n\n2. **降溫主題**：\n   - 掉出榜外的 29 個資料集中，包含特定機器人混合數據（如 `Zhanguang/robo-data-mix500h`）、氣象專用資料（`PhillyWeatherGuy/baroclinic-rrfs-data`）與加密貨幣金融數據（`btcusddata/binance-ai-data`、`MIB-8/bitunix-paper-desk-snapshots`），顯示特定高度垂直或短期用途數據集的下載速率正在回落。\n\n3. **靜態排行與動能的差異**：\n   - 靜態排行中，經典基準（如 `wikitext`、`gsm8k`、`c4`）依舊佔據百萬級的高位；然而從動能變化可見，前 10 名成長率名單已幾乎被**實體具身（GR00T）**、**環境資產（OSWorld Assets）**與**複雜代理測試（GAIA）**全面佔據。這說明靜態榜單體現了過往的累積慣性，而動能數據則揭示了研究資金與社群算力正在以極快的速度轉向 Physical AI 與 Agent 實作。",
+  "likes_digest": "### 高人氣數據洞察報告\n\n---\n\n### 1. 主要領域分析\n從按讚數前 30 名的資料集可看出，社群的關注點高度聚焦於大語言模型（LLM）的生命週期演進，並正向垂直領域與實體世界擴展：\n\n- **基礎模型預訓練語料（Pre-training Data）**：如 `FineWeb`、`FineWeb-Edu`、`FinePDFs`、`RedPajama`、`dolma` 及 `falcon-refinedweb`。這反映了開源社群對「高品質、透明、去重清洗後的大規模 Web/PDF 語料」有極度強烈的需求。\n- **對齊、RLHF 與指令微調（Alignment & SFT）**：如 `prompts.chat`（按讚榜首，顯示提示詞工程的平民化應用需求）、`hh-rlhf`、`oasst1`、`alpaca`、`dolly-15k`、`ShareGPT`。這對應了從 Raw LLM 轉向人類偏好對齊的關鍵技術路線。\n- **複雜推理與垂直專業領域（Reasoning & Domain-Specific）**：如 `gsm8k`（數學多步驟推理）、`medical-o1-reasoning-SFT`（結合 DeepSeek-R1 / o1 思維鏈的醫療數據）、`cyber-security`（博士級資安知識庫）。研究熱點正從「泛化對話」轉移至「高難度、可驗證的專業推理」。\n- **具身智慧與實體 AI（Physical AI & Robotics）**：如 `nvidia/simready-assets`、`nvidia/PhysicalAI-Autonomous-Vehicles`，反映出社群對自動駕駛、物理模擬與機器人資產的關注正快速攀升。\n- **智慧體與極限基準（Agents & Frontier Benchmarks）**：如 `GAIA`、`cais/hle`（Humanity's Last Exam）、`MiMo-V2.6-RL-oss`，代表模型評測正脫離傳統基準，朝向多模態工具使用、強化學習環境與專家級難題邁進。\n\n---\n\n### 2. 模態分佈\n在按讚數前 30 名的資料集中，模態分佈統計如下：\n\n- **純文字（Text）**：16 個（約 53.3%）\n- **表格與文字（Tabular、Text）**：5 個（約 16.7%）\n- **未標示（多為 3D 模擬資產、感測器混合資料或大型預訓練封裝檔）**：5 個（約 16.7%）\n- **純影像（Image）**：3 個（10%，如 `imagenet-1k` 以及 Stable Diffusion 使用的負向提示詞嵌入 `EasyNegative`、`bad_prompt`）\n- **多模態混合（Image、Text 及 Audio、Image、Text）**：3 個（約 10%，如 `cais/hle`、`MiMo-V2.6-RL-oss`、`GAIA`）\n\n**模態偏好洞察**：\n文字（含結構化表格文字）合計超過 70%，依舊是開源社群最容易應用、按讚熱情最高的絕對主流；但值得注意的是，雖然多模態與 3D/感測器資產數量較少，一旦有高品質的代表性專案釋出（如 NVIDIA 的實體 AI 數據或 CAIS 的多模態極限測試），便能迅速累積上千按讚與數十萬至百萬級的下載量。\n\n---\n\n### 3. 趨勢總結\n獲得社群高度青睞的資料集，普遍展現出以下特質：\n\n1. **極致的資料過濾與教育價值（High Curation & Educational Score）**：以 `FineWeb-Edu` 為代表，透過分類器篩選出高教育價值的語料，證明「品質遠比數量更重要」。\n2. **思維鏈與可驗證推理（Verifiable Reasoning Chains）**：如 `gsm8k` 與 `medical-o1-reasoning-SFT`，能激發模型深層思考過程（Chain-of-Thought / RL 驗證）的資料集具有極高價值。\n3. **即插即用與平民化（Plug-and-Play Usability）**：如 `prompts.chat` 或 `EasyNegative`，為一般開發者與創作者提供能直接改善輸出品質的現成資源，獲得大量終端使用者的按讚支持。\n4. **開源替代與合規透明（Clean-room Open Reproductions）**：如 `RedPajama`、`dolma` 與 `The Stack`，致力於透明授權與乾淨清洗，為學術界與開源界提供可商用或無版權隱患的模型訓練基石。\n\n---\n\n### 4. 研究建議\n建議用戶或團隊可以關注並投入以下具備高影響力的方向：\n\n1. **專業垂直領域的「驗證型思維鏈（Reasoning SFT / RL）數據庫」**：\n   借鑒 `medical-o1-reasoning-SFT` 與 `cyber-security` 的成功模式，針對金融審計、法規遵循、晶片設計或生物化學等嚴謹領域，構建包含「多步驟思考、工具調用軌跡、可程式化驗證（Verifiable Tests）」的資料集。\n2. **智慧體互動環境與 OS-World 軌跡數據（Agentic RL Environments）**：\n   傳統問答已趨飽和，未來的熱點在於具備回饋機制的智慧體環境（如 `MiMo-V2.6-RL-oss`、`GAIA`）。開發涵蓋軟體工程除錯、瀏覽器操作、API 調用等可執行環境與獎勵標註數據，具有極高的研究需求。\n3. **實體 AI 與機器人多感測器模擬數據（Physical AI Simulation）**：\n   針對機器人操控、跨具身模擬（Embodiment Sim）與空間幾何理解建立合成資產與多視角感測器資料集，填補目前實體世界訓練數據匱乏的缺口。\n\n---\n\n### 5. 總體陳述\n高人氣資料集之所以「備受追捧」，是因為它們直接切中了當前 AI 發展的核心瓶頸——模型架構趨於收斂，但**資料的純度、推理密度與交互複雜度決定了模型的上限**。社群已不再滿足於泛用的網頁爬蟲堆疊，而是熱切追尋能驅動下世代推理、智慧體協作與實體智能的「高品質燃料」。\n\n---\n\n### 6. 動能對照（靜態排行 vs. 近期動能）\n根據 6.0 天前後的實際比對數據（追蹤 58 個資料集，46 個下載量上升、12 個下降，整體下載速率變化 +8.6%），社群的動態需求與靜態歷史排行榜展現了顯著的差異與轉移：\n\n- **正在升溫的主題與模態**：\n  - **具身智能與機器人學強勢爆發**：`nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim` 下載量暴增 **+62.4%**（+496,935 次），按讚 +3，顯示實體機器人模擬數據正處於爆發期。\n  - **智慧體與真實環境互動基準升溫**：`gaia-benchmark/GAIA` 下載量成長 **+28.5%**（+5,868 次），按讚顯著增加 **+30**；同時 `xlangai/osworld_v2_assets` 下載量亦增長 **+19.3%**（+148,772 次），按讚 +6。\n  - **深度垂直領域受到高度關注**：`Vyber07/cyber-security` 不僅下載量增長 **+27.6%**（+6,208 次），按讚數更大幅增加 **+275**，代表專業垂直知識庫具備強大的動態吸睛力。\n  - **預訓練語料的穩定調用**：`tiiuae/falcon-refinedweb` 下載量成長 **+46.1%**（+8,051 次）、`allenai/dolma` 成長 **+25.8%**（+715 次）、`OpenAssistant/oasst1` 成長 **+18.2%**（+6,538 次）。\n  - **高量級工具與特定用途爆發**：`IaLoverSpaghetti/LocaIAinHTML` 出現翻倍增長，下載量增加 **+105.6%**（+1,238,092 次），展現極高的短期實用熱度。\n\n- **靜態排行與動態動能的差異**：\n  - **累積 vs. 前沿轉移**：靜態總按讚榜主要由過去兩年奠定基礎的「通用對話指令（Alpaca、Dolly）」與「大型通用文字預訓練（FineWeb）」所佔據；但近期動能顯示，**「具身機器人模擬（Physical AI）」、「作業系統級智慧體（Agent Benchmarks）」**以及**「垂直領域極限知識庫」**才是當前下載速率加速最快的前沿賽道。\n  - **評測熱點升級**：經典文本基準下載增長漸緩，而多模態、工具使用與高難度驗證環境（如 GAIA）的動態增長與按讚增速明顯更具爆發力。",
+  "last_modified_digest": "### 新興與活躍數據洞察報告\n\n---\n\n### 1. 主要領域分析\n\n根據近期頻繁更新與新發布的資料集特徵，資料收集與維護焦點主要集中在以下幾個領域：\n\n*   **具身智慧與機器人操作（Embodied AI & Robotics）**：\n    資料集如 `dexpoint/bimanual-fixed-bottle-refined-1120`（包含解剖學精細控制、真實機器人狀態與物理成功憑證），反映出社群對具身操控、雙臂協同及具備物理驗證機制的嚴謹數據需求正在增加。\n*   **即時金融量化與市場做市（High-Frequency Finance & Prediction Markets）**：\n    如 `huthvincent/btc15-dataset` 提供高頻行情與決策日誌（專注於 Kalshi 比特幣 15 分鐘二元期權的撮合、成交率與 sim-vs-live 差距分析），顯示出結合自動化交易記錄的「活數據（Live Dataset）」成為金融研究與強化學習驗證的活躍方向。\n*   **智慧代理與軌跡追蹤（Agent Traces & Provenance）**：\n    如 `sdfasf43534/zqatrace4`（Agent 執行軌跡）與 `SZLHOLDINGS/wave-logs`（強調帶有數位簽名與存證鏈的運算日誌），呈現出社群對 AI Agent 決策過程可追溯性與可信度（Provenance）的高度關注。\n*   **多語言與區域特定資源建設（Multilingual & Localized Corpora）**：\n    包括印尼語大型語料 `meaecosystem/pustaka` 與俄語大規模語音對齊語料 `lab260/balalaika-sft-rover7-punct`（逾 1.5 萬小時、600 萬筆音訊及共識標註），顯示低資源或非英語系的主流語言規模化標註工程仍維持高熱度。\n*   **專業場景多模態與時空觀測（Domain-specific Spatiotemporal & Multimodal）**：\n    如地理空間野火追蹤 `SamuelWu318/FAH-2014-2025`、運動分析 `nasir421/fiba-basketball-clips`（透過計分板時鐘自動對齊比賽片段），顯示出數據收集已深耕至具高度時空因果關係與複雜事件檢索的垂直領域。\n*   **模型架構與幾何指紋研究（Model Biometrics）**：\n    如 `matthew-ritch/gd-study10-biometrics` 聚焦於權重空間距離、特徵子空間對齊（LLM-Biometrics），顯示出從「數據驅動」轉向對模型權重本身進行度量與血緣追蹤的元研究（Meta-research）正在萌芽。\n\n---\n\n### 2. 模態分佈\n\n在最新更新的 30 個資料集中，模態分佈狀況如下：\n\n*   **未標示（Unlabeled / 未指定）**：約 24 個（佔比 80%）。多數新建立或私人實驗性專案尚未完善元數據（Metadata）標註。\n*   **文字（Text）**：3 個（包含純文字與複合標記，如測試用 Canary 及綜合語料）。\n*   **表格與文字（Tabular、Text）**：2 個（如 `huthvincent/btc15-dataset` 與 `sdfasf43534/zqatrace4`，多用於日誌記錄、時序決策與 Agent 軌跡）。\n*   **音訊（Audio）**：1 個（`lab260/balalaika-sft-rover7-punct`，展現了超大規模語音標註的持續交付）。\n*   **地理空間（Geospatial）**：1 個（`SamuelWu318/FAH-2014-2025`，野火邊界網格數據）。\n*   **影片（Video）**：1 個（`nasir421/fiba-basketball-clips`，多片段運動視覺）。\n\n**模態趨勢觀察**：\n「結構化日誌（表格+文字）」與「高精度物理/環境時空模態（地理空間、多關節機器人運動、時鐘對齊影片）」正在興起。研究者不再僅滿足於爬取靜態文字，而是積極擴充具備高時間解析度與環境互動特性的複合模態。\n\n---\n\n### 3. 趨勢總結\n\n當前展現高度活躍性的數據具備以下核心特質：\n1.  **「活數據（Living Datasets）」與持續集成**：如高頻交易、Agent 軌跡及每小時更新的串流數據（如 `kiiteitte`），數據集正從靜態的存檔庫演變為具備 CI/CD pipeline、自動定時增量的動態資料流。\n2.  **物理與實證可信度（Physical Auditability & Signed Receipts）**：機器人控制強調實體驗證與 SHA256 完整性；系統日誌強調簽名收據鏈，反映社群對合成資料污染與黑箱決策的防範，轉向追求高保真（High-fidelity）與可審計的數據。\n\n---\n\n### 4. 研究建議\n\n1.  **高頻微結構預測與 Sim-to-Real 差距校準（基於 `btc15-dataset`）**：\n    *   *方向*：利用逐秒行情、模型決策日誌與實際撮合結果，研究在二元期權或高波動市場中強化學習（RL）智能體的即時校準、IOC（立即成交否則取消）成交率建模與做市策略，縮小模擬與真實執行的差距。\n2.  **具備物理驗證的雙臂機器人操作策略學習（基於 `dexpoint/bimanual-fixed-bottle-refined-1120`）**：\n    *   *方向*：利用解剖學關節精細校準資料與「物理成功/拒絕」樣本，研究非對稱雙手協同操作的離線模仿學習（Offline Imitation Learning），重點探索如何透過過濾未通過物理審計的動作軌跡提升模型部署的穩定性。\n3.  **多源模型權重指紋與模型血緣追蹤（基於 `gd-study10-biometrics`）**：\n    *   *方向*：利用層級 Frobenius 範數與主角餘弦數據，發展開源模型權重空間的防偽、歸屬溯源及微調演化分析，探索模型版權保護與隱式知識演化的度量工具。\n\n---\n\n### 5. 總體陳述\n\n持續關注「近期活躍」的數據集，能讓研究者在同儕尚未發覺前捕捉到自動化流管線、物理具身驗證與 Agent 可追溯性等前沿工程實踐；這不僅有助於避開過度飽和的靜態基準測試，更能確保研究緊扣真實系統部署與多模態互動的核心挑戰。\n\n---\n\n### 6. 動能對照\n\n根據系統比對 6.0 天前的快照數據（整體 58 個追蹤資料集中，46 個上升、12 個下降，整體下載量變化 +8.6%）：\n\n*   **顯著升溫的主題與模態**：\n    *   **具身智慧與實體 AI**：`nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim` 展現極強爆發力，近 30 天滾動下載量大幅增長 **+62.4%**（增加 496,935 次下載，按讚 +3），印證了具身機器人資料的真實需求暴增，與最新列表中 `dexpoint` 等機器人資料集的更新趨勢高度共振。\n    *   **系統 Agent 與基準測試**：`gaia-benchmark/GAIA`（下載量 +28.5%，按讚 +30）與 `xlangai/osworld_v2_assets`（下載量 +19.3%，按讚 +6）持續走高，反映出 Agent 執行與評測數據仍是熱門焦點。\n    *   **超大規模網頁與開源基礎語料**：`IaLoverSpaghetti/LocaIAinHTML`（下載量 +105.6%，增加 1,238,092 次）、`tiiuae/falcon-refinedweb`（+46.1%）與 `allenai/dolma`（+25.8%）展現強大動能；此外 `Vyber07/cyber-security` 社群熱度飆升（下載量 +27.6%，按讚 +275）。\n*   **降溫與掉出榜外主題**：\n    *   在跌出榜外的 29 個資料集中，大量屬於特定交易所的市場快照（如 `MIB-8/bitunix-paper-desk-snapshots`、`btcusddata/binance-ai-data`）與小眾特定模擬資料（如 `Astreous/argon-quantum-state`、`PhillyWeatherGuy/baroclinic-rrfs-data`、`Zhanguang/robo-data-mix500h`），顯示純粹的小型快照若缺乏維護或生態支持，下載動能衰退迅速。\n*   **動能與靜態排行的差異**：\n    靜態列表中充斥著剛推送程式碼、下載數為 0 或極低的個體開發者專案（如 `HonorC/E2E-DS-v2-5b-joint`、`sdfasf43534/zqatrace4`）或內部測試（如 Canary 系列）；而動能數據則過濾了偶發性的 commit，明確反映出**主流機構所主導的具身 AI 模擬（NVIDIA GR00T 系列）與作業系統級 Agent 評測（OSWorld, GAIA）**，才是真正在社群中被廣泛調用且保持實質高增長的長期主流趨勢。",
   "digests_generated_at": {
-    "downloads": "2026-11-20T22:28:45.062820+00:00",
-    "likes": "2026-11-19T22:52:39.235252+00:00",
-    "last_modified": "2026-11-20T22:28:45.062820+00:00"
+    "downloads": "2026-11-21T21:24:03.479725+00:00",
+    "likes": "2026-11-21T21:24:03.479725+00:00",
+    "last_modified": "2026-11-21T21:24:03.479725+00:00"
   },
   "trending": {
     "available": true,
-    "window_days": 7.0,
-    "baseline_date": "2026-11-13T21:45:31.545587+00:00",
-    "current_date": "2026-11-20T22:28:45.047574+00:00",
+    "window_days": 6.0,
+    "baseline_date": "2026-11-15T20:42:26.622916+00:00",
+    "current_date": "2026-11-21T21:24:03.467881+00:00",
     "min_downloads": 1000,
     "items": [
       {
+        "id": "IaLoverSpaghetti/LocaIAinHTML",
+        "downloads": 2410839,
+        "likes": 1,
+        "downloads_delta": 1238092,
+        "downloads_pct": 105.6,
+        "likes_delta": 1,
+        "likes_pct": null
+      },
+      {
+        "id": "nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim",
+        "downloads": 1293320,
+        "likes": 295,
+        "downloads_delta": 496935,
+        "downloads_pct": 62.4,
+        "likes_delta": 3,
+        "likes_pct": 1.0
+      },
+      {
         "id": "tiiuae/falcon-refinedweb",
-        "downloads": 25645,
+        "downloads": 25518,
         "likes": 979,
-        "downloads_delta": 8268,
-        "downloads_pct": 47.6,
+        "downloads_delta": 8051,
+        "downloads_pct": 46.1,
         "likes_delta": 0,
         "likes_pct": 0.0
       },
       {
-        "id": "nvidia/PhysicalAI-Robotics-GR00T-X-Embodiment-Sim",
-        "downloads": 1166164,
-        "likes": 294,
-        "downloads_delta": 357493,
-        "downloads_pct": 44.2,
-        "likes_delta": 2,
-        "likes_pct": 0.7
-      },
-      {
-        "id": "DAGroup-PKU/Open-HumanWAM-50K",
-        "downloads": 1534105,
-        "likes": 36,
-        "downloads_delta": 466423,
-        "downloads_pct": 43.7,
-        "likes_delta": 11,
-        "likes_pct": 44.0
-      },
-      {
-        "id": "Astreous/argon-quantum-state",
-        "downloads": 7225,
-        "likes": 0,
-        "downloads_delta": 2097,
-        "downloads_pct": 40.9,
-        "likes_delta": 0,
-        "likes_pct": null
+        "id": "gaia-benchmark/GAIA",
+        "downloads": 26455,
+        "likes": 997,
+        "downloads_delta": 5868,
+        "downloads_pct": 28.5,
+        "likes_delta": 30,
+        "likes_pct": 3.1
       },
       {
         "id": "Vyber07/cyber-security",
-        "downloads": 28056,
-        "likes": 1319,
-        "downloads_delta": 7606,
-        "downloads_pct": 37.2,
-        "likes_delta": 302,
-        "likes_pct": 29.7
+        "downloads": 28737,
+        "likes": 1363,
+        "downloads_delta": 6208,
+        "downloads_pct": 27.6,
+        "likes_delta": 275,
+        "likes_pct": 25.3
       },
       {
-        "id": "gaia-benchmark/GAIA",
-        "downloads": 25360,
-        "likes": 982,
-        "downloads_delta": 6129,
-        "downloads_pct": 31.9,
-        "likes_delta": 21,
-        "likes_pct": 2.2
+        "id": "roisincrtai/ptb-xl-1.0.3",
+        "downloads": 1004807,
+        "likes": 4,
+        "downloads_delta": 206100,
+        "downloads_pct": 25.8,
+        "likes_delta": 2,
+        "likes_pct": 100.0
+      },
+      {
+        "id": "allenai/dolma",
+        "downloads": 3484,
+        "likes": 1114,
+        "downloads_delta": 715,
+        "downloads_pct": 25.8,
+        "likes_delta": 0,
+        "likes_pct": 0.0
       },
       {
         "id": "sjkhfuk1/foffo",
-        "downloads": 1358433,
+        "downloads": 1384657,
         "likes": 3,
-        "downloads_delta": 313027,
-        "downloads_pct": 29.9,
+        "downloads_delta": 238937,
+        "downloads_pct": 20.9,
         "likes_delta": 2,
         "likes_pct": 200.0
       },
       {
+        "id": "xlangai/osworld_v2_assets",
+        "downloads": 918512,
+        "likes": 25,
+        "downloads_delta": 148772,
+        "downloads_pct": 19.3,
+        "likes_delta": 6,
+        "likes_pct": 31.6
+      },
+      {
+        "id": "OpenAssistant/oasst1",
+        "downloads": 42539,
+        "likes": 1627,
+        "downloads_delta": 6538,
+        "downloads_pct": 18.2,
+        "likes_delta": 4,
+        "likes_pct": 0.2
+      },
+      {
         "id": "cais/hle",
-        "downloads": 77919,
-        "likes": 1153,
-        "downloads_delta": 15618,
-        "downloads_pct": 25.1,
-        "likes_delta": 52,
-        "likes_pct": 4.7
+        "downloads": 79751,
+        "likes": 1158,
+        "downloads_delta": 11683,
+        "downloads_pct": 17.2,
+        "likes_delta": 54,
+        "likes_pct": 4.9
       },
       {
-        "id": "nvidia/simready-assets",
-        "downloads": 1731953,
-        "likes": 1691,
-        "downloads_delta": 299619,
-        "downloads_pct": 20.9,
-        "likes_delta": 122,
-        "likes_pct": 7.8
-      },
-      {
-        "id": "allenai/dolma",
-        "downloads": 3461,
-        "likes": 1114,
-        "downloads_delta": 582,
-        "downloads_pct": 20.2,
-        "likes_delta": 0,
-        "likes_pct": 0.0
-      },
-      {
-        "id": "lmsys/lmsys-chat-1m",
-        "downloads": 7445,
-        "likes": 1082,
-        "downloads_delta": 872,
-        "downloads_pct": 13.3,
-        "likes_delta": 3,
+        "id": "databricks/databricks-dolly-15k",
+        "downloads": 61004,
+        "likes": 1386,
+        "downloads_delta": 8875,
+        "downloads_pct": 17.0,
+        "likes_delta": 4,
         "likes_pct": 0.3
       },
       {
         "id": "roneneldan/TinyStories",
-        "downloads": 201674,
-        "likes": 1281,
-        "downloads_delta": 23575,
-        "downloads_pct": 13.2,
-        "likes_delta": 36,
-        "likes_pct": 2.9
-      },
-      {
-        "id": "databricks/databricks-dolly-15k",
-        "downloads": 59816,
-        "likes": 1386,
-        "downloads_delta": 6819,
-        "downloads_pct": 12.9,
-        "likes_delta": 4,
-        "likes_pct": 0.3
-      },
-      {
-        "id": "openai/gsm8k",
-        "downloads": 1237660,
-        "likes": 2094,
-        "downloads_delta": 129782,
-        "downloads_pct": 11.7,
-        "likes_delta": 54,
-        "likes_pct": 2.6
-      },
-      {
-        "id": "OpenAssistant/oasst1",
-        "downloads": 40340,
-        "likes": 1627,
-        "downloads_delta": 3692,
-        "downloads_pct": 10.1,
-        "likes_delta": 4,
-        "likes_pct": 0.2
-      },
-      {
-        "id": "HuggingFaceFW/finepdfs",
-        "downloads": 89038,
-        "likes": 962,
-        "downloads_delta": 7909,
-        "downloads_pct": 9.7,
-        "likes_delta": 5,
-        "likes_pct": 0.5
-      },
-      {
-        "id": "FreedomIntelligence/medical-o1-reasoning-SFT",
-        "downloads": 20248,
-        "likes": 1224,
-        "downloads_delta": 1604,
-        "downloads_pct": 8.6,
-        "likes_delta": 0,
-        "likes_pct": 0.0
+        "downloads": 209102,
+        "likes": 1293,
+        "downloads_delta": 27739,
+        "downloads_pct": 15.3,
+        "likes_delta": 46,
+        "likes_pct": 3.7
       },
       {
         "id": "Salesforce/wikitext",
-        "downloads": 2386712,
+        "downloads": 2464610,
         "likes": 870,
-        "downloads_delta": 180508,
-        "downloads_pct": 8.2,
-        "likes_delta": 8,
-        "likes_pct": 0.9
+        "downloads_delta": 263044,
+        "downloads_pct": 11.9,
+        "likes_delta": 7,
+        "likes_pct": 0.8
       },
       {
-        "id": "xlangai/ubuntu_osworld_file_cache",
-        "downloads": 1395540,
-        "likes": 74,
-        "downloads_delta": 105219,
-        "downloads_pct": 8.2,
-        "likes_delta": 3,
-        "likes_pct": 4.2
+        "id": "openai/gsm8k",
+        "downloads": 1252881,
+        "likes": 2103,
+        "downloads_delta": 127735,
+        "downloads_pct": 11.4,
+        "likes_delta": 59,
+        "likes_pct": 2.9
+      },
+      {
+        "id": "HuggingFaceFW/finepdfs",
+        "downloads": 87656,
+        "likes": 962,
+        "downloads_delta": 8844,
+        "downloads_pct": 11.2,
+        "likes_delta": 4,
+        "likes_pct": 0.4
       },
       {
         "id": "OPR-Project/OxfordRobotCar_OpenPlaceRecognition",
-        "downloads": 1479234,
+        "downloads": 1508174,
         "likes": 10,
-        "downloads_delta": 106698,
-        "downloads_pct": 7.8,
+        "downloads_delta": 141458,
+        "downloads_pct": 10.4,
         "likes_delta": 6,
         "likes_pct": 150.0
       },
       {
-        "id": "h1testmeow/dsviewer-gated-v2",
-        "downloads": 16013,
-        "likes": 0,
-        "downloads_delta": 1060,
-        "downloads_pct": 7.1,
-        "likes_delta": 0,
-        "likes_pct": null
+        "id": "lmsys/lmsys-chat-1m",
+        "downloads": 7384,
+        "likes": 1083,
+        "downloads_delta": 678,
+        "downloads_pct": 10.1,
+        "likes_delta": 2,
+        "likes_pct": 0.2
       },
       {
-        "id": "h1testmeow/dsviewer-canary-v1",
-        "downloads": 16078,
-        "likes": 0,
-        "downloads_delta": 1038,
-        "downloads_pct": 6.9,
-        "likes_delta": 0,
-        "likes_pct": null
+        "id": "HuggingFaceFW/fineweb-edu",
+        "downloads": 453417,
+        "likes": 1447,
+        "downloads_delta": 41288,
+        "downloads_pct": 10.0,
+        "likes_delta": 40,
+        "likes_pct": 2.8
       },
       {
         "id": "tatsu-lab/alpaca",
-        "downloads": 90445,
+        "downloads": 92262,
         "likes": 1398,
-        "downloads_delta": 5216,
-        "downloads_pct": 6.1,
+        "downloads_delta": 8286,
+        "downloads_pct": 9.9,
         "likes_delta": 5,
         "likes_pct": 0.4
       },
       {
-        "id": "HuggingFaceFW/fineweb-edu",
-        "downloads": 447625,
-        "likes": 1439,
-        "downloads_delta": 24664,
-        "downloads_pct": 5.8,
-        "likes_delta": 37,
-        "likes_pct": 2.6
-      },
-      {
-        "id": "tasl-lab/uniocc",
-        "downloads": 1111217,
-        "likes": 46,
-        "downloads_delta": 59688,
-        "downloads_pct": 5.7,
-        "likes_delta": 6,
-        "likes_pct": 15.0
-      },
-      {
-        "id": "HuggingFaceH4/ultrachat_200k",
-        "downloads": 85223,
-        "likes": 1194,
-        "downloads_delta": 4400,
-        "downloads_pct": 5.4,
-        "likes_delta": 3,
-        "likes_pct": 0.3
-      },
-      {
-        "id": "HuggingFaceFW/fineweb",
-        "downloads": 363745,
-        "likes": 3788,
-        "downloads_delta": 17334,
-        "downloads_pct": 5.0,
-        "likes_delta": 51,
-        "likes_pct": 1.4
-      },
-      {
         "id": "fka/prompts.chat",
-        "downloads": 21190,
-        "likes": 9966,
-        "downloads_delta": 955,
-        "downloads_pct": 4.7,
+        "downloads": 21779,
+        "likes": 9967,
+        "downloads_delta": 1867,
+        "downloads_pct": 9.4,
         "likes_delta": 24,
         "likes_pct": 0.2
       },
       {
-        "id": "ILSVRC/imagenet-1k",
-        "downloads": 92232,
-        "likes": 1195,
-        "downloads_delta": 3270,
-        "downloads_pct": 3.7,
-        "likes_delta": 50,
-        "likes_pct": 4.4
+        "id": "nvidia/simready-assets",
+        "downloads": 1737165,
+        "likes": 1710,
+        "downloads_delta": 140503,
+        "downloads_pct": 8.8,
+        "likes_delta": 120,
+        "likes_pct": 7.5
       },
       {
-        "id": "lerobot/FineART",
-        "downloads": 1165646,
+        "id": "DAGroup-PKU/Open-HumanWAM-50K",
+        "downloads": 1539099,
+        "likes": 36,
+        "downloads_delta": 121182,
+        "downloads_pct": 8.5,
+        "likes_delta": 7,
+        "likes_pct": 24.1
+      },
+      {
+        "id": "HuggingFaceH4/ultrachat_200k",
+        "downloads": 86250,
+        "likes": 1194,
+        "downloads_delta": 6639,
+        "downloads_pct": 8.3,
+        "likes_delta": 2,
+        "likes_pct": 0.2
+      },
+      {
+        "id": "huggingface/documentation-images",
+        "downloads": 4323247,
+        "likes": 260,
+        "downloads_delta": 304685,
+        "downloads_pct": 7.6,
+        "likes_delta": 3,
+        "likes_pct": 1.2
+      },
+      {
+        "id": "xlangai/ubuntu_osworld_file_cache",
+        "downloads": 1400828,
+        "likes": 74,
+        "downloads_delta": 97340,
+        "downloads_pct": 7.5,
+        "likes_delta": 3,
+        "likes_pct": 4.2
+      },
+      {
+        "id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+        "downloads": 20600,
+        "likes": 1224,
+        "downloads_delta": 1415,
+        "downloads_pct": 7.4,
+        "likes_delta": 0,
+        "likes_pct": 0.0
+      },
+      {
+        "id": "wikimedia/wikipedia",
+        "downloads": 332821,
+        "likes": 1768,
+        "downloads_delta": 18826,
+        "downloads_pct": 6.0,
+        "likes_delta": 43,
+        "likes_pct": 2.5
+      },
+      {
+        "id": "ILSVRC/imagenet-1k",
+        "downloads": 92689,
+        "likes": 1206,
+        "downloads_delta": 4753,
+        "downloads_pct": 5.4,
+        "likes_delta": 56,
+        "likes_pct": 4.9
+      },
+      {
+        "id": "tasl-lab/uniocc",
+        "downloads": 1119725,
         "likes": 46,
-        "downloads_delta": 40767,
-        "downloads_pct": 3.6,
-        "likes_delta": 4,
-        "likes_pct": 9.5
+        "downloads_delta": 51415,
+        "downloads_pct": 4.8,
+        "likes_delta": 6,
+        "likes_pct": 15.0
       }
     ],
     "entered": [
-      "AfriSpeech/afrikrane-mt",
-      "AlphaDojo/dojo_stock_info",
+      "Arman-03/mvda-data",
       "Dagonulca/figofigofigofigo",
-      "Elliot-Data/pixmo_pixmo_docs",
-      "Elliot-Data/wiki_qa",
-      "FatUnc6969/lexi-borderland-data",
+      "GC1014/E2E-DS-v2-5b-rgb",
       "HennyPr/ps2_hf2",
-      "HuggingFriends/PixelWorld",
-      "IaLoverSpaghetti/LocaIAinHTML",
-      "Jetbard/tmx-feed-g9nh5j",
+      "HonorC/E2E-DS-v2-5b-joint",
       "JoTalbot/octopus-eternal",
-      "Kristen-Z/stereorep-teaser",
-      "LeoMaxwell/b87935af8bedca82d803b259",
-      "LeoMaxwell/d093490cc2273cbed42104cd",
-      "Nihilux/RedRose",
+      "M-hv1/Titan-Learn",
       "Osamap3/PSP_ph",
-      "RalphLabsAI/ralph-v2-status",
-      "SZLHOLDINGS/killinchu-osint-corpus",
-      "SZLHOLDINGS/readiness-runs",
-      "ThomasGhione/hydray",
-      "TimeSeventeen/Polymarket-v2",
-      "XDOF/ABC-130k",
+      "SZLHOLDINGS/wave-logs",
+      "SamuelWu318/FAH-2014-2025",
+      "StevenZhou0825/Weibo-dataset",
+      "Strutf/future-space",
+      "TrixieEste/Annoy-PyEdu-Rs",
+      "ahashanahmed/csv",
       "allenai/c4",
-      "btcusddata/binance-ai-data",
-      "electroglyph/fx2-bank-data",
-      "ericng17/hcm_traffic_snapshots7",
-      "milo-pa/levantar_cosas_20261120_221932",
-      "pliny-the-prompter/g0dm0d3",
+      "dexpoint/bimanual-fixed-bottle-refined-1120",
+      "huthvincent/btc15-dataset",
+      "jhphgf2/ee4d-03",
+      "lab260/balalaika-sft-rover7-punct",
+      "matthew-ritch/gd-study10-biometrics",
+      "migueldbsfnz/ncm-vqlm256",
+      "nasir421/fiba-basketball-clips",
+      "nowfrogg/carcassonne-az-data",
+      "prasaduser/webtoepub-library",
       "ryry99/meyo-assets-hf",
-      "sagels/new-dataset",
-      "vnpornads/cdn-hls-20",
-      "xlangai/osworld_v2_assets",
-      "zaaabik/alien-data-v2"
+      "safwatkhokha/nawaqes-backup-v2",
+      "sdfasf43534/zqatrace4",
+      "sevenc-nanashi/kiiteitte",
+      "trl-lib/trackio-dataset",
+      "vnpornads/cdn-hls-84"
     ],
     "exited": [
-      "2chch/bo_m3u8",
-      "Askhat777/quikstrike-data",
-      "Falcon79epok/symbion-multi-ohlcv",
-      "Hamidoih/thes2-ref",
-      "IINOVAII/tameez-eval-outputs",
-      "Jaswinder530/sikh-history-frames",
-      "StevenZhou0825/Weibo-dataset",
-      "Tako121/First-nuvaka",
-      "aaniksahaa/ConnectoFM-experiments",
-      "artsousa/SceneStateTI2V",
-      "bertandd/9router-data",
-      "binhdo31428/comet",
-      "ccl4u/hermes-system-monitor-v2",
-      "csizeee/bull-eye-copernicus-panoramas",
-      "cubeow/lerobot-act-data",
+      "Astreous/argon-quantum-state",
+      "MIB-8/bitunix-paper-desk-snapshots",
+      "PhillyWeatherGuy/baroclinic-rrfs-data",
+      "RLinf/dataset",
+      "RemiFabre/faience-games",
+      "Zhanguang/robo-data-mix500h",
+      "anhbui19394/walnut",
+      "binhle2521/astronomy",
+      "brezgis/samogita-records",
+      "btcusddata/binance-ai-data",
+      "ddai10/ddy-archive-yufan2",
       "epfml/FineWeb-HQ",
-      "fujiiee/roleplay-bot-data",
-      "hallucinations-leaderboard/results",
-      "hf-doc-build/doc-build",
       "hf-doc-build/doc-build-dev",
+      "hieuhoang5424/barge",
       "i998979/TransitApp",
-      "laion/laion-audio-xl-short-caption-warehouse",
+      "khoapham44566/buffalo",
+      "lnxdre4d/dino-clip-libero",
+      "luhr/magicsim-g1-demos",
       "m-a-p/FineFineWeb",
-      "mira-sharkbyte/TinyDebug",
-      "mlfoundations/MINT-1T-HTML",
+      "makaikoghogo/alib_models_encrypted",
+      "nganpham52679/airship",
+      "nolimitsxl/wazobia-asr-data",
       "openalphalab/gdelt-news",
-      "prlq/mobilemanipbench-data",
-      "resfunny717/sports-betting-bundle",
-      "richardholmes930/s-8d6e50fde79043ba",
-      "seliny2/cascade-lumina34b-0.75-chain",
-      "ssg-qwq/cosmos3-distill-data",
+      "phatho94707/tarsier",
+      "phuongvu76985/tundra",
+      "thanhho43147/orca",
+      "vincewin/CREST_data",
       "wegrthj/e94fjt-qi9l-raw",
-      "xinquanx/transfer_delta"
+      "yenhuynh54659/canine"
     ],
     "totals": {
-      "tracked": 55,
-      "rising": 41,
-      "falling": 14,
-      "downloads_now": 41881474,
-      "downloads_before": 40485988,
-      "downloads_pct": 3.4
+      "tracked": 58,
+      "rising": 46,
+      "falling": 12,
+      "downloads_now": 46838164,
+      "downloads_before": 43130659,
+      "downloads_pct": 8.6
     }
   }
 }
